@@ -1,0 +1,479 @@
+<!--Padrão 31/08/2016 embuscadocodigo.com v0.2-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+          <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<!--titulos-->
+		<title>Breakpoint em HTML5 CSS3. Vídeo 100</title>
+          <meta name="twitter:title" content="Breakpoint em HTML5 CSS3. Vídeo 100">
+<!--descrição-->
+          <meta property="og:description" content="Aqui vemos o que é layout, viewport, Grid-view, Media Query e no vídeo exemplo de breakpoint"/>
+          <meta name="twitter:description" content="Aqui vemos o que é layout, viewport, Grid-view, Media Query e no vídeo exemplo de breakpoint">
+<!--Palavras chave-->
+          <meta name="keywords" content="layout, viewport, grid, grid-view, media query, breakpoint">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/html/video100.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="embuscadocodigo.ico">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/html/img/100.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/html/img/100.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="../../css/reset.css">
+          <link rel="stylesheet" href="../../css/roca.css">
+          <link rel="stylesheet" href="liststyletype.css">
+          <link rel="stylesheet" href="../../css/padrao.css">
+          <link rel="stylesheet" href="../../css/erro.css">
+          <link rel="stylesheet" href="../../css/fonte.css">
+          <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@embuscadocodigo">
+     </head>
+     <body>
+          <header>
+			<nav class="cabecalho">
+				<ul>
+					<li><a href="../../index.html">home</a></li>
+					<li>|</li>
+					<li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+					<li>|</li>
+					<li><a href="../../sobre.html">Sobre</a></li>
+					<li>|</li>
+					<li><a href="../../codigos.html">Códigos</a></li>
+				</ul>
+<section class="linhamenus">
+</section>
+			</nav>
+		</header>
+      <section>
+            <div  class="paginas">
+                  <ul>
+                        <li><a href="video99.html">anterior</a></li>
+                        <li>|</li>
+                        <li><a href="../html.html">curso</a></li>
+                  </ul>
+            </div>
+      </section>
+<section class="propmeio">
+<p>Publicidade</p>
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- em busca do codigo 01 -->
+				<ins class="adsbygoogle"
+				style="display:inline-block;width:728px;height:90px"
+				data-ad-client="ca-pub-5020252132627432"
+				data-ad-slot="7324870979"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+</section>
+<a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+<section class="paragrafoscodigos">
+<p>Compre um adesivo e ajude o Em Busca do Código a continuar.</p>
+</section>
+</a>
+</br>
+<section class="paragrafoscodigos">
+<!--Título--><!--Título--><!--Título--><!--Título--><!--Título--><!--Título--><!--Título--><!--Título-->
+<h1>Breakpoint em HTML5 CSS3. Vídeo 100</h1>
+</br>
+      <p class="cabe">O que é um layout?</p>
+</br>
+      <p>
+Primeiramente vamos definir o que é um layout. O layout é a disposição dos elementos de um site (isso em desenvolvimento web), o layout é um esboço de como ficará a distribuição física dos elementos.
+      </p>
+</br>
+      <p>
+Existem quatro modos diferentes de se criar layouts a partir de colunas, são eles.
+      </p>
+</br>
+      <p>
+Utilizando:</br></br>
+Table;</br>
+float;</br>
+framework;</br>
+flexbox.
+      </p>
+</br>
+      <p>
+O layout do Em Busca do Código utiliza a propriedade float. Uma observação interessante é que até a documentação da W3C (World Wide Web Consortium) afirma que float é fácil de aprender.
+      </p>
+</br>
+      <p>
+Durante os nossos vídeos de HTML5 e CSS3 nós aprendemos a utilizar a propriedade float sem nenhuma dificuldade e com naturalidade, o que só confirma ainda mais a afirmação da W3C.
+      </p>
+</br>
+      <p class="cabe">Flexbox</p>
+</br>
+      <p>
+Utilizar flexbox para desenvolver seu layout significa utilizar o modo que surgiu junto com o CSS3, por isso um dos mais citados em fóruns e grupos de desenvolvedores web.
+      </p>
+</br>
+      <p>
+Uma desvantagem de se utilizar flexbox é que ele não funciona nos navegadores da Microsoft até o IE10.
+      </p>
+</br>
+      <p>
+Eu não utilizo flexbox, não o estudei, muito provavelmente existe modos de fazer com que funcione, mas essa informação está na documentação oficial sobre layout da W3C, link no final deste artigo.
+      </p>
+</br>
+      <p class="cabe">O que é web design responsivo?</p>
+</br>
+      <p>
+Web design responsivo, ou somente layout responsivo não é um programa ou um JavaScript, ele é composto somente por HTML e CSS (W3C).
+      </p>
+</br>
+      <p class="cabe">O que é viewport?</p>
+</br>
+      <p>
+Não importa o dispositivo que o usuário esteja vendo seu site, a viewport é a área visível do mesmo (de um site). No inicio (a alguns anos) não existiam smartphones então os sites eram vistos apenas através de computadores pessoais (PCs).
+      </p>
+</br>
+      <p>
+A viewport varia de acordo com o dispositivo, será menores em celulares e maiores em desktops (pcs e notebooks). Antes da popularização dos smartphones os sites eram estáticos, por isso quando começamos a utilizar tablets e telefones celulares o tamanho fixo desses sites eram maiores que o viewport (parte visível), por isso os navegadores começaram a diminuir o tamanho do site para caber no viewport.
+      </p>
+</br>
+      <p>
+Não preciso falar que para o usuário essa experiência é horrível, mas funcionava.
+      </p>
+</br>
+      <p class="cabe">E qual foi a solução?</p>
+</br>
+      <p>
+O HTML5, "dizendo" que você tem que incluir em todas as suas paginas o elemento viewport.
+      </p>
+            <nav class="fonte">
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br />
+            </nav>
+</br>
+      <p class="cabe">Grid-view</p>
+</br>
+      <p>
+Antes de continuarmos a falar diretamente de responsividade vamos "falar" de algo que também está no meio disso tudo. Um Grid-view, ou apenas grid.
+      </p>
+</br>
+      <p>
+O layout de muitos sites é baseado em grid-view (grid), o que significa que ele é baseado em colunas.
+      </p>
+</br>
+<iframe class="propmeio3" src="img/viewport02.html" width="100%" height="120px" frameborder='0' scrolling="no"></iframe>
+</br></br>
+      <p>
+Provavelmente você não use para nada, mas se quiser fazer download do nosso grid de cima, fique a vontade.
+      </p>
+</br>
+<a href="img/gridsimples.zip" download="Grid simples.zip">Download</a>
+</br>  </br>
+      <p>
+Mas essa grid de nada nos serve pois é muito difícil usa-la. Então vamos fazer uma grid que consigamos usar.
+      </p>
+</br>
+      <p>
+Para fazer um grid-view de 12 colunas precisamos calcular o tamanho horizontal da tela em porcentagem.
+      </p>
+            <nav class="fonte">
+100% / 12 = 8,33
+            </nav>
+</br>
+      <p>
+Nós já sabemos que teremos 12 colunas então precisamos criar 12 classes, vou criar essas classes com nomes de grid01 até grid12 onde a grid01 terá 8,33%, a grid02 16,66% até a frid12 que receberá 100%.
+      </p>
+            <nav class="fonte">
+.grid01 {width: 8.33%;}<br />
+.grid02 {width: 16.66%;}<br />
+.grid03 {width: 25%;}<br />
+.grid04 {width: 33.33%;}<br />
+.grid05 {width: 41.66%;}<br />
+.grid06 {width: 50%;}<br />
+.grid07 {width: 58.33%;}<br />
+.grid08 {width: 66.66%;}<br />
+.grid09 {width: 75%;}<br />
+.grid10 {width: 83.33%;}<br />
+.grid11 {width: 91.66%;}<br />
+.grid12 {width: 100%;}<br />
+            </nav>
+</br>
+      <p>
+Já editando o&nbsp; HTML cada classe deve estar em uma&nbsp; &lt;div&gt;.
+      </p>
+            <nav class="fonte">
+&lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="grid01"&gt;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="grid02"&gt;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="grid03"&gt;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="grid04"&gt;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="grid05"&gt;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="grid06"&gt;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="grid07"&gt;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="grid08"&gt;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="grid09"&gt;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="grid10"&gt;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="grid11"&gt;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="grid12"&gt;&lt;/div&gt;<br />
+&lt;/body&gt;<br />
+            </nav>
+</br>
+      <p>
+Agora voltamos para o CSS e adicionamos uma cor no fundo de cada classe (background), a cor de sua preferência. E adicionamos uma borda (border). Isso em todas as classes relacionadas a nossa grid.
+      </p>
+            <nav class="fonte">
+&nbsp;&nbsp;&nbsp;&nbsp; [class*="grid"] {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; float: left;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding: 15px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; border: 1px solid #90EE90;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+            </nav>
+</br>
+      <p>
+Mas como conseguimos ver como a nossa grid está agora, vemos que não da para entender quase nada.
+      </p>
+<iframe class="propmeio3" src="img/viewport.html" width="100%" height="280px" frameborder='0' scrolling="no"></iframe>
+</br></br>
+      <p>
+Ou, entendemos sim. Mas antes de utilizarmos nossa grid vamos voltar ao HTML e adicionar uma &lt;div&gt; como tag pai das nossas 12 classes, não esquecendo de criar uma classe para esta &lt;div&gt;.
+      </p>
+            <nav class="fonte">
+&lt;div class="linha"&gt;<br />
+... <br />
+&lt;/div&gt;<br />
+            </nav>
+</br>
+      <p>
+Agora voltando ao CSS vamos configurar para que os elementos inseridos sempre fiquem dentro dessas div's'.
+      </p>
+            <nav class="fonte">
+.linha::after {<br />
+&nbsp;&nbsp;&nbsp; content: "";<br />
+&nbsp;&nbsp;&nbsp; clear: both;<br />
+&nbsp;&nbsp;&nbsp; display: table;<br />
+}<br />
+            </nav>
+</br>
+      <p>
+Adicionei alguns estilos e cores, EXCLUI quase todas as div's' do meu HTML e configurei meu layout do jeito que eu quis, você confere no exemplo a seguir.
+      </p>
+</br>
+<iframe class="propmeio3" src="img/viewport03.html" width="100%" height="500px;" frameborder='0' scrolling="no"></iframe>
+</br>
+      <p>
+Se quiser pode fazer download desde "grid".
+      </p>
+</br>
+<a href="img/exemplogrid.zip" download="Exemplo grid.zip">Download</a>
+</br>  </br>
+      <p>
+Escolha o tamanho/proporção (%) do seu menu lateral, e do seu main (área principal do site) lembrando que a soma tem que dar 100% sempre.
+      </p>
+</br>
+      <p>
+Mas se diminuirmos muito esse exemplo ou você estiver vendo de um celular/tablet/smartphone esse exemplo não será muito bom. Daí surgiu a media query.
+      </p>
+</br>
+      <p class="cabe">Media Query</p>
+</br>
+<iframe class="propmeio3" src="img/iframe5.html" width="100%" height="100px;" frameborder='0' scrolling="no"></iframe>
+</br></br>
+      <p>
+De que cor é o espaço entre a o subtítulo "media query" e este texto? Se branco a resolução do seu dispositivo na horizontal é maior que 350px, se preto é menor que 350px.
+      </p>
+</br>
+<iframe class="propmeio3" src="img/iframe6.html" width="100%" height="100px;" frameborder='0' scrolling="no"></iframe>
+</br></br>
+      <p>
+E se o espaço entre o paragrafo acima e este for azul a sua resolução é menor que 800px, se for vermelho é maior (resolução horizontal).
+      </p>
+</br>
+      <p>
+Esse exemplo é muito gostoso de se fazer e realmente é o melhor modo de se aprender. Pois bem, agora é a sua vez.
+      </p>
+            <nav class="fonte">
+ body {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background-color: red;<br />
+ }<br />
+<br />
+ @media only screen and (max-width: 800px) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; body {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background-color: blue;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+}<br />
+            </nav>
+</br>
+      <p>
+Crie um documento HTML, link um documento CSS e brinque com o seu navegador a partir do código fonte acima
+      </p>
+</br>
+      <p>
+Falo para você fazer isso no seu computador/PC/notebook/maquina/nave porque começou a parte HARD.
+      </p>
+</br>
+      <p class="cabe">Breakpoint</p>
+</br>
+      <p>
+Melhor do que tentar explicar o que são breakpoints é explicar o que fazer.
+      </p>
+</br>
+      <p>
+Utilizando breakpoint nós vamos configurar o nosso layout (o layout do site) para se comportar do jeito que queremos, tanto se for visto em um desktop (pc ou notebook), tablet ou celular (smartphone).
+      </p>
+</br>
+      <p>
+Desenvolva o layout do seu site sem utilizar media query, apenas utilizando grid. Assim como já vimos aqui.
+      </p>
+</br>
+      <p>
+Depois de desenvolvido nós poderíamos adicionar um breakpoint que diria para o navegador que, quando o viewport for pequeno (tela do dispositivo em que o usuário está vendo o site), o usuário estiver em um tablet ou celular todas as nossas colunas terão um width de 100%.
+      </p>
+            <nav class="fonte">
+@media only screen and (max-width: 768px) {<br />
+&nbsp;&nbsp;&nbsp; [class*="grid"] {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; width: 100%;<br />
+&nbsp;&nbsp;&nbsp; }<br />
+            </nav>
+</br>
+      <p>
+Mas não vamos fazer isso. Antes de darmos continuidade se quiser faça download do arquivo exemplo do nosso projeto. Assim fica mais fácil entendermos.
+      </p>
+</br>
+<a href="img/breakpoint.zip" download="utilizando breakpoint.zip">Download</a>
+</br></br>
+      <p>
+Agora você já pode assistir ao vídeo.
+      </p>
+</br>
+      <p class="cabe">Assista ao vídeo: </p>
+      <nav class="video">
+<iframe width="90%" height="500px" src="https://www.youtube.com/embed/MRGzzJ--i6k?controls=1&amp;autoplay=1&amp;mute=1&amp;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </nav>
+      <p>
+O que nós vimos no vídeo?
+      </p>
+</br>
+      <p>
+Vimos o conceito mobile first, então, configuramos o nosso layout para todas as colunas relacionadas a nossa grid receber um width de 100% e, configuramos um breakpoint para quando a tela tiver no mínimo 768px receber a configuração que criamos anteriormente.
+      </p>
+</br>
+      <p class="cabe">Código fonte CSS:</p>
+            <nav class="fonte">
+[class*="grid"] {<br />
+&nbsp;&nbsp;&nbsp; width: 100%;<br />
+}<br />
+<br />
+@media only screen and (min-width: 768px) {<br />
+...<br />
+}<br />
+            </nav>
+</br>
+      <p>
+Depois pensamos no layout para tablets e para isso copiamos as nossas classes (CSS) da nossa grid e na cópia adicionamos "-m" no nome de cada classe. E a partir dai criamos outro breakpoint para essas "novas" classes.
+      </p>
+</br>
+      <p class="cabe">Código fonte CSS:</p>
+            <nav class="fonte">
+@media only screen and (min-width: 600px) <br />
+and (max-width: 768px){<br />
+...<br />
+}<br />
+            </nav>
+</br>
+      <p>
+Adicionamos as novas classes (a que quisermos) as tags ou elementos de nossa preferência no documento HTML e testamos pelo Responsive Design Mode do Mozilla Firefox
+      </p>
+</br>
+      <p>
+Espero que essa videoaula e este curso tenha sido útil para você, são exatamente 100 códigos fontes totalmente abertos e gratuitos para você utilizar. Até logo.
+      </p>
+</br>
+      <p>
+Já estava esquecendo, a seguir você confere as dimensões automaticas dos navegadores da Fundação Mozilla.
+      </p>
+</br>
+            <nav class="fonte">
+width: 320px e height: 480px
+</br></br>
+width: 360px) height: 640px
+</br></br>
+width: 768px height: 1024px
+</br></br>
+width: 800px height: 1280px
+</br></br>
+width: 980px height: 1280px
+</br></br>
+width: 1280px height: 600px
+</br></br>
+width: 1920px height: 900px
+            </nav>
+</br>
+<p>
+Caso entenda que faltou algo confira nossas fontes.
+      </p>
+</br>
+     <a href="http://www.w3schools.com/html/html_layout.asp" target="_blank">Fonte (W3C): Layout </a></br>
+     <a href="http://www.w3schools.com/css/css_rwd_intro.asp" target="_blank">Fonte (W3C): Web Design Responsivo</a></br>
+     <a href="http://www.w3schools.com/css/css_rwd_viewport.asp" target="_blank">Fonte (W3C): Viewport</a></br>
+     <a href="http://www.w3schools.com/css/css_rwd_grid.asp" target="_blank">Fonte (W3C): Grid</a></br>
+     <a href="http://www.w3schools.com/css/css_rwd_mediaqueries.asp " target="_blank">Fonte (W3C): Media querie</a></br>
+
+</section>
+</br>
+<a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+<section class="paragrafoscodigos">
+<p>Compre um adesivo e ajude o Em Busca do Código a continuar.</p>
+</section>
+</a>
+      <section>
+            <div  class="paginas">
+                  <ul>
+                        <li><a href="video99.html">anterior</a></li>
+                        <li>|</li>
+                        <li><a href="../html.html">curso</a></li>
+                  </ul>
+            </div>
+      </section>
+<footer id="rodape">
+
+<form class="procurar">
+      <script>
+        (function() {
+          var cx = '003467032773945451414:czc04qxogy0';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+              '//cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+</form> <!--Fim do form de pesquisa-->
+			<img src="../../css/img/001.png">
+                  Desde 2015 Em Busca do Código
+			<ul class="redes">
+				<li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../css/img/007.png"></a></li>
+				<li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../css/img/008.png"></a></li>
+				<li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../css/img/009.png"></a></li>
+			</ul>
+
+</footer> <!--Fim do rodape-->
+
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+<iframe class="propmeio2" src="iframepropdois.html" width="100%" height="120px" frameborder='0' scrolling="no"></iframe>
+
+	</body>
+</html>
