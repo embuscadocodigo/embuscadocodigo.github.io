@@ -1,0 +1,542 @@
+/*quando alterar class fonte também alterar ubhs01 21/06/2017*/
+
+.ubhs01 {
+    margin-top: 1em;
+    padding: 1em;
+	width: 75%;
+	border-radius: 1px;
+    color: #1C1C1C;
+	background-color: #FDF5E6;
+    font-size: 1em;
+    overflow:auto;
+	border: 1px #FFFAFA; 
+	box-shadow:  -0.1em 0.3em 0.5em #EEDD82;
+}
+.ubhs01 a {
+    text-decoration: none;
+}
+.procurar {
+    width: 100%;
+    clear: both;
+}
+.videoindex {
+    width: 100%;
+    height: 190px;
+}
+.paragrafoscodigos {
+	background-color: #FFFFF0;
+	box-shadow:  -0.1em 0.3em 0.5em #EEDD82;
+	padding: 1%;
+	text-align: justify;
+	border-radius: 0.6em;
+	width: 100%;
+	overflow:auto;
+	margin-bottom: 3%;
+}
+.paragrafoscodigos h1 {
+	color: #8B0A50;
+	font-size: 2em; /*-------------------------------------------------------------------- Alterar para 3em desktop*/
+	margin: 3%;
+	text-align: left;
+      font-weight: bold;
+}
+.paragrafoscodigos h2 {
+	color: #8B0A50;
+	font-size: 1.5em; /*-------------------------------------------------------------------- Alterar para 3em desktop*/
+	margin: 3%;
+	text-align: left;
+    font-weight: bold;
+}
+.paragrafoscodigos p {
+	color: black;
+	margin: 1.1em;
+	letter-spacing: 0.1em; /*espaço entre letras*/
+	line-height: 1.6em; /*altura da linha*/
+	word-spacing: 0.2em; /*espaço entre palavras*/
+	text-indent: 1.1em; /*margem da 1ª palavra*/
+}
+.itemindex {
+    background-color: #fff;
+	text-align: justify;
+	width: 93%;
+    height: 505px;
+	overflow:auto;
+	/*margin-bottom: 3%;*/
+    margin: 0 2% 5% 3%;
+}
+.vindex {
+    background-color: #FFFFF0;
+	text-align: justify;
+	width: 100%;
+	overflow:auto;
+	margin-bottom: 3%;
+}
+.itemindex a, .vindex a {
+	text-decoration: none;
+}
+.itemindex h1, .vindex h1 {
+    color: #8B0A50;
+	font-size: 2em; /*-------------------------------------------------------------------- Alterar para 3em desktop*/
+	margin: 3% 3% 0 3%;
+	text-align: left;
+    font-weight: bold;
+}
+.itemindex p, .vindex p {
+	color: black;
+	margin: 1.1em;
+	letter-spacing: 0.1em; /*espaço entre letras*/
+	line-height: 1.6em; /*altura da linha*/
+	word-spacing: 0.2em; /*espaço entre palavras*/
+	text-indent: 1.1em; /*margem da 1ª palavra*/
+}
+.video {
+    width: 100%;
+	height: 200px;
+}
+.paginas a {
+    font-size: 1.2em;
+	color: black;
+}
+.paginas a:hover {
+    font-size: 1.2em;
+    text-shadow: 0px 0px 2px black;
+}
+.fonte {
+    margin-top: 1em;
+    padding: 1em;
+	width: 75%;
+	border-radius: 1px;
+    color: #1C1C1C;
+	background-color: #FDF5E6;
+    font-size: 1em;
+    overflow:auto;
+	border: 1px #FFFAFA; 
+	box-shadow:  -0.1em 0.3em 0.5em #EEDD82;
+}
+.cabe {
+    font-weight: bold;
+    text-align: left;
+}
+.list-cont {
+    text-align: center;
+	line-height: 2em; /*altura da linha*/
+	text-decoration: none;
+	list-style-type: none;
+	width: 100%;
+}
+.item-list-cont a:hover {
+    color: #000;
+	text-decoration: none;
+}
+.item-list-cont a {
+    color: #8B0A50;
+	text-decoration: none;
+    font-weight: bold;
+}
+.list-com {
+    line-height: 1.3em; /*altura da linha*/
+	text-decoration: none;
+	list-style-type: decimal;
+	margin-left: 2em;
+	color: #8B0A50;
+    font-weight: bold;
+}
+.linkexterno {
+	color: #000080;
+	margin: 1.2em;
+	line-height: 1.3em;
+	text-decoration: none;
+}
+.linkexterno:hover {
+    text-decoration: underline;
+}
+body {
+    background-color: #FDF5E6;
+	font-family: Trebuchet, Verdana, sans-serif;
+	color: black;
+}
+.jah {
+	background-color: #FFFFF0;
+	box-shadow:  -0.1em 0.3em 0.5em #EEDD82;
+	padding: 1%;
+	text-align: justify;
+	border-radius: 0.4em;
+	width: 100%;
+	overflow:auto;
+	margin-bottom: 3%;
+}
+.jah h1 {
+	color: #8B0A50;
+	font-size: 1.5em; /*-------------------------------------------------------------------- Alterar para 3em desktop*/
+}
+.jah p {
+	color: black;
+	margin: 1%;
+	letter-spacing: 0.1em; /*espaço entre letras*/
+	line-height: 1.2em; /*altura da linha*/
+	text-indent: 0.7em; /*margem da 1ª palavra*/
+}
+.adesivo {
+	background-color: #FFFFF0;
+	box-shadow:  -0.1em 0.3em 0.5em #EEDD82;
+	padding: 1%;
+	text-align: justify;
+	letter-spacing: 0.1em; /*espaço entre letras*/
+	line-height: 1.3em; /*altura da linha*/
+	word-spacing: 0.1em; /*espaço entre palavras*/
+	border-radius: 0.2em;
+	width: 100%;
+	overflow:auto;
+	margin-bottom: 3%;
+}
+.adesivo p:hover {
+	color: #8B0A50;
+}
+.adesivo p {
+	color: #0000CD;
+}
+
+.adesivo a {
+	text-decoration: none;
+}
+.prose {
+	height: 0px;
+}
+.propmeio2 {
+    width: 100%;
+	bottom: 0px;
+    font-size: 0.5em;
+	text-align: center;
+	position: fixed;
+/*    transform: translateX(-30px);
+      background-color: rgba(255,250,250,0.1);*/
+	left: 999999px;
+}
+.propagando {
+    	position: fixed;
+    	left: 999999px;
+}
+@media only screen and (min-width: 520px) and (max-width: 629px) {
+    .itemindex {
+		width: 46%;
+        height: 460px;
+        position: relative;
+        float: left;
+        margin-left: 2%;
+        margin-right: 2%;
+	}
+    .vindex {
+		width: 46%;
+        position: relative;
+        float: left;
+        margin-left: 2%;
+        margin-right: 2%;
+	}
+    .videoindex {
+        width: 100%;
+        height: 160px;
+    }
+}
+@media only screen and (min-width: 630px) and (max-width: 768px) {
+    .itemindex, .vindex {
+		width: 46%;
+        position: relative;
+        float: left;
+        margin-left: 2%;
+        margin-right: 2%;
+	}
+    .videoindex {
+        width: 100%;
+        height: 200px;
+    }   
+}
+@media only screen and (min-width: 769px) {
+        .video {
+        width: 100%;
+        height: 500px;
+    }
+	.prose {
+		height: 120px;
+	}
+	.propmeio2 {
+		width: 100%;
+		bottom: 0px;
+		font-size: 0.5em;
+		text-align: center;
+		position: fixed;
+		transform: translateX(-30px);
+		background-color: rgba(255,250,250,0.1);
+		left: 0px;
+	}
+	.adesivo {
+		width: 25%;
+          float: left;
+		clear: left;
+	}
+	.jah {
+		width: 25%;
+          float: left;
+		clear: left;
+		margin-bottom: 2%;
+	}
+    .propagando {
+        width: 100%;
+        text-align: center;
+        left: 0px;
+        position: relative;
+        margin-bottom: 1%;
+        font-size: 0.5em;
+    }
+	.paragrafoscodigos {
+		width: 69%;
+		margin-left: 29%;
+		clear: right;
+	}
+    .procurar {
+        width: 50%;
+        clear: both;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1099px) {
+    .videoindex {
+        width: 100%;
+        height: 230px;
+    }
+	.itemindex {
+		width: 46%;
+        height: 500px;
+        position: relative;
+        float: left;
+        margin-left: 2%;
+        margin-right: 2%;
+	}
+    .vindex {
+		width: 46%;
+        position: relative;
+        float: left;
+        margin-left: 2%;
+        margin-right: 2%;
+	}
+    .vindex {
+		width: 46%;
+        position: relative;
+        float: left;
+        margin-left: 2%;
+        margin-right: 2%;
+	}
+}
+@media only screen and (min-width: 1100px) {
+    .videoindex {
+        width: 100%;
+        height: 180px;
+    }
+	.itemindex {
+		width: 23%;
+        height: 460px;
+        position: relative;
+        float: left;
+        margin-left: 1%;
+        margin-right: 1%;
+	}
+.vindex {
+		width: 23%;
+        position: relative;
+        float: left;
+        margin-left: 1%;
+        margin-right: 1%;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+    .cachorro{
+		position:absolute;
+		left:-9999px;
+     }
+     .prolatgo {
+		position:absolute;
+		left:-9999px;
+     }
+	.prom {
+			position: relative;
+			float: left;
+			clear: left;
+			margin: 0 0% auto -1.5%;  
+			font-size: 0.5em;
+			float: center;
+			text-align: center;
+			left: 0;
+	}
+}
+@media only screen and (min-width: 1301px){
+    .prom {
+		position:absolute;
+		left:-9999px;
+    }
+	.prolat  {
+		position: relative;
+		float: left;
+		clear: left;
+		margin-bottom: 2%;  
+		font-size: 0.5em;
+		float: center;
+		text-align: center;
+			left: 0;
+	}
+	.prolatgo {
+		position: relative;
+		float: left;
+		clear: left;
+		margin-bottom: 2%;  
+		font-size: 0.5em;
+		text-align: center;
+			left: 0;
+	}
+}
+/*
+header, section, footer, a, li {
+	color: #363636;
+}
+section {
+	margin: 10px;
+	letter-spacing: 2px; /*espaço entre letras*/
+/*
+/*	line-height: 20px; /*altura da linha*/
+/*	word-spacing: 2px; /*espaço entre palavras*/
+/*	text-indent:10px; /*margem da 1ª palavra*/
+/*
+}
+
+.propagando {
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	bottom: 0px;
+}
+.propagandoiframe {
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	bottom: 0px;
+}
+.paragrafoscodigos a {
+	text-decoration: none;
+}
+.paragrafoscodigos h1 {
+      font-weight: bold;
+}
+.paragrafoscodigos {
+	text-align: justify;
+	font-size: 1em;
+	background: #FFFAFA;
+	border: 0.5px dashed #E8E8E8;
+	padding: 5px;
+	position: relative;
+	width: 90%;
+	width: center;
+      margin: 0 auto;
+	border-radius: 5px;
+/*      box-shadow:  10px 10px 10px #B5B5B5; 21/08
+}
+.paragrafoscodigos h1 {
+	font-size: 1.3em;
+}
+.paragrafoscodigos:hover {
+/*	border: 0px; 21/08*/
+/*	border-radius: 0px; 21/08
+	color: #363636;
+      background-color: #FFFAFA;
+/*	border: 3px dashed #E8E8E8;
+      box-shadow:  0px 0px 0px #B5B5B5; 21/08
+}
+.procurar {
+      width: 90%;
+}
+/*
+.imgartigo {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+      padding: 0;
+      margin: 0;
+}*//*
+.capim {
+      text-align: center;
+}
+
+.propmeio {
+	width: 100%;
+     font-size: 0.5em;
+	text-align: center;
+}
+.propmeio2 {
+	width: 100%;
+	bottom: 0px;
+     font-size: 0.5em;
+	text-align: center;
+	position: fixed;
+    transform: translateX(-30px);
+      background-color: rgba(255,250,250,0.1);
+}
+.propmeio3 {
+	width: 100%;
+     font-size: 0.5em;
+	text-align: center;
+	position: relative;
+      background-color: rgba(255,250,250,0.1);
+
+}
+.dialogo {
+     position: fixed;
+     top: 0;
+     right: 0;
+     left: 0;
+     bottom: 0;
+     background: rgba(245,245,245,0.5);
+     z-index: 11111111;
+     opacity: 0;
+     pointer-events: none;
+     overflow: scroll;
+}
+
+.dialogo:target {
+     opacity: 1;
+     pointer-events: auto;
+}
+
+.imgfake {
+     position: relative;
+     margin-left: 25%;
+     margin-top: 5%;
+}
+
+.imagemmodal {
+     display: block;
+     float: center;
+     width: 75%;
+}
+
+.fechar {
+     color: #000;
+     position: absolute;
+     text-align: left;
+     width: 24px;
+     text-decoration: none;
+     font-weight: bold;
+}
+.listafixa {
+     position: fixed;
+     text-align: left;
+     top: 10%;
+     right: 3px;
+     list-style-type: none;
+}
+.listafixa img {
+     width:  100px
+}
+.listafixa li {
+          opacity: 0.7;
+}
+.listafixa li:hover {
+     opacity: 1;
+}
