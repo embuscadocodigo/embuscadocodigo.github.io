@@ -24,3 +24,11 @@ up pasta e arquivos CSS
 up pasta img e imagens - 14:01
 sem ninguém online para tirar dúvidas :(
 
+Commit funcionou: git commit -m "Commit Inicial" - 14:05
+upar todos os arquivos para o git deu errado :( - 14:11
+comando: git push -u origin master
+erro
+/*
+error: failed to push some refs to 
+*/
+mensagem de erro apresenta sugestões.
