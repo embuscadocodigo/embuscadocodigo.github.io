@@ -1,0 +1,42 @@
+.loja a {
+	text-decoration: none;
+}
+.loja {
+	float: left;
+	clear: left;
+}
+.bloco {
+	padding: 5px;
+	width: 420px;
+}
+.canecas {
+	float: left;
+}
+.camisas {
+	float: right;
+}
+.imagens {
+	width: 160px;
+	height: 120px;
+}
+.bloco h2 {
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+}
+.bloco a {
+	color: #f0ffff;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+}
+.bloco li {
+	display: inline-block;
+	vertical-align: top;
+	margin: 2px;
+	padding: 10px 10px 5px 0px;
+	background-color: #363036;
+	border: 3px dashed #363636;
+}
+

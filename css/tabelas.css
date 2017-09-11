@@ -1,0 +1,101 @@
+.base_graf_Em_Busca {
+    width: 97%; /*tamanho lateral do grafico*/
+    background-color: aliceblue;
+    height: 140px; /*altura do grafico, proporcional a 10 itens*/
+
+}
+.Busca_nome {
+    width: 15%;
+    background-color: antiquewhite;
+    height: 20px; /*se alterar altura, alterar também altura da tabela*/
+    float: left;
+}
+.Busca_valor {
+    width: 85%;
+    background-color: lightblue;
+    height: 20px; /*altura igual a da classe Busca_nome*/
+    float: right;
+}
+.Busca_nome_centralizado {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.insert_busca_width {
+    background-color: black;
+    height: 14px;
+    color: white;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+}
+
+.colunafake {
+    width: 1px;
+    background-color: #FFFAFA;
+}
+.subt {
+      text-align: center;
+      background-color: #696969;
+      padding-right: 5px;
+      padding-left: 5px;
+}
+.colum {
+    text-align: center;
+    background-color: #D3D3D3;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-left: 50px;
+}
+.coldois {
+    text-align: center;
+    background-color: #E8E8E8;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-left: 50px;
+}
+.tabelas {
+      color: black;
+      line-height: 150%;
+}
+.scroll {
+      overflow:auto;
+}
+.tabelas caption {
+      text-transform: uppercase;
+      background-color: #E8E8E8;
+}
+.tabelacores {
+      line-height: 150%;
+}
+.tabelacorescabecalho {
+      text-transform: uppercase;
+	font-weight: bold;
+}
+.talesp td {
+     line-height: 1.5em;
+ border-bottom: 1px solid #111111;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

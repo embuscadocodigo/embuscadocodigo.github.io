@@ -1,0 +1,35 @@
+.video {
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.video iframe {
+	text-align: center;
+}
+.tabela01 img {
+	width: 50%;
+	position: relative;
+	text-align: center;
+}
+.tabela01 {
+	text-align: center;
+}
+.tabelas {
+position: relative;
+margin: auto;
+}
+
+table{ margin-right:auto; margin-left:auto; }
+
+.paginas li, .paginas a {
+	text-decoration: none;
+}
+.paginas ul li {
+	text-transform: uppercase;
+	list-style-type: none;
+	display: inline;
+}
+.paginas {
+	text-align: center;
+      font-size: 1em;
+}

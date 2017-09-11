@@ -1,0 +1,79 @@
+.uppercase {
+	text-transform: uppercase;
+}
+.lowercase {
+	text-transform: lowercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+.overline {
+	text-decoration: overline;
+}
+.underline {
+	text-decoration: underline;	
+}
+.line-through {
+	text-decoration: line-through;
+}
+.paragrafos {
+	text-align: justify;
+	font-size: 10px;
+	font-weight: bold;
+}
+.transform {
+	float: right;
+	margin-bottom: 10px;
+}
+.decoration {
+	float: right;
+	clear: right;
+}
+.paragrafos li:first-child {
+	color: blue;
+}
+.paragrafos li:last-child {
+	color: red;
+}
+.paragrafos p:first-letter {
+	font-size: 120%;
+}
+.paragrafos p:first-line {
+	font-style: italic;
+}
+.paragrafos a:before {
+	content: '[';
+}
+.paragrafos a:after {
+	content: ']';
+}
+.bordasa {
+	border-radius: 5px;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}
+.bordasb {
+	border-radius: 5px 10px;
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+}
+.bordasc {
+	border-radius: 5px 10px 20px;
+	width: 100px;
+	height: 100px;
+	background-color: green;
+}
+.bordasd {
+	border-radius: 5px 10px 20px 30px;
+	width: 100px;
+	height: 100px;
+	background-color: pink;
+}
+.bordas li {
+	display: inline-block;
+}
+.todositens {
+	text-align: center;
+}

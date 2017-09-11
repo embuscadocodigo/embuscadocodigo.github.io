@@ -1,0 +1,14 @@
+.codigosimagens {
+	width: 300px;
+}
+.codigo ul li {
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+}
+.codigo a {
+	text-decoration: none;
+}
+.codigo {
+	text-align: center;
+}

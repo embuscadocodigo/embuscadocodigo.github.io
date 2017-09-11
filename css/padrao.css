@@ -1,0 +1,206 @@
+body {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+ body {
+	background-color: #E8E8E8;
+	font-family: Trebuchet, Verdana, sans-serif;
+}
+header, section, footer, a, li {
+	color: #363636;
+}
+section {
+	margin: 10px;
+	letter-spacing: 2px; /*espaço entre letras*/
+	line-height: 20px; /*altura da linha*/
+	word-spacing: 2px; /*espaço entre palavras*/
+	text-indent:10px; /*margem da 1ª palavra*/
+}
+.loja, .transform, .decoration {
+	text-transform: uppercase;
+	width: 160px;
+	font-size: 15px;
+}
+.loja li, .transform li, .decoration li {
+	background-color: #363036;
+	padding: 1px 5px;
+}
+.loja h3, .transform h3, .decoration h3 {
+	border-bottom: 5px solid #363636;
+}
+.paragrafos { /*menu a direita*/
+	background-color: #CFCFCF;
+	padding: 1px 5px;
+	margin-right: 200px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+/*	border: 5px dashed #E8E8E8; 21/08*/
+}
+.paragrafos:hover {
+	width: 100%;
+	margin: 0px;
+	width: center;
+}
+.ClasseExemplo { /*menu a esquerda*/
+	background-color: #B5B5B5;
+	padding: 1px 5px;
+	margin-left: 200px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border: 5px dashed #E8E8E8;
+}
+.propagando {
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	bottom: 0px;
+}
+.propagandoiframe {
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	bottom: 0px;
+}
+.paragrafoscodigos a {
+	text-decoration: none;
+}
+.paragrafoscodigos h1 {
+      font-weight: bold;
+}
+.paragrafoscodigos {
+	text-align: justify;
+	font-size: 1em;
+	background: #FFFAFA;
+	border: 0.5px dashed #E8E8E8;
+	padding: 5px;
+	position: relative;
+	width: 90%;
+	width: center;
+      margin: 0 auto;
+	border-radius: 5px;
+/*      box-shadow:  10px 10px 10px #B5B5B5; 21/08*/
+}
+.paragrafoscodigos h1 {
+	font-size: 1.3em;
+}
+.paragrafoscodigos:hover {
+/*	border: 0px; 21/08*/
+/*	border-radius: 0px; 21/08*/
+	color: #363636;
+      background-color: #FFFAFA;
+/*	border: 3px dashed #E8E8E8;
+      box-shadow:  0px 0px 0px #B5B5B5; 21/08*/
+}
+.fonte {
+      margin-top: 1em;
+      padding: 1em;
+	width: 75%;
+	border-radius: 10px;
+      color: #1C1C1C;
+	background-color: #D3D3D3;
+      font-size: 1em;
+      overflow:auto;
+}
+.cabe {
+      font-weight: bold;
+      text-align: left;
+}
+.fonte:hover {
+/*	border: 3px dashed #FFFAFA; 21/08*/
+      color: #1C1C1C;
+	background-color: #E8E8E8;E8E8E8
+}
+.paginas a {
+	font-size: 1.2em;
+}
+.paginas a:hover {
+	font-size: 1.2em;
+      text-shadow: 0px 0px 2px black;
+}
+.prose {
+	height:90px;
+}
+.procurar {
+      width: 90%;
+}
+.modalDialog {
+      position: fixed;
+    	font-family: Trebuchet, Verdana, sans-serif;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 99999;
+      opacity:0;
+      -webkit-transition: opacity 400ms ease-in;
+      -moz-transition: opacity 400ms ease-in;
+      transition: opacity 400ms ease-in;
+      pointer-events: none;
+      overflow:scroll; /* activa scroll da página se a modal for muito comprida */
+}
+ 
+.modalDialog:target {
+      opacity:1;
+      pointer-events: auto;
+}
+ 
+.modalDialog > div {
+      width: 75%;
+      position: relative;
+      margin-left: 35%;
+      margin-top: 5%;
+}
+ 
+.close {
+      color: #FFFFFF;
+      position: absolute;
+      text-align: center;
+      width: 24px;
+      text-decoration: none;
+      font-weight: bold;
+}
+.close:hover { 
+      background-color: #B5B5B5;
+      border-radius: 50%;
+}
+.modalpic {
+      float: left;
+      width: 75%;
+      display: block;
+      box-shadow: 3px 6px 8px 1px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 3px 6px 8px 1px rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: 3px 6px 8px 1px rgba(0, 0, 0, 0.3);
+      text-align: center;
+}
+.imgartigo {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+      padding: 0;
+      margin: 0;
+}
+.capim {
+      text-align: center;
+}
+
+.propmeio {
+	width: 100%;
+     font-size: 0.5em;
+	text-align: center;
+}
+.propmeio2 {
+	width: 100%;
+	bottom: 0px;
+     font-size: 0.5em;
+	text-align: center;
+	position: fixed;
+    transform: translateX(-30px);
+}
+.propmeio3 {
+	width: 100%;
+     font-size: 0.5em;
+	text-align: center;
+	position: relative;
+      background-color: #FFFAFA;
+}

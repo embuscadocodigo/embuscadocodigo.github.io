@@ -1,0 +1,154 @@
+.cabecalho li:hover {
+    text-shadow: 0px 0px 2px black;
+}
+.cabecalho ul li {
+    text-transform: uppercase;
+	list-style-type: none;
+	display: inline;
+}
+.cabecalho a {
+    text-decoration: none;
+    color: black;
+}
+.cabecalho {
+    display: inline;
+	text-align: center;
+    font-size: 1.5em;
+    color: black;
+}
+.cabecalho li {
+    font-weight: bold;
+    color: black;
+}
+.rodape {
+    width: 100%;
+    text-align: center;
+}
+.rodape img {
+    width: 20%;
+	vertical-align: middle;
+}
+.rodape {
+    font-size: 0.7em;
+}
+.redes, .redess {
+    width: 100%;
+    text-align: center;
+}
+.redes img, .redess img {
+    width: 18%;
+}
+.redes ul li, .redess ul li {
+    text-transform: uppercase;
+    list-style-type: none;
+    display: inline;
+}
+.linhamenus {
+    width: 90%;
+    height: 0.5em;
+    margin: auto;
+}
+@media only screen and (min-width: 480px)
+and (max-width: 769px){
+    footer {
+        clear: both;
+     }
+     .rodape {
+         font-size: 0.7em;
+     }
+     .rodape {
+         width: 50%;
+         float: left;
+     }
+     .redes {
+         width: 50%;
+         float: right;
+     }
+    .antibloq {
+        margin-top: 90px;
+    }
+    .cabecalho {
+        font-size: 2em;
+    }
+}
+@media only screen and (min-width: 769px) {
+    .cabecalho {
+        font-size: 2em;
+     }
+    footer {
+        width: 100%;
+        clear: both;
+        margin-bottom: 3%;
+    }
+    .rodape {
+        font-size: 1em;
+    }
+    .rodape {
+        width: 45%;
+        float: left;
+        text-align: left;
+     }
+     .rodape img {
+         width: 10%;
+     }
+     .redes {
+         width: 45%;
+         float: right;
+         margin-right: 1%;
+         text-align: right;
+     }
+     .redes img {
+         width: 10%;
+     }
+     header {
+         margin-top: 15px;
+	     margin-bottom: 15px; 
+     }
+     .gifinicial img {
+         width: 90%;
+         box-shadow:  -10px 10px 10px #B5B5B5;
+         opacity: 0.35;
+     }
+     .gifinicial img:hover {
+         opacity: 1;
+     }
+     .cabeloja {
+         left: 150px;
+     }
+     form {
+         width: 500px;
+	     margin: 20px auto;
+     }
+     .svg img {
+         width: 50%;
+	     margin-top: 10px;
+     }
+     .svg img:hover {
+         width: 100%;
+     }
+     .procurar {
+         width: 90%;
+     }
+     .socialeredes img {
+	     width: 1em;
+     }
+     .socialeredes {
+	     position: relative;
+	     float: center;
+         width: 100%
+     }
+     .socialeredes ul {
+         display: inline-block;
+         text-align: center;
+     }
+     .socialeredes li {
+         float: center;
+         display: inline;
+         margin-right: 1%;
+         text-align: center;
+     }
+     .antibloq {
+         clear: both;
+         margin-top: 3%;
+     }
+}
