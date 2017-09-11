@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Aula 11</title>
+		<meta encoding="utf-8">
+		<link rel="stylesheet" href="../../css/reset.css">
+		<link rel="stylesheet" href="../../css/roca.css">
+		<link rel="stylesheet" href="../../css/padrao.css">
+		<link rel="stylesheet" href="../../css/erro.css">
+		<link rel="stylesheet" href="../../css/fonte.css">
+<script> function umalert() { alert("Foi mal, não terminei de explicar isso."); } </script>
+	</head>
+	<body>
+		<header>
+			<nav class="cabecalho">
+				<ul>
+					<li><a href="../../index.html">home</a></li>
+					<li>/</li>
+					<li><a href="../../ajuda.html">ajuda</a></li>
+					<li>/</li>
+					<li><a href="../../sobre.html">Sobre</a></li>
+					<li>/</li>
+					<li><a href="../../codigos.html">Códigos</a></li>
+				</ul>
+				<form>
+					<input class="search" type="search" name="q" id="q" placeholder="Procurar..." required>
+					<input class="buttomsearch" type="submit" value="???" onclick="umalert()">
+				</form>
+			</nav>
+		</header>
+<body>
+<section class="paragrafoscodigos">
+<h1>C/C++: Descomplicando o SWITCH. Aula 11</h1>
+</br>
+<p>Nesse vídeo vemos um exemplo do uso do switch inserindo dois "casos" para o usuário digitar e uma terceira opção quando o usuário digitar algo "errado".<br />
+Facebook: <a href="https://www.facebook.com/embuscadocodigo?_rdr=p" target="_blank"><u>Em Busca do Código</u>.</a></p>
+<p>Código fonte:</p>
+</br>
+<nav class="fonte">
+#include &lt;stdio.h&gt;<br />
+#include &lt;conio.h&gt;<br />
+<br />
+int main (void) { /*void server para a função<br />
+&nbsp;&nbsp;&nbsp; poder retornar algo nulo*/<br />
+&nbsp;&nbsp;&nbsp; char variavel[] = "alam";<br />
+&nbsp;&nbsp;&nbsp; int a;<br />
+&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp; printf ("Digite 8 ou 80: ");<br />
+&nbsp;&nbsp;&nbsp; scanf("%d", &amp;a);<br />
+&nbsp;&nbsp;&nbsp; <br />
+switch (a) {<br />
+&nbsp;&nbsp;&nbsp; case 8: /*8 é o que o usuario deve digitar*/<br />
+&nbsp;&nbsp;&nbsp; printf ("%s", variavel);<br />
+&nbsp;&nbsp;&nbsp; break;<br />
+&nbsp;&nbsp;&nbsp; case 80:<br />
+&nbsp;&nbsp;&nbsp; printf ("Quantos cases quiser");<br />
+&nbsp;&nbsp;&nbsp; break;<br />
+&nbsp;&nbsp;&nbsp; default:<br />
+&nbsp;&nbsp;&nbsp; printf("Eu disse 8 ou 80");<br />
+&nbsp;&nbsp;&nbsp; break;<br />
+}<br />
+<br />
+getch();<br />
+return(0);&nbsp;&nbsp;&nbsp; <br />
+}<br />
+</nav>
+</br>
+<p>Vídeo: </p>
+<nav class="video">
+<iframe width="90%" height="500" src="https://www.youtube.com/embed/v_xDuqk1LBw?list=PLI55Mxqv-Ayir3AGgIQcvIFJDrtneTAB_" frameborder="0" allowfullscreen></iframe>
+</nav>
+</section>
+<section class="propagando">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- em busca do codigo 01 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="7324870979"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+		<footer id="rodape">
+			<img src="../../css/img/001.png">
+			&copy; Todos direitos reservados Alam Maia
+			<ul class="redes">
+				<li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../css/img/007.png"></a></li>
+				<li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../css/img/008.png"></a></li>
+				<li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w"target="_blank"><img src="../../css/img/009.png"></a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

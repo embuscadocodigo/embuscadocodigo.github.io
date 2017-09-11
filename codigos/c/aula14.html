@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Aula 14</title>
+		<meta encoding="utf-8">
+		<link rel="stylesheet" href="../../css/reset.css">
+		<link rel="stylesheet" href="../../css/roca.css">
+		<link rel="stylesheet" href="../../css/padrao.css">
+		<link rel="stylesheet" href="../../css/erro.css">
+		<link rel="stylesheet" href="../../css/fonte.css">
+<script> function umalert() { alert("Foi mal, não terminei de explicar isso."); } </script>
+	</head>
+	<body>
+		<header>
+			<nav class="cabecalho">
+				<ul>
+					<li><a href="../../index.html">home</a></li>
+					<li>/</li>
+					<li><a href="../../ajuda.html">ajuda</a></li>
+					<li>/</li>
+					<li><a href="../../sobre.html">Sobre</a></li>
+					<li>/</li>
+					<li><a href="../../codigos.html">Códigos</a></li>
+				</ul>
+				<form>
+					<input class="search" type="search" name="q" id="q" placeholder="Procurar..." required>
+					<input class="buttomsearch" type="submit" value="???" onclick="umalert()">
+				</form>
+			</nav>
+		</header>
+<body>
+<section class="paragrafoscodigos">
+<h1>C/C++: [do while] estrutura de repetição. Aula 14</h1>
+</br>
+<p>Nesse vídeo fazemos um programa que verifica se o número é par ou ímpar utilizando a estrutura de repetição do while em C/C++ (linguagem C).<br />
+Facebook: <a href="https://www.facebook.com/embuscadocodigo?_rdr=p" target="_blank"><u>Em Busca do Código</u>.</a></p>
+<p>Código fonte:</p>
+</br>
+<nav class="fonte">
+#include &lt;stdio.h&gt;<br />
+#include &lt;conio.h&gt;<br />
+<br />
+int main (void) {<br />
+&nbsp;&nbsp;&nbsp; int a;<br />
+&nbsp;&nbsp;&nbsp; do {<br />
+printf("Digite um numero (0(zero) para sair): ");<br />
+&nbsp;&nbsp;&nbsp; scanf("%d", &amp;a);<br />
+&nbsp;&nbsp;&nbsp; if (a%2==0) {<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; printf("PAR \n");<br />
+&nbsp;&nbsp;&nbsp; }else{<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; printf("IMPAR \n");&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp; }<br />
+&nbsp;&nbsp;&nbsp; }while (a!=0); <br />
+&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp; <br />
+getch ();<br />
+return (0);<br />
+}<br />
+</nav>
+</br>
+<p>Vídeo: </p>
+<nav class="video">
+<iframe width="90%" height="500" src="https://www.youtube.com/embed/K5btumDBdLk?list=PLI55Mxqv-Ayir3AGgIQcvIFJDrtneTAB_" frameborder="0" allowfullscreen></iframe>
+</nav>
+</section>
+<section class="propagando">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- em busca do codigo 01 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="7324870979"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+		<footer id="rodape">
+			<img src="../../css/img/001.png">
+			&copy; Todos direitos reservados Alam Maia
+			<ul class="redes">
+				<li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../css/img/007.png"></a></li>
+				<li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../css/img/008.png"></a></li>
+				<li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w"target="_blank"><img src="../../css/img/009.png"></a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

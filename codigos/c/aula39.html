@@ -1,0 +1,195 @@
+<!--Código fonte de vídeoaulas do embuscadocodigo.com
+Padrão atualizado 24/08/2018-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+            <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<!--titulos-->
+		<title>Números aleatórios em C/C++. 39</title>
+            <meta name="twitter:title" content="Números aleatórios em C/C++. 39">
+<!--descrição-->
+            <meta property="og:description" content="Neste vídeo vemos dois exemplos de criar números aleatórios em C ou C++."/>
+            <meta name="twitter:description" content="Neste vídeo vemos dois exemplos de criar números aleatórios em C ou C++.">
+<!--Palavras chave-->
+            <meta name="keywords" content="Linguagem C, C++, random, números aleatórios, C/C++">
+<!--Meta Tags globais-->
+            <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+            <meta property="og:url" content="http://embuscadocodigo.com/codigos/c/aula39.html"/>
+            <meta property="og:site_name" content="http://embuscadocodigo.com">
+            <meta property="og:type" content="article">
+            <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="embuscadocodigo.ico">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+            <meta property="og:image:type" content="image/png">
+            <meta property="og:image" content="http://embuscadocodigo.com/codigos/c/img/c39.png" />
+            <meta property="og:image:width" content="1280">
+            <meta property="og:image:height" content="720">
+      <!--Twitter-->
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/c/img/c39.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+            <link rel="stylesheet" href="../../css/reset.css">
+            <link rel="stylesheet" href="../../css/roca.css">
+            <link rel="stylesheet" href="../../css/padrao.css">
+            <link rel="stylesheet" href="../../css/erro.css">
+            <link rel="stylesheet" href="../../css/fonte.css">
+            <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+            <meta property="fb:app_id" content="966242223397117">
+            <meta name="twitter:site" content="@embuscadocodigo">
+            <meta name="twitter:creator" content="@embuscadocodigo">
+</head>
+<body>
+	<header>
+		<nav class="cabecalho">
+			<ul>
+				<li><a href="../../index.html">home</a></li>
+				<li>|</li>
+					<li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+				<li>|</li>
+				<li><a href="../../sobre.html">Sobre</a></li>
+				<li>|</li>
+				<li><a href="../../codigos.html">Códigos</a></li>
+			</ul>
+		</nav>
+	</header>
+<body>
+      <section>
+            <div class="paginas">
+                  <ul>
+                        <li><a href="aula38.html">Aula 38</a></li>
+                        <li>|</li>
+                        <li><a href="../c.html">Curso</a></li>
+                        <li>|</li>
+                        <li><a href="#">#</a></li>
+                  </ul>
+            </div>
+      </section>
+<a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+<section class="paragrafoscodigos">
+<p>Compre um adesivo e ajude o Em Busca do Código a continuar.</p>
+</section>
+</a>
+</br>
+<section class="paragrafoscodigos">
+      <h1></h1>
+</br>
+      <p>Neste vídeo vemos dois exemplos de criar números aleatórios em C ou C++.</p>
+</br>
+      <p>Os dois exemplos são o mais simples possível, o primeiro é gerar um número aleatório de 0 a 100, e para isso utilizamos um simples printf. O diferencial está depois da , (vírgula), depois da vírgula utilizamos o:</p>
+      <nav class="fonte">
+rand()%100
+      </nav>
+</br>
+      <p>Dentro do próprio printf, o código (inteiro) dessa linha é o abaixo.</p>
+      <nav class="fonte">
+printf ("\n\nentre 0 e 100 em C: %d\n\n", rand()%100);
+      </nav>
+</br>
+      <p>Mas assistindo ao vídeo vemos que assim ele fica sorteando sempre o mesmo número, e não é isso que queremos, por isso incluímos a biblioteca time.h, que manipula horários e datas.</p>
+      <nav class="fonte">
+#include &lt;time.h&gt;
+      </nav>
+</br>
+      <p>E dentro da função main inserimos a linha responsável por realmente aparecer números aleatórios toda vez que o programa for executado.</p>
+      <nav class="fonte">
+srand (time(NULL));
+      </nav>
+</br>
+      <p>Já no segundo exemplo vemos como escolher que o número aleatório (randômico) esteja em um intervalo que seu inicio seja diferente de zero. Veja o código fonte a seguir e assista ao vídeo.</p>
+</br>
+      <p class="cabe">Código fonte:</p>
+      <nav class="fonte">
+#include &lt;stdio.h&gt;<br />
+#include &lt;stdlib.h&gt;<br />
+#include &lt;time.h&gt;<br />
+<br />
+int main() {<br />
+<br />
+srand (time(NULL));<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf ("\n\nentre 0 e 100 em C: %d\n\n", rand()%100);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf ("\n\nentre 40 e 59 em C: %d\n\n", rand()%20+40);<br />
+<br />
+return 0;<br />
+}<br />
+      </nav>
+</br>
+<p class="cabe">Assista ao vídeo: </p>
+      <nav class="video">
+<iframe width="90%" height="500px" src="https://www.youtube.com/embed/lIzns4rPeUs?controls=1&amp;autoplay=1&amp;mute=1&amp;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </nav>
+</br>
+      <p>Ficou com alguma dúvida? Separei dois links (fontes) para você caso queira conhecer um pouco mais sobre números randomicos ou a biblioteca time.</p>
+</br>
+     <a href="https://funcoesemc.blogspot.com.br/2010/06/biblioteca-timeh.html?showComment=1482093221365#c5542051912005099393" target="_blank">Fonte (abre em outra aba): Blog (blogspot)</a></br>
+     <a href="http://www.clubedohardware.com.br/forums/topic/212354-comando-random-em-c/" target="_blank">Fonte (abre em outra aba): Clube do Hardware</a></br>
+ </br>
+
+</section>
+</br>
+<a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+<section class="paragrafoscodigos">
+<p>Compre um adesivo e ajude o Em Busca do Código a continuar.</p>
+</section>
+</a>
+      <section>
+            <div class="paginas">
+                  <ul>
+                        <li><a href="aula38.html">Aula 38</a></li>
+                        <li>|</li>
+                        <li><a href="../c.html">Curso</a></li>
+                        <li>|</li>
+                        <li><a href="#">#</a></li>
+                  </ul>
+            </div>
+      </section>
+<section class="propagando">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- em busca do codigo 01 -->
+      <ins class="adsbygoogle"
+           style="display:inline-block;width:728px;height:90px"
+           data-ad-client="ca-pub-5020252132627432"
+           data-ad-slot="7324870979"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+</section> <!--Fim da propagando-->
+
+<footer id="rodape">
+
+<form class="procurar">
+      <script>
+        (function() {
+          var cx = '003467032773945451414:czc04qxogy0';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+              '//cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+</form> <!--Fim do form de pesquisa-->
+			<img src="../../css/img/001.png">
+                  Desde 2015 Em Busca do Código 
+			<ul class="redes">
+				<li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../css/img/007.png"></a></li>
+				<li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../css/img/008.png"></a></li>
+				<li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w"target="_blank"><img src="../../css/img/009.png"></a></li>
+			</ul>
+
+</footer> <!--Fim do rodape-->
+
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+	</body>
+</html>

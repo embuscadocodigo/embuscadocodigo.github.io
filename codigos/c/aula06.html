@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Aula 06</title>
+		<meta encoding="utf-8">
+		<link rel="stylesheet" href="../../css/reset.css">
+		<link rel="stylesheet" href="../../css/roca.css">
+		<link rel="stylesheet" href="../../css/padrao.css">
+		<link rel="stylesheet" href="../../css/erro.css">
+		<link rel="stylesheet" href="../../css/fonte.css">
+<script> function umalert() { alert("Foi mal, não terminei de explicar isso."); } </script>
+	</head>
+	<body>
+		<header>
+			<nav class="cabecalho">
+				<ul>
+					<li><a href="../../index.html">home</a></li>
+					<li>/</li>
+					<li><a href="../../ajuda.html">ajuda</a></li>
+					<li>/</li>
+					<li><a href="../../sobre.html">Sobre</a></li>
+					<li>/</li>
+					<li><a href="../../codigos.html">Códigos</a></li>
+				</ul>
+				<form>
+					<input class="search" type="search" name="q" id="q" placeholder="Procurar..." required>
+					<input class="buttomsearch" type="submit" value="???" onclick="umalert()">
+				</form>
+			</nav>
+		</header>
+<body>
+<section class="paragrafoscodigos">
+<h1>C/C++: Manipulação de arquivo [criando arquivo]. Aula 06</h1>
+</br>
+<p>Nesse vídeo criamos um arquivo .txt utilizando C/C++.</br></br>
+<a href="tabela01.html"  target="_blank">
+<figure class="tabela01">
+	<img src="../../css/img/tabela01.png" alt="manipulaçao de arquivos em C/C++"></img>
+	<figcaption>Modos de manipular arquivos em C/C++</figcaption>
+</figure>
+</a>
+Facebook: <a href="https://www.facebook.com/embuscadocodigo?_rdr=p" target="_blank"><u>Em Busca do Código</u>.</a></p></br>
+<p>Código fonte:</p>
+</br>
+<nav class="fonte">
+#include &lt;stdio.h&gt;<br />
+#include &lt;conio.h&gt;<br />
+<br />
+int main () {<br />
+&nbsp;&nbsp;&nbsp; FILE *arquivo;<br />
+&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp; arquivo = fopen ("arquivo.txt","w");<br />
+&nbsp;&nbsp;&nbsp; /*O w cria um arquivo*/<br />
+&nbsp;&nbsp;&nbsp; /*se o arquivo já existir ele é destruido*/<br />
+&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp; printf("Arquivo criado.");<br />
+&nbsp;&nbsp;&nbsp; <br />
+getch();<br />
+return(0);<br />
+}<br />
+</nav>
+</br>
+<p>Vídeo: </p>
+
+<nav class="video">
+<iframe width="90%" height="500" src="https://www.youtube.com/embed/j_5K2e3GjCA?list=PLI55Mxqv-Ayir3AGgIQcvIFJDrtneTAB_" frameborder="0" allowfullscreen></iframe>
+</nav>
+</section>
+<section class="propagando">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- em busca do codigo 01 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="7324870979"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+		<footer id="rodape">
+			<img src="../../css/img/001.png">
+			&copy; Todos direitos reservados Alam Maia
+			<ul class="redes">
+				<li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../css/img/007.png"></a></li>
+				<li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../css/img/008.png"></a></li>
+				<li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w"target="_blank"><img src="../../css/img/009.png"></a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

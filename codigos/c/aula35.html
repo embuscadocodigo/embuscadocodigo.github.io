@@ -1,0 +1,179 @@
+<!--Código fonte de vídeoaulas do embuscadocodigo.com
+Padrão atualizado 24/08/2018-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+            <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<!--titulos-->
+		<title>Respostas prontas em C/C++. Vídeo 35</title>
+            <meta name="twitter:title" content="Respostas prontas em C/C++. Vídeo 35">
+<!--descrição-->
+            <meta property="og:description" content="Nesta videoaula vemos como utilizar o sprintf juntamente com o puts para não precisar ficar digitando um printf toda vez que precisar chamar uma variável."/>
+            <meta name="twitter:description" content="Nesta videoaula vemos como utilizar o sprintf juntamente com o puts para não precisar ficar digitando um printf toda vez que precisar chamar uma variável.">
+<!--Palavras chave-->
+            <meta name="keywords" content="Linguagem C, C++, Olá Mundo, lógica, programação, prog, sprintf, puts">
+<!--Meta Tags globais-->
+            <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+            <meta property="og:url" content="http://embuscadocodigo.com/codigos/c/aula35.html"/>
+            <meta property="og:site_name" content="http://embuscadocodigo.com">
+            <meta property="og:type" content="article">
+            <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="embuscadocodigo.ico">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+            <meta property="og:image:type" content="image/png">
+            <meta property="og:image" content="http://embuscadocodigo.com/codigos/c/img/c35.png" />
+            <meta property="og:image:width" content="1280">
+            <meta property="og:image:height" content="720">
+      <!--Twitter-->
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/c/img/ct35.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+            <link rel="stylesheet" href="../../css/reset.css">
+            <link rel="stylesheet" href="../../css/roca.css">
+            <link rel="stylesheet" href="../../css/padrao.css">
+            <link rel="stylesheet" href="../../css/erro.css">
+            <link rel="stylesheet" href="../../css/fonte.css">
+            <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+            <meta property="fb:app_id" content="966242223397117">
+            <meta name="twitter:site" content="@embuscadocodigo">
+            <meta name="twitter:creator" content="@embuscadocodigo">
+</head>
+<body>
+	<header>
+		<nav class="cabecalho">
+			<ul>
+				<li><a href="../../index.html">home</a></li>
+				<li>|</li>
+				<li><a href="../../ajuda.html">ajuda</a></li>
+				<li>|</li>
+				<li><a href="../../sobre.html">Sobre</a></li>
+				<li>|</li>
+				<li><a href="../../codigos.html">Códigos</a></li>
+			</ul>
+		</nav>
+	</header>
+<body>
+      <section>
+            <div class="paginas">
+                  <ul>
+                        <li><a href="aula34.html">Aula 34</a></li>
+                        <li>|</li>
+                        <li><a href="../c.html">Curso</a></li>
+                        <li>|</li>
+                        <li><a href="aula36.html">Aula 36</a></li>
+                  </ul>
+            </div>
+      </section>
+<section class="paragrafoscodigos">
+      <h1>Respostas prontas em C/C++. Vídeo 35</h1>
+</br>
+      <p>Caso tenha allgum conceito que você não sabe, veja os código fontes / videoaulas a seguir para sanar sua dúvida, links abrem em outra aba.</p>
+</br>
+      <p><a href="http://embuscadocodigo.com/codigos/c/aula11.html" target="_blank"><u>Descomplicando o SWITCH.</u></a></br>
+      <p><a href="http://embuscadocodigo.com/codigos/c/aula15.html" target="_blank"><u>Vetores [parte 01].</u></a></br>
+      <p><a href="http://embuscadocodigo.com/codigos/c/aula33.html" target="_blank"><u>Instalar compilador de C/C++ no linux.</u></a></br>
+</br>
+      <p>Nesta videoaula vemos como utilizar o sprintf juntamente com o puts para não precisar ficar digitando um printf toda vez que precisar chamar uma variável.</p>
+      </br>
+      <p class="cabe">Código fonte:</p>
+      <nav class="fonte">
+#include &lt;stdio.h&gt;<br />
+<br />
+int main (void) {<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int vetor[2];<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int i, a;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; char string1[100], string2[100];<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("Digite um valor: ");<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scanf("%d", &amp;vetor[0]);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("Digite um valor: ");<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scanf("%d", &amp;vetor[1]);<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sprintf(string1, "Valor = %d", vetor[0]);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sprintf(string2, "Valor = %d", vetor[1]);<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("Qual posicao (1 ou 2)? ");<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scanf("%d", &amp;a);<br />
+<br />
+switch (a) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case 1:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; puts(string1);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case 2:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; puts(string2);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; defaut:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("Leia as opcoes (FIM).");<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break;<br />
+}<br />
+return 0;<br />
+}
+      </nav>
+      </br>
+<p class="cabe">Assista ao vídeo: </p>
+      <nav class="video">
+<iframe width="90%" height="500px" src="https://www.youtube.com/embed/KloqeZur2Sg" frameborder="0" allowfullscreen></iframe>
+      </nav>
+</section>
+      <section>
+            <div class="paginas">
+                  <ul>
+                        <li><a href="aula34.html">Aula 34</a></li>
+                        <li>|</li>
+                        <li><a href="../c.html">Curso</a></li>
+                        <li>|</li>
+                        <li><a href="aula36.html">Aula 36</a></li>
+                  </ul>
+            </div>
+      </section>
+<section class="propagando">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- em busca do codigo 01 -->
+      <ins class="adsbygoogle"
+           style="display:inline-block;width:728px;height:90px"
+           data-ad-client="ca-pub-5020252132627432"
+           data-ad-slot="7324870979"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+</section> <!--Fim da propagando-->
+
+<footer id="rodape">
+
+<form class="procurar">
+      <script>
+        (function() {
+          var cx = '003467032773945451414:czc04qxogy0';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+              '//cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+</form> <!--Fim do form de pesquisa-->
+			<img src="../../css/img/001.png">
+                  Desde 2015 Em Busca do Código 
+			<ul class="redes">
+				<li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../css/img/007.png"></a></li>
+				<li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../css/img/008.png"></a></li>
+				<li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w"target="_blank"><img src="../../css/img/009.png"></a></li>
+			</ul>
+
+</footer> <!--Fim do rodape-->
+
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+	</body>
+</html>

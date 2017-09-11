@@ -1,0 +1,162 @@
+<!--Código fonte de vídeoaulas do embuscadocodigo.com
+Padrão atualizado 24/08/2018-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+            <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<!--titulos-->
+		<title>Limpando o buffer em C/C++. Vídeo 36</title>
+            <meta name="twitter:title" content="Limpando o buffer em C/C++. Vídeo 36">
+<!--descrição-->
+            <meta property="og:description" content=""/>
+            <meta name="twitter:description" content="">
+<!--Palavras chave-->
+            <meta name="keywords" content="Linguagem C, C++, buffer, limpar, getchar, erro, char, caractere">
+<!--Meta Tags globais-->
+            <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+            <meta property="og:url" content="http://embuscadocodigo.com/codigos/c/aula36.html"/>
+            <meta property="og:site_name" content="http://embuscadocodigo.com">
+            <meta property="og:type" content="article">
+            <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="embuscadocodigo.ico">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+            <meta property="og:image:type" content="image/png">
+            <meta property="og:image" content="http://embuscadocodigo.com/codigos/c/img/c36.png" />
+            <meta property="og:image:width" content="1280">
+            <meta property="og:image:height" content="720">
+      <!--Twitter-->
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/c/img/ct36.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+            <link rel="stylesheet" href="../../css/reset.css">
+            <link rel="stylesheet" href="../../css/roca.css">
+            <link rel="stylesheet" href="../../css/padrao.css">
+            <link rel="stylesheet" href="../../css/erro.css">
+            <link rel="stylesheet" href="../../css/fonte.css">
+            <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+            <meta property="fb:app_id" content="966242223397117">
+            <meta name="twitter:site" content="@embuscadocodigo">
+            <meta name="twitter:creator" content="@embuscadocodigo">
+</head>
+<body>
+	<header>
+		<nav class="cabecalho">
+			<ul>
+				<li><a href="../../index.html">home</a></li>
+				<li>|</li>
+				<li><a href="../../ajuda.html">ajuda</a></li>
+				<li>|</li>
+				<li><a href="../../sobre.html">Sobre</a></li>
+				<li>|</li>
+				<li><a href="../../codigos.html">Códigos</a></li>
+			</ul>
+		</nav>
+	</header>
+<body>
+      <section>
+            <div class="paginas">
+                  <ul>
+                        <li><a href="aula35.html">Aula 35</a></li>
+                        <li>|</li>
+                        <li><a href="../c.html">Curso</a></li>
+                        <li>|</li>
+                        <li><a href="#">#</a></li>
+                  </ul>
+            </div>
+      </section>
+<section class="paragrafoscodigos">
+      <h1>Limpando o buffer em C/C++. Vídeo 36</h1>
+</br>
+      <p>Neste exemplo pratico vemos que ao solicitarmos que o usuário digite duas variáveis do tipo char uma seguida da outra ocorre um erro.</p>
+</br>
+      <p>Esse erro acontece pois ao apertar o enter o programa entende que a tecla enter é um char, mesmo não sendo.</p>
+</br>
+      <p>Existem vários jeitos diferentes de se apagar a sujeirinha do buffer, muitos sites indicam que deixe dois modos diferentes, uma para windows outra para linux, mas no exemplo a seguir vemos que isso não é necessário.</p>
+</br>
+ </br>
+      <p class="cabe">Código fonte:</p>
+      <nav class="fonte">
+#include &lt;stdio.h&gt;<br />
+<br />
+int main() {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; char um, dois;<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("Caractere: ");<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scanf("%c", &amp;um);<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; getchar();<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("Caractere: ");<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scanf("%c", &amp;dois);<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("\n\n\nCaracteres digitados: %c %c\n\n\n", um, dois);<br />
+}<br />
+      </nav>
+      </br>
+<p class="cabe">Assista ao vídeo: </p>
+      <nav class="video">
+<iframe width="90%" height="500px" src="https://www.youtube.com/embed/_T242bhsYsc" frameborder="0" allowfullscreen></iframe>
+      </nav>
+</section>
+      <section>
+            <div class="paginas">
+                  <ul>
+                        <li><a href="aula35.html">Aula 35</a></li>
+                        <li>|</li>
+                        <li><a href="../c.html">Curso</a></li>
+                        <li>|</li>
+                        <li><a href="#">#</a></li>
+                  </ul>
+            </div>
+      </section>
+<section class="propagando">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- em busca do codigo 01 -->
+      <ins class="adsbygoogle"
+           style="display:inline-block;width:728px;height:90px"
+           data-ad-client="ca-pub-5020252132627432"
+           data-ad-slot="7324870979"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+</section> <!--Fim da propagando-->
+
+<footer id="rodape">
+
+<form class="procurar">
+      <script>
+        (function() {
+          var cx = '003467032773945451414:czc04qxogy0';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+              '//cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+</form> <!--Fim do form de pesquisa-->
+			<img src="../../css/img/001.png">
+                  Desde 2015 Em Busca do Código 
+			<ul class="redes">
+				<li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../css/img/007.png"></a></li>
+				<li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../css/img/008.png"></a></li>
+				<li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w"target="_blank"><img src="../../css/img/009.png"></a></li>
+			</ul>
+
+</footer> <!--Fim do rodape-->
+
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+	</body>
+</html>

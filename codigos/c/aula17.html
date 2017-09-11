@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Aula 17</title>
+		<meta encoding="utf-8">
+		<link rel="stylesheet" href="../../css/reset.css">
+		<link rel="stylesheet" href="../../css/roca.css">
+		<link rel="stylesheet" href="../../css/padrao.css">
+		<link rel="stylesheet" href="../../css/erro.css">
+		<link rel="stylesheet" href="../../css/fonte.css">
+<script> function umalert() { alert("Foi mal, não terminei de explicar isso."); } </script>
+	</head>
+	<body>
+		<header>
+			<nav class="cabecalho">
+				<ul>
+					<li><a href="../../index.html">home</a></li>
+					<li>/</li>
+					<li><a href="../../ajuda.html">ajuda</a></li>
+					<li>/</li>
+					<li><a href="../../sobre.html">Sobre</a></li>
+					<li>/</li>
+					<li><a href="../../codigos.html">Códigos</a></li>
+				</ul>
+				<form>
+					<input class="search" type="search" name="q" id="q" placeholder="Procurar..." required>
+					<input class="buttomsearch" type="submit" value="???" onclick="umalert()">
+				</form>
+			</nav>
+		</header>
+<body>
+<section class="paragrafoscodigos">
+<h1>C/C++: Utilizando o break e o continue. Aula 17</h1>
+</br>
+<p>Nesse vídeo vemos o que realmente faz o break e o continue na linguagem C, em apenas um programa de 28 linhas nós utilizamos um while, um if e um switch, para podermos entender o que faz o continue e o break.<br />
+Facebook: <a href="https://www.facebook.com/embuscadocodigo?_rdr=p" target="_blank"><u>Em Busca do Código</u>.</a></p>
+<p>Código fonte:</p>
+</br>
+<nav class="fonte">
+#include &lt;stdio.h&gt; <br />
+#include &lt;conio.h&gt;<br />
+<br />
+int main() {<br />
+&nbsp;&nbsp;&nbsp; int digite;<br />
+&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp; while(digite != 2 ) {<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; printf("\nDigite 1 ou 2: ");<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; scanf("%d", &amp;digite);<br />
+&nbsp;&nbsp;&nbsp; if ((digite &gt; 2)||(digite &lt; 1)) {<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; printf("numero invalido.");<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; continue;<br />
+&nbsp;&nbsp;&nbsp; }<br />
+&nbsp;&nbsp;&nbsp; switch (digite) {<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; case 1:<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; printf("continue.");<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; continue;<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; case 2:<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; printf("break");<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; break;<br />
+&nbsp;&nbsp;&nbsp; }<br />
+&nbsp;&nbsp;&nbsp; printf("\n\n fim do switch.");<br />
+&nbsp;&nbsp;&nbsp; }<br />
+&nbsp;&nbsp;&nbsp; printf("\n\n fim do while.");<br />
+<br />
+getch();<br />
+return(0); <br />
+}<br />
+</nav>
+</br>
+<p>Vídeo: </p>
+<nav class="video">
+<iframe width="90%" height="500" src="https://www.youtube.com/embed/UIuDAtKHKac?list=PLI55Mxqv-Ayir3AGgIQcvIFJDrtneTAB_" frameborder="0" allowfullscreen></iframe>
+</nav>
+</section>
+<section class="propagando">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- em busca do codigo 01 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="7324870979"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+		<footer id="rodape">
+			<img src="../../css/img/001.png">
+			&copy; Todos direitos reservados Alam Maia
+			<ul class="redes">
+				<li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../css/img/007.png"></a></li>
+				<li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../css/img/008.png"></a></li>
+				<li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w"target="_blank"><img src="../../css/img/009.png"></a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
