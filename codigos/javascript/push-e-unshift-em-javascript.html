@@ -1,0 +1,238 @@
+<!--Padrão 24/12/2016 ?+?-? embuscadocodigo.com v0.4-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+          <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--titulos-->
+		<title>Adicionar elemento no inicio ou fim de um array em JavaScripit. Dica 09</title>
+          <meta name="twitter:title" content="Adicionar elemento no inicio ou fim de um array em JavaScripit. Dica 09">
+<!--descrição-->
+          <meta property="og:description" content="Nesta dica utilizamos os métodos push e unshift para adicionar elementos no inicio ou fim de um array em JavaScript."/>
+          <meta name="twitter:description" content="Nesta dica utilizamos os métodos push e unshift para adicionar elementos no inicio ou fim de um array em JavaScript.">
+<!--Palavras chave-->
+          <meta name="keywords" content="Curso de JavaScript, javascript, array, arrays, document.write, push, unshift, adicionar, fim, inicio">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/javascript/push-e-unshift-em-javascript.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="http://embuscadocodigo.com/css/img/001.png">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/javascript/img/js09.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/javascript/img/js09.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="../../css/reset.css">
+          <link rel="stylesheet" href="../../css/hefo.css">
+          <link rel="stylesheet" href="../../css/novo.css">
+          <link rel="stylesheet" href="../../css/erro.css">
+          <link rel="stylesheet" href="../../css/fonte.css">
+          <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@alamvianna">
+     </head>
+     <body>
+          <header>
+			<nav class="cabecalho">
+				<ul>
+					<li><a href="../../index.html">home</a></li>
+					<li>|</li>
+					<li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+					<li>|</li>
+					<li><a href="../../sobre.html">Sobre</a></li>
+					<li>|</li>
+					<li><a href="../../codigos.html">Códigos</a></li>
+				</ul>
+<section class="linhamenus">
+</section>
+			</nav>
+		</header>
+          </section>
+     <section class="jah jah2">
+           <p>O Em Busca do Código é um site em formato de plataforma de ensino a distância (EAD), totalmente aberta e gratuita.</p>
+           <p>Aprendendo e ensinando, essa é a minha regra para mim.</p>
+     </section>
+     <section class="adesivo adesivo2">
+          <a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+               <p>Compre um adesivo do Em Busca do Código.</p>
+          </a>
+     </section>
+     <section class="prolat cachorro">
+<p>Publicidade</p>
+<iframe  src="prop/prolat.html" width="250" height="260" frameborder='0' scrolling="no"></iframe>
+     </section>
+<section class="prolatgo cachorro" >
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+<section class="prolat cachorro">
+<p>Publicidade</p>
+<iframe src="prop/prolatdaddy.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+<section class="paragrafoscodigos">
+      <section>
+            <div  class="paginas">
+                  <ul>
+                        <li><a href="join-concat-em-javascript.html">anterior</a></li>
+                        <li>|</li>
+                        <li><a href="index.html">curso</a></li>
+                        <li>|</li>
+                        <li><a href="remover-elemento-no-inicio-ou-fim-javascript.html">próxima</a></li>
+                  </ul>
+            </div>
+      </section>
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<h1>Adicionar elemento no inicio ou fim de um array em JavaScripit. Dica 09</h1>
+      <p>
+ Nesta dica utilizamos os métodos push e unshift para adicionar elementos no inicio ou fim de um array em JavaScript.
+      </p>
+      <p>
+
+Objetos e métodos, e seguindo esse padrão nós utilizaremos os métodos push e unshift.
+      </p>
+    <h1>Método push</h1>
+      <p>
+Para utilizar o método push basta chama-lo depois do nome do array. Segue o exemplo a seguir.
+      </p>
+        <nav class="fonte">
+array1.push("novo valor");
+        </nav>
+      <p>
+Antes de escrever essa linha precisamos de um array.
+      </p>
+        <nav class="fonte">
+var array1 = new Array(123,654,"oi");<br />
+document.write("&lt;h1&gt;Array original: "+array1+"&lt;/h1&gt;");<br />
+        </nav>
+      <p>
+Agora sim podemos utilizar o método push.
+      </p>
+        <nav class="fonte">
+array1.push("novo valor");<br />
+document.write("&lt;h1&gt;Adicionando no fim: "+array1+"&lt;/h1&gt;");<br />
+        </nav>
+      <p>
+Não podendo esquecer de "criar" um documento HTML simples.
+      </p>
+    <p class="cabe">HTML</p>
+         <nav class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+<br />
+&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;Array&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="UTF-8"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;Array parte 4&lt;/h1&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script src="array04.js"&gt;&lt;/script&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+     </nav>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+      <p>
+Tendo como base o array que acabamos de utilizar agora utilizaremos o método unshift para adicionar um elemento no índice 0 (zero) de um array.
+      </p>
+      <p>
+Objetos e métodos.
+      </p>
+     <nav class="fonte">
+array1.unshift("1º elemento");
+     </nav>
+          <p>
+Agora segue o código fonte JavaScript completo.
+      </p>
+        <p class="cabe">Código fonte JavaScript</p>
+        <nav class="fonte">
+document.write("&lt;h1&gt;&lt;/br&gt;NO FIM (push)&lt;/h1&gt;");<br />
+<br />
+var array1 = new Array(123,654,"oi");<br />
+document.write("&lt;h1&gt;Array original: "+array1+"&lt;/h1&gt;");<br />
+array1.push("novo valor");<br />
+document.write("&lt;h1&gt;Adicionando no fim: "+array1+"&lt;/h1&gt;");<br />
+<br />
+document.write("&lt;h1&gt;&lt;/br&gt;NO INICIO (UNSHIFT)&lt;/h1&gt;");<br />
+<br />
+array1.unshift("1º elemento");<br />
+document.write("&lt;h1&gt;Adicionando no inicio: "+array1+"&lt;/h1&gt;");<br />
+        </nav>
+        <p>
+Caso tenha ficado alguma dúvida pode valer a pena ver o vídeo.
+        </p>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+          <p class="cabe">Assista ao vídeo:</p>
+      <nav>
+<iframe class="video" src="https://www.youtube.com/embed/RW2QY3jMt_s" frameborder="0" allowfullscreen></iframe>
+<!--<iframe class="video" src="https://www.youtube.com/embed/yorgg2ndlvE" frameborder="0" allowfullscreen></iframe>-->
+      </nav>
+         <a class="linkexterno" href="" target="_blank">
+            <div  class="paginas">
+                  <ul>
+                        <li><a href="join-concat-em-javascript.html">anterior</a></li>
+                        <li>|</li>
+                        <li><a href="index.html">curso</a></li>
+                        <li>|</li>
+                        <li><a href="remover-elemento-no-inicio-ou-fim-javascript.html">próxima</a></li>
+                  </ul>
+            </div>
+      </section>
+</section>
+     <footer>
+          <div class="rodape">
+               <img src="../../css/img/001.png">
+               2017 Em Busca do Código
+          </div>
+          <nav class="redes">
+               <ul>
+                    <li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../img/007.png"></a></li>
+		          <li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../img/008.png"></a></li>
+		          <li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../img/009.png"></a></li>
+		          <li><a href="https://www.instagram.com/alamvianna/" target="_blank"><img src="../../img/010.png"></a></li>
+		          <li><a href="https://www.twitter.com/alamvianna/" target="_blank"><img src="../../img/011.png"></a></li>
+	          </ul>
+          </nav>
+     </footer> <!--Fim do rodape-->
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+<iframe class="propmeio2" src="prop/iframepropdois.html" width="728" height="120px" frameborder='0' scrolling="no"></iframe>
+	</body>
+</html>

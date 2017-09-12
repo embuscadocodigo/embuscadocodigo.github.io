@@ -1,0 +1,301 @@
+<!--Padrão 30/04/2017 embuscadocodigo.com v2.g
+<a class="linkexterno" href="" target="_blank"></a>
+-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+          <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--titulos-->
+		<title>Executar JavaScript quando a janela do navegador for redimensionada. Dica 28</title>
+          <meta name="twitter:title" content="Executar JavaScript quando a janela do navegador for redimensionada. Dica 28">
+<!--descrição-->
+          <meta property="og:description" content="Como o título já diz, o evento onresize quando a janela foi redimensionada, e repare bem na palavra foi, mas vamos começar a dica."/>
+          <meta name="twitter:description" content="Como o título já diz, o evento onresize quando a janela foi redimensionada, e repare bem na palavra foi, mas vamos começar a dica.">
+<!--Palavras chave-->
+          <meta name="keywords" content="onerror, onpageshow, JS, JavaScript, Curso de JavaScript, curso de javascript gratuito">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/javascript/evento-onresize-em-javascript-dice-28.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="http://embuscadocodigo.com/css/img/001.png">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/javascript/img/js28.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/javascript/img/js28.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="../../css/reset.css">
+          <link rel="stylesheet" href="../../css/hefo.css">
+          <link rel="stylesheet" href="../../css/novo.css">
+          <link rel="stylesheet" href="../../css/erro.css">
+          <link rel="stylesheet" href="../../css/fonte.css">
+          <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@alamvianna">
+     </head>
+     <body>
+    <header>
+        <nav class="cabecalho">
+            <ul>
+                <li><a href="../../index.html">home</a></li>
+                <li>|</li>
+                <li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+                <li>|</li>
+                <li><a href="../../sobre.html">Sobre</a></li>
+                <li>|</li>
+                <li><a href="../../codigos.html">Códigos</a></li>
+            </ul>
+            <section class="linhamenus">
+            </section>
+        </nav>
+    </header>
+    <section class="jah jah2">
+        <p>O Em Busca do Código é um site em formato de plataforma de ensino a distância (EAD), totalmente aberta e gratuita.
+        <br><br>
+        Aprendendo e ensinando, essa é a minha regra para mim.
+        <br><br>
+         Publicado dia 21 de junho de 2017.</p>
+    </section>
+    <section class="adesivo adesivo2">
+        <a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+          <p>Compre um adesivo do Em Busca do Código.</p>
+        </a>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe  src="prop/prolat.html" width="250" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+    <section class="prolatgo cachorro" >
+        <p>Publicidade</p>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- EBC JS--> 
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:336px;height:280px"
+             data-ad-client="ca-pub-5020252132627432"
+             data-ad-slot="6229362170"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe src="prop/prolatdaddy.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+<section class="paragrafoscodigos">
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="eventos-onerror-e-onpageshow-javascript.html">anterior</a></li>
+                <li>|</li>
+                <li><a href="index.html">curso</a></li>
+                <li>|</li>
+                <li><a href="capturar-valor-digitado-javascript.html">próxima</a></li>
+            </ul>
+        </nav>
+    </section>
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+    <h1>Executar JavaScript quando a janela do navegador for redimensionada. Dica 28</h1>
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+    <p>
+Bem vindo a dica 28 de JS da Em Busca do Código, e nesta dica nós veremos como executar um JS quando a janela do navegador for redimensionada.
+    </p>
+    <p class="cabe">
+O vídeo complementa o texto e o texto completa o vídeo, assista.
+    </p>
+    <div>
+<iframe class="video" src="https://www.youtube.com/embed/p8LSSU2aV0Y" frameborder="0" allowfullscreen></iframe>
+<!-- class="video" -->
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+    <p>
+Para isso nós utilizaremos o evento onresize. Para realizar esta dica eu estou utilizando o editor de texto open-source chamado Brackets, desenvolvido pela Adobe e comunidade. Além de um editor de texto ou IDE, você também precisa de dois arquivos, um .html e outro .js.
+    </p>
+    <h2>Evento onresize</h2>
+    <p>
+Como o título já diz, o evento onresize quando a janela foi redimensionada, e repare bem na palavra foi, mas vamos começar a dica.
+    </p>
+    <p>
+Em nosso documento HTML inicial temos um padrão, assim como está sendo utilizado nessas dicas de JS. Lembrando que você está na dica número 28 de um curso aberto de JavaScript.
+    </p>
+    <p>
+A seguir o Código fonte HTML inicial.
+    </p>
+    <div class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;Evento onresize em JavaScript. Dica 28&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script src="js28.js"&gt;&lt;/script&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="UTF-8"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;Evento onresize em JavaScript. Dica 28&lt;/h1&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h2 id="quantas"&gt;&lt;/h2&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p>
+Utilizaremos o evento na tag body, lembrando que, esta é uma dica baseada na documentação da W3C. Se alguma vez eu esquecer de colocar as fontes das dicas e artigos na parte escrita (site), por favor, me lembre. Isso é importante para o SEO do site.
+    </p>
+    <div class="fonte">
+&lt;body onresize="redimensinada()"&gt;<br />
+    </div>
+    <p>
+Já informando uma função que iremos criar no JS. Tudo o que precisamos fazer no HTML já foi feito, agora vamos ao JavaScript (.js).
+    </p>
+    <p>
+Nosso documento JS inicial está em branco, e a primeira informação que iremos inserir é a função que acabamos de criar no JS.
+    </p>
+    <div class="fonte">
+function redimensinada() {<br />
+}<br />
+    </div>
+    <p>
+Neste exemplo nós iremos contar quantas vezes a janela do navegador foi redimensionada. E para isso precisamos criar duas variáveis.
+    </p>
+    <div class="fonte">
+var x = 0;<br />
+var vezes = "";<br />
+    </div>
+    <p>
+Este tipo de exemplo já foi utilizado em dicas anteriores, claro que, de outra forma, junto com o link da W3C nas fontes que estão no final desta dica, deixei mais duas dicas onde contamos o número de vezes que os eventos são acionados, para caso queira conferi-las.
+    </p>
+    <p>
+A variável com nome de x está com valor inicial 0 (zero). O próximo passo é dentro da função, onde iremos dar um valor a variável chamada vezes.
+    </p>
+    <div class="fonte">
+vezes = x += 1;
+    </div>
+    <p>
+Com essa linha de código, toda vez que o evento for acionado, será somado mais um no valor da variável com nome vezes.
+    </p>
+    <p>
+Agora utilizaremos document.getElementById para vermos o resultado em nossa tag h2, que por algum acaso, no documento HTMl inicial, já estava com um id.
+    </p>
+    <div class="fonte">
+document.getElementById("quantas").innerHTML = "Redimensionada quantas vezes: "+vezes;<br />
+    </div>
+    <p>
+Agora vem os testes, e o evento funciona, mas existe algo muito interessante. Se o usuário estiver em outra aba quando redimensionar a janela do navegador o evento não será acionado. Se ele voltar para a aba onde está esse evento e, a janela do navegador estiver com uma dimensão diferente, com relação da que estava antes de sair da aba, o evento será acionado, somente, quando ele voltar para a aba e, se ela não estiver mais com as mesmas dimensões. Se quando ele voltar para a aba as dimensões da janela do navegador estiverem idênticas a de quando ele saiu desta aba, o evento não será acionado. Não importando quantas vezes a janela do navegador foi redimensionada.
+    </p>
+    <p>
+Reparou em algo diferente na minha forma de explicar está dica, melhorou?
+    </p>
+    <p>
+Espero que está dica tenha sido útil, se foi útil e se possível deixe seu like lá no YouTube, e até mais.
+    </p>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+    <p>
+Código fonte JavaScript (completo):
+    </p>
+    <div class="fonte">
+var x = 0;<br />
+var vezes = "";<br />
+<br />
+function redimensinada () {<br />
+&nbsp;&nbsp;&nbsp; vezes = x += 1;<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("quantas").innerHTML = "Redimensionada quantas vezes: "+vezes;<br />
+}<br />
+    </div>
+<!--<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>-->
+    <p>
+Fontes:
+    </p>
+<a class="linkexterno" href="https://www.w3schools.com/jsref/event_onresize.asp" target="_blank">W3C: onresize</a><br>
+<a class="linkexterno" href="https://www.w3schools.com/jsref/event_onresize.asp">Diferença entre onkeydown e onkeypress em JavaScript. Dica 21</a><br>
+<a class="linkexterno" href="http://embuscadocodigo.com/codigos/javascript/onkeyup-tolowercase-e-touppercase-em-javascript.html">Evento onkeyup e métodos toLowerCase e toUpperCase em JavaScript. Dica 23</a>
+    <p>
+Confira outras dicas de JS do site. Já temos muito mais que o básico.
+    </p>
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="eventos-onerror-e-onpageshow-javascript.html">anterior</a></li>
+                <li>|</li>
+                <li><a href="index.html">curso</a></li>
+                <li>|</li>
+                <li><a href="capturar-valor-digitado-javascript.html">próxima</a></li>
+            </ul>
+        </nav>
+    </section>
+</section>
+<form class="procurar">
+      <script>
+        (function() {
+          var cx = '003467032773945451414:czc04qxogy0';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+              '//cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+</form> <!--Fim do form de pesquisa-->
+     <footer>
+          <div class="rodape">
+               <img src="../../css/img/001.png">
+               2017 Em Busca do Código
+          </div>
+          <nav class="redes">
+               <ul>
+                    <li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../img/007.png"></a></li>
+		          <li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../img/008.png"></a></li>
+		          <li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../img/009.png"></a></li>
+		          <li><a href="https://www.instagram.com/alamvianna/" target="_blank"><img src="../../img/010.png"></a></li>
+		          <li><a href="https://www.twitter.com/alamvianna/" target="_blank"><img src="../../img/011.png"></a></li>
+	          </ul>
+          </nav>
+     </footer>
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+<iframe class="propmeio2" src="prop/iframepropdois.html" width="728" height="120px" frameborder='0' scrolling="no"></iframe>
+	</body>
+</html>

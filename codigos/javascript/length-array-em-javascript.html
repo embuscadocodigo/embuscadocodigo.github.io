@@ -1,0 +1,283 @@
+<!--Padrão 24/12/2016 ?+?-? embuscadocodigo.com v0.4-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+          <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--titulos-->
+		<title>Length. Array em JavaScript parte 2. Dica 07</title>
+          <meta name="twitter:title" content="Length. Array em JavaScript parte 2. Dica 07">
+<!--descrição-->
+          <meta property="og:description" content="Na dica anterior nós criamos Arrays e, nesta dica iremos contar o número de elementos de um array. Contar quantos caracteres um determinado array tem (quando este elemento é uma string), ver o ultimo elemento de um array e, diminuir ou aumentar o tamanho de um array."/>
+          <meta name="twitter:description" content="Na dica anterior nós criamos Arrays e, nesta dica iremos contar o número de elementos de um array. Contar quantos caracteres um determinado array tem (quando este elemento é uma string), ver o ultimo elemento de um array e, diminuir ou aumentar o tamanho de um array.">
+<!--Palavras chave-->
+          <meta name="keywords" content="Curso de JavaScript, javascript, array, arrays, document.write, length, lenght">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/javascript/length-array-em-javascript.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="http://embuscadocodigo.com/css/img/001.png">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/javascript/img/js07.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/javascript/img/js07.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="../../css/reset.css">
+          <link rel="stylesheet" href="../../css/hefo.css">
+          <link rel="stylesheet" href="../../css/novo.css">
+          <link rel="stylesheet" href="../../css/erro.css">
+          <link rel="stylesheet" href="../../css/fonte.css">
+          <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@alamvianna">
+     </head>
+     <body>
+          <header>
+			<nav class="cabecalho">
+				<ul>
+					<li><a href="../../index.html">home</a></li>
+					<li>|</li>
+					<li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+					<li>|</li>
+					<li><a href="../../sobre.html">Sobre</a></li>
+					<li>|</li>
+					<li><a href="../../codigos.html">Códigos</a></li>
+				</ul>
+<section class="linhamenus">
+</section>
+			</nav>
+		</header>
+          </section>
+     <section class="jah jah2">
+           <p>O Em Busca do Código é um site em formato de plataforma de ensino a distância (EAD), totalmente aberta e gratuita.</p>
+           <p>Aprendendo e ensinando, essa é a minha regra para mim.</p>
+     </section>
+     <section class="adesivo adesivo2">
+          <a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+               <p>Compre um adesivo do Em Busca do Código.</p>
+          </a>
+     </section>
+     <section class="prolat cachorro">
+<p>Publicidade</p>
+<iframe  src="prop/prolat.html" width="250" height="260" frameborder='0' scrolling="no"></iframe>
+     </section>
+<section class="prolatgo cachorro" >
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+<section class="prolat cachorro">
+<p>Publicidade</p>
+<iframe src="prop/prolatdaddy.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+<section class="paragrafoscodigos">
+      <section>
+            <div  class="paginas">
+                  <ul>
+                        <li><a href="array-em-javascript.html">anterior</a></li>
+                        <li>|</li>
+                        <li><a href="index.html">curso</a></li>
+                        <li>|</li>
+                        <li><a href="join-concat-em-javascript.html">próxima</a></li>
+                  </ul>
+            </div>
+      </section>
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<h1>Length. Array em JavaScript parte 2. Dica 07</h1>
+      <p>
+Para realizar esta dica você pode utilizar o código fonte HTML da dica anterior e, utilizar apenas um dos arrays criados como exemplo.
+      </p>
+      <p>
+Na dica anterior nós criamos Arrays e, nesta dica iremos contar o número de elementos de um array. Contar quantos caracteres um determinado array tem (quando este elemento é uma string), ver o ultimo elemento de um array e, diminuir ou aumentar o tamanho de um array.
+      </p>
+      <p>
+Sempre utilizando a propriedade length.
+      </p>
+      <p>
+Para contar quantos elementos tem um array apenas inserimos ".length" depois que chamamos o nome do array.
+      </p>
+         <nav class="fonte">
+document.write("&lt;h1&gt;Array: "+Array02.length +"&lt;/h1&gt;");<br />
+     </nav>
+      <p>
+Quando um determinado elemento for uma string eu posso contar o número de caracteres que ele tem, e para isso eu só preciso dizer qual o índice do elemento ao qual eu quero contar o número de caracteres.
+      </p>
+         <nav class="fonte">
+document.write("&lt;h1&gt;Array: "+Array02[0].length +"&lt;/h1&gt;");<br />
+     </nav>
+      <p>
+Para conseguir ver o ultimo elemento de um array eu preciso entender lógica, a primeira coisa que devemos fazer é criar uma variável com o nome qualquer.
+      </p>
+     <nav class="fonte">
+var verUltimo<br />
+     </nav>
+      <p>
+Como eu quero que, ao chamar essa variável apareça o ultimo elemento do meu array, eu preciso informar o array que estou utilizando.
+      </p>
+         <nav class="fonte">
+var verUltimo = Array2[];
+     </nav>
+      <p>
+Agora vamos fingir que não sabemos o número de elementos desse array, mas sabemos que Array2.length (Array2 é o nome do meu array) mostra o número de elementos.
+      </p>
+<!--      <p class="cabe">usar?</p>-->
+     <nav class="fonte">
+var verUltimo = Array[Array2.length];
+     </nav>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+      <p>
+Só que o primeiro elemento tem índice 0 (zero), e não 1 (um), então, do jeito que está, esta variável não teria um valor, caso tenha ficado duvida nessa parte assista ao vídeo, no vídeo eu mostro essa diferença entre o número de elementos e maior índice
+      </p>
+          <p>
+Para resolver isso temos que subtrair do tamanho do nosso Array, tendo como resultado o número do último índice.
+      </p>
+<!--      <p class="cabe">usar?</p>-->
+     <nav class="fonte">
+var verUltimo = Array[Array2.length - 1];
+     </nav>
+      <p>
+A partir daí podemos chamar essa variável, que por algum acaso sempre irá retornar o valor do ultimo elemento do array.
+      </p>
+          <p>
+Podemos também excluir/diminuir o tamanho de um array.
+      </p>
+         <nav class="fonte">
+Array02.length = 2;<br />
+document.write("&lt;h1&gt;Array: "+Array02 +"&lt;/h1&gt;");<br />
+document.write("&lt;h1&gt;Tamanho: "+Array02.length +"&lt;/h1&gt;");<br />
+     </nav>
+      <p>
+E se o valor do length fosse maior não menor que o valor do array, o tamanho do array aumentaria. Isso acontece porque o número de elementos de um array se adapta ao valor do length.
+      </p>
+         <nav class="fonte">
+Array02.length = 5;<br />
+document.write("&lt;h1&gt;Array: "+Array02 +"&lt;/h1&gt;");<br />
+document.write("&lt;h1&gt;Tamanho 5: "+Array02.length +"&lt;/h1&gt;");<br />
+document.write("&lt;h1&gt;Array: "+Array02[4] +"&lt;/h1&gt;");<br />
+     </nav>
+      <p>
+Agora segue o código fonte completo desta dica/aula/artigo.
+      </p>
+        <p class="cabe">Código fonte HTML:</p>
+     <nav class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+<br />
+&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;Array&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="UTF-8"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;Array parte 2&lt;/h1&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script src="array02.js"&gt;&lt;/script&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+     </nav>
+        <p class="cabe">Código fonte JavaScript</p>
+        <nav class="fonte">
+var Array02 = new Array("textos",456,45.5);<br />
+<br />
+document.write("&lt;h1&gt;Array: "+Array02 +"&lt;/h1&gt;");<br />
+<br />
+document.write("&lt;h1&gt;Array: "+Array02.length +"&lt;/h1&gt;");<br />
+<br />
+document.write("&lt;h1&gt;Array: "+Array02[0].length +"&lt;/h1&gt;");<br />
+<br />
+var verUltimo = Array02[Array02.length - 1];<br />
+<br />
+document.write("&lt;h1&gt;Ultimo: "+verUltimo +"&lt;/h1&gt;");<br />
+<br />
+Array02.length = 2;<br />
+document.write("&lt;h1&gt;Array: "+Array02 +"&lt;/h1&gt;");<br />
+document.write("&lt;h1&gt;Tamanho: "+Array02.length +"&lt;/h1&gt;");<br />
+<br />
+Array02.length = 5;<br />
+document.write("&lt;h1&gt;Array: "+Array02 +"&lt;/h1&gt;");<br />
+document.write("&lt;h1&gt;Tamanho 5: "+Array02.length +"&lt;/h1&gt;");<br />
+document.write("&lt;h1&gt;Array: "+Array02[4] +"&lt;/h1&gt;");<br />
+     </nav>
+      <p>
+Salve estes códigos fontes em seu computador e abra, no final deste vídeo eu explico resumidamente cada linha deste código fonte.
+      </p>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+          <p class="cabe">Assista ao vídeo:</p>
+      <nav>
+<iframe class="video" src="https://www.youtube.com/embed/GaS6atPa5co" frameborder="0" allowfullscreen></iframe>
+<!--<iframe class="video" src="https://www.youtube.com/embed/yorgg2ndlvE" frameborder="0" allowfullscreen></iframe>-->
+      </nav>
+      <p>
+
+      </p>
+      <p>
+
+      </p>
+         <a class="linkexterno" href="" target="_blank">
+            <div  class="paginas">
+                  <ul>
+                        <li><a href="array-em-javascript.html">anterior</a></li>
+                        <li>|</li>
+                        <li><a href="index.html">curso</a></li>
+                        <li>|</li>
+                        <li><a href="join-concat-em-javascript.html">próxima</a></li>
+                  </ul>
+            </div>
+      </section>
+</section>
+     <footer>
+          <div class="rodape">
+               <img src="../../css/img/001.png">
+               2017 Em Busca do Código
+          </div>
+          <nav class="redes">
+               <ul>
+                    <li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../img/007.png"></a></li>
+		          <li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../img/008.png"></a></li>
+		          <li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../img/009.png"></a></li>
+		          <li><a href="https://www.instagram.com/alamvianna/" target="_blank"><img src="../../img/010.png"></a></li>
+		          <li><a href="https://www.twitter.com/alamvianna/" target="_blank"><img src="../../img/011.png"></a></li>
+	          </ul>
+          </nav>
+     </footer> <!--Fim do rodape-->
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+<iframe class="propmeio2" src="prop/iframepropdois.html" width="728" height="120px" frameborder='0' scrolling="no"></iframe>
+	</body>
+</html>

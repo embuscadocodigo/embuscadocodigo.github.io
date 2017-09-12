@@ -1,0 +1,318 @@
+<!--Padrão 30/04/2017 embuscadocodigo.com v2.g
+<a class="linkexterno" href="" target="_blank"></a>
+-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+          <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--titulos-->
+		<title>Substituir getElementById por querySelector. JavaScript dica 30.</title>
+          <meta name="twitter:title" content="Substituir getElementById por querySelector. JavaScript dica 30.">
+<!--descrição-->
+          <meta property="og:description" content="QuerySlector é um método JavaScript que retorna o primeiro elemento filho de um determinado seletor CSS previamente especificado"/>
+          <meta name="twitter:description" content="QuerySlector é um método JavaScript que retorna o primeiro elemento filho de um determinado seletor CSS previamente especificado">
+<!--Palavras chave-->
+          <meta name="keywords" content="JS, JavaScript, Curso de JavaScript, curso de javascript gratuito, querySlector">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/javascript/querySelector-javascript-dica-30.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="http://embuscadocodigo.com/css/img/001.png">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/javascript/img/js30.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/javascript/img/js30.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="../../css/reset.css">
+          <link rel="stylesheet" href="../../css/hefo.css">
+          <link rel="stylesheet" href="../../css/novo.css">
+          <link rel="stylesheet" href="../../css/erro.css">
+          <link rel="stylesheet" href="../../css/fonte.css">
+          <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@alamvianna">
+     </head>
+     <body>
+    <header>
+        <nav class="cabecalho">
+            <ul>
+                <li><a href="../../index.html">home</a></li>
+                <li>|</li>
+                <li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+                <li>|</li>
+                <li><a href="../../sobre.html">Sobre</a></li>
+                <li>|</li>
+                <li><a href="../../codigos.html">Códigos</a></li>
+            </ul>
+            <section class="linhamenus">
+            </section>
+        </nav>
+    </header>
+    <section class="jah jah2">
+        <p>O Em Busca do Código é um site em formato de plataforma de ensino a distância (EAD), totalmente aberta e gratuita.
+        <br><br>
+        Aprendendo e ensinando, essa é a minha regra para mim.
+        <br><br>
+         Publicado dia 09 de julho de 2017.</p>
+    </section>
+    <section class="adesivo adesivo2">
+        <a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+          <p>Compre um adesivo do Em Busca do Código.</p>
+        </a>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe  src="prop/prolat.html" width="250" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+    <section class="prolatgo cachorro" >
+        <p>Publicidade</p>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- EBC JS--> 
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:336px;height:280px"
+             data-ad-client="ca-pub-5020252132627432"
+             data-ad-slot="6229362170"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe src="prop/prolatdaddy.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+<section class="paragrafoscodigos">
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="capturar-valor-digitado-javascript.html">anterior</a></li>
+                <li>|</li>
+                <li><a href="index.html">curso</a></li>
+            </ul>
+        </nav>
+    </section>
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+    <h1>Substituir getElementById por querySelector. JavaScript dica 30 </h1>
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+    <p>
+Bem vindo a dica 30 de JavaScript da Em Busca do Código, nosso canal exclusivo de programação e tecnologia.
+    </p>
+    <p class="cabe">
+O vídeo complementa o texto e o texto completa o vídeo, assista.
+    </p>
+    <div>
+<iframe class="video" src="https://www.youtube.com/embed/f2DTeI8mHYE" frameborder="0" allowfullscreen></iframe>
+<!-- class="video" -->
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+    <p>
+E como o título já diz, nessa dica nós iremos substituir getElementById por querySelector. Para realizar esta dica você precisa de um arquivo HTML linkando um .js. O editor de texto que utilizo é o open source Brackets e o navegador é o Mozilla Firefox. Mas nesta dica você pode utilizar o editor e navegador de sua preferência.
+    </p>
+    <h2>O que é querySelector?</h2>
+    <p>
+QuerySlector é um método JavaScript que retorna o primeiro elemento filho de um determinado seletor CSS previamente especificado, mas vamos primeiro exemplo.
+    </p>
+    <p>
+Nosso primeiro exemplo consiste em pegar o código fonte da nossa dica anterior e substituir o getElementById por querySelector.
+    </p>
+    <p>
+Só lembrando que:
+    </p>
+    <div class="fonte">
+&lt;h1&gt;Pegar valor digitado utilizando JavaScript. Dica 29&lt;/h1&gt;<br />
+&lt;input type="text" id=valor&gt;<br />
+&lt;input type="submit" onclick="capturar()" value="escreva algo"&gt;<br />
+&lt;p id="valorDigitado"&gt;&lt;/p&gt;<br />
+    </div>
+    <p>
+Na dica anterior nós acabamos de "transformar" o que é digitado pelo usuário em uma variável. E vamos fazer a mesma coisa agora. O que iremos mudar é apenas no JavaScript.
+    </p>
+    <div class="fonte">
+var capturando = "";<br />
+function capturar () {<br />
+&nbsp;&nbsp;&nbsp; capturando = document.getElementById('valor').value;<br />
+&nbsp;&nbsp;&nbsp; document.getElementById('valorDigitado').innerHTML = capturando;<br />
+}<br />
+    </div>
+    <p>
+A única informação que alteramos inicialmente é, substituir getElementById por querySelector.
+    </p>
+    <div class="fonte">
+capturando = document.querySelector('valor').value;<br />
+document.querySelector('valorDigitado').innerHTML = capturando;<br />
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p>
+GetElementById é apenas uma variante de getElementBy, que só trabalha com IDs, substituindo-o por querySelector poderemos trabalhar com class (classes), poderemos trabalhar com elemenmos como a tag p.
+    </p>
+    <p>
+Mas do jeito que está ainda não funciona. Precisamos informar qual elemento HTML estamos selecionando. Para este primeiro exemplo ficar mais legal, vou substituir o ID da tag p deste elemento por uma classe.
+    </p>
+    <div class="fonte">
+&lt;p class="valorDigitado"&gt;&lt;/p&gt;
+    </div>
+    <p>
+Agora sim eu vou informar que valor é um ID e valorDigitado uma classe e que valor é um ID.
+    </p>
+    <div class="fonte">
+capturando = document.querySelector('#valor').value;<br />
+document.querySelector('.valorDigitado').innerHTML = capturando;<br />
+    </div>
+    <p>
+Vale a pena salientar que, com querySelector nós poderíamos gerenciar o conteúdo exclusivamente da tag p, mas vamos deixar assim por enquanto, teste em seu navegador.
+    </p>
+    <h2>Segundo exemplo</h2>
+    <p>
+Em nosso segundo exemplo nós teremos uma &lt;div&gt; com um &lt;h2&gt; e uma &lt;p&gt; como filhos, e ambos os filhos recebem a mesma classe. Isso é claro, nem nosso doc HTML.
+    </p>
+    <div class="fonte">
+&lt;div class="a-partir-dessa"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;h2 class="ok"&gt;Oi, eu sou uma tag h2&lt;/h2&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;p class="ok"&gt;Oi, eu sou uma tag p&lt;/p&gt;<br />
+&lt;/div&gt;<br />
+    </div>
+    <p>
+Logo em seguida criamos um botão com um evento onclick que, a partir dele iremos utilizar nosso querySelector para da primeira tag filho da nossa &lt;div&gt;.
+    </p>
+    <div class="fonte">
+&lt;input type="button" onclick="funcao()" value="Click"&gt;
+    </div>
+    <p>
+Agora vamos ao .js. Em nosso JS criamos a função que acabamos de declarar no HTML.
+    </p>
+    <div class="fonte">
+&nbsp;function funcao() {<br />
+<br />
+}<br />
+    </div>
+    <p>
+Vou fazer algo "diferente" nesse exemplo, que é utilizar uma variável local. O valor dessa variável irá alterar o valor do primeiro elemento CSS que foi especificado.
+    </p>
+    <div class="fonte">
+let a = document.querySelector(".a-partir-dessa");
+    </div>
+    <p>
+Sim, estamos selecionando a &lt;div&gt; com querySelector, e na próxima linha do nosso código fonte nós informamos um valor a nossa variável local, só que, já informando que, esse valor, depois do click irá substituir o que está escrito no primeiro elemento filho da nossa &lt;div&gt;.
+    </p>
+    <div class="fonte">
+a.querySelector(".ok").innerHTML = "querySelector no primeiro elemento";
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p>
+Essas duas últimas linhas de código dentro da função. Teste em seu navegador.
+    </p>
+    <p>
+Testando conseguimos ver que somente o valor da primeira tag filho foi alterado, que por algum acaso é uma tag h2. Insira a tag p (segunda tag filho) antes da tag h2 e veja novamente e abra novamente o HTML para conferir que, dessa vez é alterado o que está escrito da tag p.
+    </p>
+    <p>
+Tem muito mais informação que poderia passar sobre querySelector, mas essa dica fica por aqui. No percorrer dessas 100 dicas de JavaScript utilizaremos mais querySelector, muitas vezes, em sua maioria, o método querySelector nem estará no título, mas, estaremos utilizando para chegar ao resultado das próximas dicas.
+    </p>
+    <p>
+A seguir temos uma ampla gama de fontes sobre querySelector, li todas que estou passando para vocês, algumas são bem pequenas, outras bem mais elaboradas. Todos os links das fontes abrem em outra aba.
+    </p>
+    <p>
+Fontes (abrem em outra aba):
+    </p>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+<a class="linkexterno" href="https://cursos.alura.com.br/forum/topico-duvida-getelementby-vs-queryselector-29604" target="_blank">Forum Alura: getElementById vs querySelector</a><br>
+<a class="linkexterno" href="https://www.w3schools.com/jsref/met_element_queryselectorall.asp" target="_blank">W3C: querySelectAll</a><br>
+<a class="linkexterno" href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll" target="_blank">Mozilla: querySelectorAll (document.)</a><br>
+<a class="linkexterno" href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">W3C: Seletores CSS</a><br>
+<a class="linkexterno" href="https://www.w3schools.com/jsref/met_element_queryselector.asp" target="_blank">W3C: querySelector</a><br>
+<a class="linkexterno" href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector" target="_blank">Mozilla: querySelector</a><br>
+<a class="linkexterno" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll" target="_blank">Mozilla: querySelectorAll (element.)</a><br>
+<a class="linkexterno" href="http://desenvolvimentoparaweb.com/javascript/conhecimentos-essenciais-javascript-para-quem-ja-usa-jquery/" target="_blank">Desenvolvimento para Web: Conhecimentos "avançados"</a><br>
+<a class="linkexterno" href="http://www.devfuria.com.br/javascript/dom-nodelist/" target="_blank">Dev Furia: nodelist</a><br>
+<a class="linkexterno" href="https://www.turbosite.com.br/blog/10-dicas-de-como-escrever-javascript-sem-jquery/" target="_blank">Turbo Site: Escrever JavaScript.</a><br>
+    <p>
+Chegamos a mais de 1000 inscritos no YouTube, se você é uma dessas pessoas inscritas, desde já meu muito obrigado. Ainda esse mÊs teremos um vídeo um pouco diferente por causa disso, espero que goste.
+    </p>
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="capturar-valor-digitado-javascript.html">anterior</a></li>
+                <li>|</li>
+                <li><a href="index.html">curso</a></li>
+            </ul>
+        </nav>
+    </section>
+</section>
+<form class="procurar">
+      <script>
+        (function() {
+          var cx = '003467032773945451414:czc04qxogy0';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+              '//cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+</form> <!--Fim do form de pesquisa-->
+     <footer>
+          <div class="rodape">
+               <img src="../../css/img/001.png">
+               2017 Em Busca do Código
+          </div>
+          <nav class="redes">
+               <ul>
+                    <li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../img/007.png"></a></li>
+		          <li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../img/008.png"></a></li>
+		          <li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../img/009.png"></a></li>
+		          <li><a href="https://www.instagram.com/alamvianna/" target="_blank"><img src="../../img/010.png"></a></li>
+		          <li><a href="https://www.twitter.com/alamvianna/" target="_blank"><img src="../../img/011.png"></a></li>
+	          </ul>
+          </nav>
+     </footer>
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+<iframe class="propmeio2" src="prop/iframepropdois.html" width="728" height="120px" frameborder='0' scrolling="no"></iframe>
+	</body>
+</html>

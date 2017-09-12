@@ -1,0 +1,341 @@
+<!--Padrão 09/02/2017 embuscadocodigo.com v0.5-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+          <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--titulos-->
+		<title>Listar com for ou forEach? JavaScript dica 15</title>
+          <meta name="twitter:title" content="Listar com for ou forEach? JavaScript dica 15">
+<!--descrição-->
+          <meta property="og:description" content="Nesta dica listamos os elementos de um array em JavaScript utilizando for e forEach."/>
+          <meta name="twitter:description" content="Nesta dica listamos os elementos de um array em JavaScript utilizando for e forEach.">
+<!--Palavras chave-->
+          <meta name="keywords" content="Curso de JavaScript, javascript,  js, for, foreach, listar, elemento, elementos, array, arrays">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/javascript/listar-com-for-ou-foreach-javascript.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="http://embuscadocodigo.com/css/img/001.png">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/javascript/img/js15.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/javascript/img/js15.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="../../css/reset.css">
+          <link rel="stylesheet" href="../../css/hefo.css">
+          <link rel="stylesheet" href="../../css/novo.css">
+          <link rel="stylesheet" href="../../css/erro.css">
+          <link rel="stylesheet" href="../../css/fonte.css">
+          <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@alamvianna">
+     </head>
+     <body>
+    <header>
+        <nav class="cabecalho">
+            <ul>
+                <li><a href="../../index.html">home</a></li>
+                <li>|</li>
+                <li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+                <li>|</li>
+                <li><a href="../../sobre.html">Sobre</a></li>
+                <li>|</li>
+                <li><a href="../../codigos.html">Códigos</a></li>
+            </ul>
+            <section class="linhamenus">
+            </section>
+        </nav>
+    </header>
+    <section class="jah jah2">
+        <p>O Em Busca do Código é um site em formato de plataforma de ensino a distância (EAD), totalmente aberta e gratuita.
+        </br></br>
+        Aprendendo e ensinando, essa é a minha regra para mim.
+        </br></br>
+         Publicado dia 12 de março de 2017.</p>
+    </section>
+    <section class="adesivo adesivo2">
+        <a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+          <p>Compre um adesivo do Em Busca do Código.</p>
+        </a>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe  src="prop/prolat.html" width="250" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+    <section class="prolatgo cachorro" >
+        <p>Publicidade</p>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- EBC JS--> 
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:336px;height:280px"
+             data-ad-client="ca-pub-5020252132627432"
+             data-ad-slot="6229362170"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe src="prop/prolatdaddy.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+<section class="paragrafoscodigos">
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="buscar-elemento-array-javascript.html">anterior</a></li>
+                <li>|</li>
+                <li><a href="index.html">curso</a></li>
+                <li>|</li>
+                <li><a href="while-e-do-while-em-javascript.html">próxima</a></li>
+            </ul>
+        </nav>
+    </section>
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+    <h1>Listar com for ou forEach? JavaScript dica 15</h1>
+    <p>
+Nesta dica listamos os elementos de um array em JavaScript utilizando for e forEach.
+    </p>
+    <p class="cabe">Assista ao vídeo:</p>
+    <div>
+<iframe class="video" src="https://www.youtube.com/embed/_Awo-sZmtKk" frameborder="0" allowfullscreen></iframe>
+<!--<iframe class="video" src="https://www.youtube.com/embed/yorgg2ndlvE" frameborder="0" allowfullscreen></iframe>-->
+    </div>
+    <p>
+Se você caiu nesta dica de paraquedas preciso informar que este é um curso em formato de dicas e, eu ainda não nenhum exemplo do laço de repetição for.
+    </p>
+    <p>
+A seguir temos o código fonte HTML necessário para realizar esta dica.
+    </p>
+    <div class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;for e forEach&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="UTF-8"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;for e forEach&lt;/h1&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script src="for.js"&gt;&lt;/script&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+    </div>
+    <p>
+E a seguir o código fonte JS inicial desta dica.
+    </p>
+    <div class="fonte">
+document.write("&lt;h1&gt;*********************** Exemplo básico de for **********************&lt;/h1&gt;");<br />
+<br />
+<br />
+<br />
+document.write("&lt;h1&gt;******************** Listando array com forEach ********************&lt;/h1&gt;");<br />
+<br />
+var array1 = new Array("oi tudo bem?","teste teste","em busca","Busca",<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "do do do","código go goW","teste","codigo");<br />
+document.write("&lt;h1&gt;Array Exemplo:&lt;/br&gt;"+array1.join(" - ")+"&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/h1&gt;");<br />
+<br />
+<br />
+<br />
+document.write("&lt;h1&gt;********************** Listando array com for **********************&lt;/h1&gt;");<br />
+<br />
+var array2 = new Array("oi tudo bem?","teste teste","em busca","Busca",<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "do do do","código go goW","teste","codigo");<br />
+<br />
+document.write("&lt;h1&gt;Array Exemplo:&lt;/br&gt;"+array2.join(" - ")+"&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/h1&gt;");<br />
+    </div>
+    <h2>for</h2>
+    <p>
+Para utilizar um for em JavaScript precisamos criar uma variável. Eu posso criar essa variável dentro do for, mas nesse exemplo vou cria-la fora do meu laço de repetição.
+    </p>
+    <div class="fonte">
+var x;
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p>
+Como é um exemplo básico vamos fazer o for contar de 0 (zero) até 10.
+    </p>
+    <div class="fonte">
+for (x=0; x&lt;=10; x++) {<br />
+&nbsp;&nbsp;&nbsp; document.write("&lt;h1&gt;"+x+"&lt;/h1&gt;");<br />
+}<br />
+    </div>
+    <p>
+Eu utilizei um document.write para mostrar o resultado em nosso navegador, mas vale a pena lembrar que você pode utilizar um alert ou até console.log. Também utilizei a tag h1 para que os números apareçam maiores no vídeo.
+    </p>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+    <h2>forEach</h2>
+    <p>
+Agora vamos conferir um exemplo de listar os elementos de um array em JavaScript utilizando o método forEach.
+    </p>
+    <p>
+forEach é um método, então, antes de tudo, eu preciso declarar o meu objeto.
+    </p>
+    <div class="fonte">
+array1.
+    </div>
+    <p>
+Agora sim declarar o método forEach.
+    </p>
+    <div class="fonte">
+array1.forEach();
+    </div>
+    <p>
+Para que o meu forEach funcione eu preciso criar uma função dentro dele e, declarar dois parâmetros.
+    </p>
+    <div class="fonte">
+array1.forEach(function(valor,indice) {});<br />
+    </div>
+    <p>
+O primeiro parâmetro é relacionado ao valor de cada elemento do array, e o segundo parâmetro ao índice de cada elemento.
+    </p>
+    <p>
+E como já é um padrão deste curso de dicas, utilizo outro document.write para para mostrar o resultado do nosso forEach.
+    </p>
+    <div class="fonte">
+array1.forEach(function(valor,indice) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.write("&lt;h1&gt;Índice: "+indice+". Valor: "+valor+"&lt;/h1&gt;");<br />
+});<br />
+    </div>
+    <p>
+Quando for listar os elementos de um array em JavaScript é indicado que se utilize forEach e não for. Mas por uma questão de didática, vamos conferir um exemplo onde listamos os elementos de um array a partir de um for.
+    </p>
+    <p>
+Primeiramente crio uma variável.
+    </p>
+    <div class="fonte">
+var d;
+    </div>
+    <p>
+Crio o meu laço for.
+    </p>
+    <div class="fonte">
+for (d=0; d&lt;=array2.length; d++) {};
+    </div>
+    <p>
+Neste for eu utilizei o método lenght, pois assim o nosso for terá como base a quantidade de elementos que nosso array tem.
+    </p>
+    <p>
+E para mostrar o resultado um document.write dentro do for.
+    </p>
+    <div class="fonte">
+document.write("&lt;h1&gt;Índice: "+d+". Valor: "+array2[d]+"&lt;/h1&gt;");
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p class="cabe">Código fonte JavaScript (completo)</p>
+    <div class="fonte">
+document.write("&lt;h1&gt;*****************************************************************&lt;/br&gt;*********************** Exemplo básico de for **********************&lt;/br&gt;*****************************************************************&lt;/h1&gt;");<br />
+<br />
+var x;<br />
+for (x=0; x&lt;=10; x++) {<br />
+&nbsp;&nbsp;&nbsp; document.write("&lt;h1&gt;"+x+"&lt;/h1&gt;");<br />
+}<br />
+<br />
+document.write("&lt;h1&gt;*****************************************************************&lt;/br&gt;******************** Listando array com forEach ********************&lt;/br&gt;*****************************************************************&lt;/h1&gt;");<br />
+<br />
+var array1 = new Array("oi tudo bem?","teste teste","em busca","Busca",<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "do do do","código go goW","teste","codigo");<br />
+document.write("&lt;h1&gt;Array Exemplo:&lt;/br&gt;"+array1.join(" - ")+"&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/h1&gt;");<br />
+<br />
+array1.forEach(function(valor,indice) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.write("&lt;h1&gt;Índice: "+indice+". Valor: "+valor+"&lt;/h1&gt;");<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; });<br />
+<br />
+document.write("&lt;h1&gt;*****************************************************************&lt;/br&gt;********************** Listando array com for **********************&lt;/br&gt;*****************************************************************&lt;/h1&gt;");<br />
+<br />
+var array2 = new Array("oi tudo bem?","teste teste","em busca","Busca",<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "do do do","código go goW","teste","codigo");<br />
+<br />
+document.write("&lt;h1&gt;Array Exemplo:&lt;/br&gt;"+array2.join(" - ")+"&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/h1&gt;");<br />
+<br />
+var d;<br />
+<br />
+for (d=0; d&lt;=array2.length; d++) {<br />
+&nbsp;&nbsp;&nbsp; document.write("&lt;h1&gt;Índice: "+d+". Valor: "+array2[d]+"&lt;/h1&gt;");<br />
+&nbsp;&nbsp;&nbsp; <br />
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+    <h2>Dica</h2>
+    <p>
+Em dicas anteriores eu já falei que este código fonte é seu, então, a primeira dica que eu dou é que você altere os nomes dos arrays. Já vimos alguns métodos ao decorrer dessas 15 primeiras dicas, então que tal você listar os elementos desse array em ordem crescente e decrescente?
+    </p>
+    <p>
+Espero que esta dica tenha sido útil.
+    </p>
+    <!--<a class="linkexterno" href="" target="_blank"></a>-->
+    <section>
+    <nav  class="paginas">
+        <ul>
+            <li><a href="buscar-elemento-array-javascript.html">anterior</a></li>
+            <li>|</li>
+            <li><a href="index.html">curso</a></li>
+                <li>|</li>
+                <li><a href="while-e-do-while-em-javascript.html">próxima</a></li>
+        </ul>
+    </nav>
+    </section>
+</section>
+     <footer>
+          <div class="rodape">
+               <img src="../../css/img/001.png">
+               2017 Em Busca do Código
+          </div>
+          <nav class="redes">
+               <ul>
+                    <li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../img/007.png"></a></li>
+		          <li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../img/008.png"></a></li>
+		          <li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../img/009.png"></a></li>
+		          <li><a href="https://www.instagram.com/alamvianna/" target="_blank"><img src="../../img/010.png"></a></li>
+		          <li><a href="https://www.twitter.com/alamvianna/" target="_blank"><img src="../../img/011.png"></a></li>
+	          </ul>
+          </nav>
+     </footer>
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+<iframe class="propmeio2" src="prop/iframepropdois.html" width="728" height="120px" frameborder='0' scrolling="no"></iframe>
+	</body>
+</html>

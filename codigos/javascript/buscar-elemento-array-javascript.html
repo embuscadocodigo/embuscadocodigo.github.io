@@ -1,0 +1,333 @@
+<!--Padrão 09/02/2017 embuscadocodigo.com v0.5-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+          <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--titulos-->
+		<title>Buscar elemento de um array em JavaScript. Dica 14</title>
+          <meta name="twitter:title" content="Buscar elemento de um array em JavaScript. Dica 14">
+<!--descrição-->
+          <meta property="og:description" content="Nesta dica nós vemos como buscar um determinado elemento de um array em JavaScript."/>
+          <meta name="twitter:description" content="Nesta dica nós vemos como buscar um determinado elemento de um array em JavaScript.">
+<!--Palavras chave-->
+          <meta name="keywords" content="Curso de JavaScript, javascript, indexof, lastindexof, js">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/javascript/buscar-elemento-array-javascript.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="http://embuscadocodigo.com/css/img/001.png">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/javascript/img/js14.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/javascript/img/js14.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="../../css/reset.css">
+          <link rel="stylesheet" href="../../css/hefo.css">
+          <link rel="stylesheet" href="../../css/novo.css">
+          <link rel="stylesheet" href="../../css/erro.css">
+          <link rel="stylesheet" href="../../css/fonte.css">
+          <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@alamvianna">
+     </head>
+     <body>
+    <header>
+        <nav class="cabecalho">
+            <ul>
+                <li><a href="../../index.html">home</a></li>
+                <li>|</li>
+                <li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+                <li>|</li>
+                <li><a href="../../sobre.html">Sobre</a></li>
+                <li>|</li>
+                <li><a href="../../codigos.html">Códigos</a></li>
+            </ul>
+            <section class="linhamenus">
+            </section>
+        </nav>
+    </header>
+    <section class="jah jah2">
+        <p>O Em Busca do Código é um site em formato de plataforma de ensino a distância (EAD), totalmente aberta e gratuita.
+        </br></br>
+        Aprendendo e ensinando, essa é a minha regra para mim.
+        </br></br>
+         Publicado dia 05 de março de 2017.</p>
+    </section>
+    <section class="adesivo adesivo2">
+        <a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+          <p>Compre um adesivo do Em Busca do Código.</p>
+        </a>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe  src="prop/prolat.html" width="250" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+    <section class="prolatgo cachorro" >
+        <p>Publicidade</p>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- EBC JS--> 
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:336px;height:280px"
+             data-ad-client="ca-pub-5020252132627432"
+             data-ad-slot="6229362170"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe src="prop/prolatdaddy.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+<section class="paragrafoscodigos">
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="ordenar-array-javascript.html">anterior</a></li>
+                <li>|</li>
+                <li><a href="index.html">curso</a></li>
+                <li>|</li>
+                <li><a href="listar-com-for-ou-foreach-javascript.html">próxima</a></li>
+            </ul>
+        </nav>
+    </section>
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+    <h1>Buscar elemento de um array em JavaScript. Dica 14</h1>
+    <p>
+Nesta dica nós vemos como buscar um determinado elemento de um array em JavaScript.
+    </p>
+    <p>
+O código fonte HTML inicial é o código fonte abaixo.
+    </p>
+    <div class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;indexof e lastIndexOf&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="UTF-8"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;indexof e lastIndexOf&lt;/h1&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script src="busca.js"&gt;&lt;/script&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+    </div>
+    <p>
+E seguindo o padrão deste curso em formato de dicas, a seguir temos o código fonte JavaScript inicial.
+    </p>
+    <div class="fonte">
+var array1 = new Array("oi","teste","em","Busca","do","código","teste","codigo");<br />
+<br />
+document.write("&lt;h1&gt;"+ array1.join(" - ") +"&lt;/h1&gt;");<br />
+    </div>
+    <h2>Método indexOf</h2>
+    <p>
+Para busca um elementos de um array em JS eu vou criar uma variável e chama-la de busca.
+    </p>
+    <div class="fonte">
+var busca =
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p>
+Agora é necessário informar o array que quero busca o elemento e sem seguida declaro o método indexOf.
+    </p>
+    <div class="fonte">
+var busca = array1.indexOf();
+    </div>
+    <p>
+Mas precisamos informar o que nós queremos buscar, e eu faço isso dentro do parênteses e entre aspas duplas.
+    </p>
+    <div class="fonte">
+var busca = array1.indexOf("Busca");
+    </div>
+    <p>
+Agora falta nós mostrarmos o valor buscado em nosso navegador, eu estou utilizando document.write, mas você pode usar alert, console.log...
+    </p>
+    <div class="fonte">
+document.write("&lt;h1&gt;Índice: "+busca+"&lt;/h1&gt;");
+    </div>
+    <p>
+Vendo o resultado deste código fonte em nosso navegador nós vemos que o que apareceu foi o índice do elemento e não o elemento em si, e como é mais legal aparecer o elemento buscado, vamos alterar um pouquinho nosso document.write.
+    </p>
+    <div class="fonte">
+document.write("&lt;h1&gt;Índice: "+busca+", valor buscado: "+array1[busca]+"&lt;/h1&gt;");
+    </div>
+    <p>
+O método indexOf é case sensitive e para deixar isso bem claro, agora buscaremos a palavra busca, só que agora com letra minúscula.
+    </p>
+    <div class="fonte">
+var busca02 = array1.indexOf("busca");<br />
+document.write("&lt;h1&gt;Índice: "+busca02+", valor buscado: "+array1[busca02]+"&lt;/h1&gt;");
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+    <p>
+Ao buscar com indexOf algo que não exista, o índice informado no resultado dessa busca será -1, e como não existe array com índice -1 em JavaScript o seu valor será indefinido. Teste e veja o resultado.
+    </p>
+    <p>
+Em nosso array exemplo vemos duas vezes a palavra código, só que, um com e outra sem acento. Inseri este exemplo para vermos que existe diferenciação entre buscar algo com e sem acento. Mas vamos ao exemplo.
+    </p>
+    <div class="fonte">
+var busca03 = array1.indexOf("codigo");<br />
+document.write("&lt;h1&gt;Índice: "+busca03+", valor buscado: "+array1[busca03]+"&lt;/h1&gt;");
+<br />
+<br />
+var busca04 = array1.indexOf("código");<br />
+document.write("&lt;h1&gt;Índice: "+busca04+", valor buscado: "+array1[busca04]+"&lt;/h1&gt;");
+    </div>
+    <p>
+Para facilitar o entendimento neste caso especifico, inseri o resultado que aparecerá no navegador aqui mesmo. Caso ainda fique com dúvida, assista ao vídeo.
+    </p>
+    <div class="fonte">
+Índice: 7, valor buscado: codigo<br />
+Índice: 5, valor buscado: código<br />
+    </div>
+    <p>
+O método indexOf busca o elemento a partir do primeiro índice, o índice 0 (zero). E com este exemplo vemos que existe diferença entre buscar palavras com ou sem acento utilizando o método indexOf.
+    </p>
+    <p>
+Em nosso array exemplo vemos que o elemento do índice 1 tem o mesmo valor que o elemento do índice 6. Esse exemplo foi inserido para nós vermos nosso próximo método.
+    </p>
+    <h2>Método lastIndexOf</h2>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p>
+Agora vamos buscar a palavra teste duas vezes, uma utilizando o método indexOf e outra lastIndexOf.
+    </p>
+    <div class="fonte">
+var busca05 = array1.indexOf("teste");<br />
+document.write("&lt;h1&gt;indexOf: "+busca05+", valor buscado: "+array1[busca05]+"&lt;/h1&gt;");<br />
+<br />
+var busca06 = array1.lastIndexOf("teste");<br />
+document.write("&lt;h1&gt;lasIndexOf: "+busca06+", valor buscado: "+array1[busca06]+"&lt;/h1&gt;");
+    </div>
+    <p>
+A diferença está no índice que será mostrado, indexOf começa a buscar a partir do elemento de índice 0 (zero), já lastIndexOf começa a busca de trás para frente, a partir do último elemento. Segue o resultado que aparecerá em seu computador.
+    </p>
+    <div class="fonte">
+indexOf: 1, valor buscado: teste<br />
+lasIndexOf: 6, valor buscado: teste<br />
+    </div>
+    <p>
+Caso tenha ficado alguma dúvida não hesite em assistir o vídeo.
+    </p>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+    <p class="cabe">Assista ao vídeo:</p>
+    <div>
+<iframe class="video" src="https://www.youtube.com/embed/xUMG4AoLiMo" frameborder="0" allowfullscreen></iframe>
+<!--<iframe class="video" src="https://www.youtube.com/embed/yorgg2ndlvE" frameborder="0" allowfullscreen></iframe>-->
+    </div>
+    <p class="cabe">Código fonte JavaScript (completo)</p>
+    <div class="fonte">
+var array1 = new Array("oi","teste","em","Busca",<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "do","código","teste","codigo");<br />
+<br />
+document.write("&lt;h1&gt;"+ array1.join(" - ") +"&lt;/h1&gt;");<br />
+<br />
+var busca = array1.indexOf("Busca");<br />
+document.write("&lt;h1&gt;Índice: "+busca+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", valor buscado: "+array1[busca]+"&lt;/h1&gt;");<br />
+<br />
+var busca02 = array1.indexOf("busca");<br />
+document.write("&lt;h1&gt;Índice: "+busca02+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", valor buscado: "+array1[busca02]+"&lt;/h1&gt;");<br />
+<br />
+var busca03 = array1.indexOf("codigo");<br />
+document.write("&lt;h1&gt;Índice: "+busca03+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", valor buscado: "+array1[busca03]+"&lt;/h1&gt;");<br />
+<br />
+var busca04 = array1.indexOf("código");<br />
+document.write("&lt;h1&gt;Índice: "+busca04+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", valor buscado: "+array1[busca04]+"&lt;/h1&gt;");<br />
+<br />
+var busca05 = array1.indexOf("teste");<br />
+document.write("&lt;h1&gt;indexOf: "+busca05+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", valor buscado: "+array1[busca05]+"&lt;/h1&gt;");<br />
+<br />
+var busca06 = array1.lastIndexOf("teste");<br />
+document.write("&lt;h1&gt;lasIndexOf: "+busca06+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", valor buscado: "+array1[busca06]+"&lt;/h1&gt;");<br />
+    </div>
+    <h2>Dica</h2>
+    <p>
+O array é seu, o código fonte é seu, não hesite em brincar com ele. Mude o nome da variável, os valores do array. Obs: Reparou que utilizei o join diretamente no array?
+    </p>
+    <p>
+Espero que esta dica tenha sido útil.
+    </p>
+    <!--<a class="linkexterno" href="" target="_blank"></a>-->
+    <section>
+    <nav  class="paginas">
+        <ul>
+            <li><a href="ordenar-array-javascript.html">anterior</a></li>
+            <li>|</li>
+            <li><a href="index.html">curso</a></li>
+                <li>|</li>
+                <li><a href="listar-com-for-ou-foreach-javascript.html">próxima</a></li>
+        </ul>
+    </nav>
+    </section>
+</section>
+     <footer>
+          <div class="rodape">
+               <img src="../../css/img/001.png">
+               2017 Em Busca do Código
+          </div>
+          <nav class="redes">
+               <ul>
+                    <li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../img/007.png"></a></li>
+		          <li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../img/008.png"></a></li>
+		          <li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../img/009.png"></a></li>
+		          <li><a href="https://www.instagram.com/alamvianna/" target="_blank"><img src="../../img/010.png"></a></li>
+		          <li><a href="https://www.twitter.com/alamvianna/" target="_blank"><img src="../../img/011.png"></a></li>
+	          </ul>
+          </nav>
+     </footer>
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+<iframe class="propmeio2" src="prop/iframepropdois.html" width="728" height="120px" frameborder='0' scrolling="no"></iframe>
+	</body>
+</html>

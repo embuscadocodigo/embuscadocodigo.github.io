@@ -1,0 +1,242 @@
+<!--Padrão 09/02/2017 embuscadocodigo.com v0.5-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+          <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--titulos-->
+		<title>Remover elemento no inicio ou fim de um array em JavaScripit. Dica 10</title>
+          <meta name="twitter:title" content="Remover elemento no inicio ou fim de um array em JavaScripit. Dica 10">
+<!--descrição-->
+          <meta property="og:description" content="Nesta dica vemos os métodos pop e shift."/>
+          <meta name="twitter:description" content="Nesta dica vemos os métodos pop e shift.">
+<!--Palavras chave-->
+          <meta name="keywords" content="Curso de JavaScript, javascript, array, arrays, document.write, pop, shift, remover, fim, inicio">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/javascript/remover-elemento-no-inicio-ou-fim-javascript.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="http://embuscadocodigo.com/css/img/001.png">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/javascript/img/js10.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/javascript/img/js10.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="../../css/reset.css">
+          <link rel="stylesheet" href="../../css/hefo.css">
+          <link rel="stylesheet" href="../../css/novo.css">
+          <link rel="stylesheet" href="../../css/erro.css">
+          <link rel="stylesheet" href="../../css/fonte.css">
+          <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@alamvianna">
+     </head>
+     <body>
+    <header>
+        <nav class="cabecalho">
+            <ul>
+                <li><a href="../../index.html">home</a></li>
+                <li>|</li>
+                <li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+                <li>|</li>
+                <li><a href="../../sobre.html">Sobre</a></li>
+                <li>|</li>
+                <li><a href="../../codigos.html">Códigos</a></li>
+            </ul>
+            <section class="linhamenus">
+            </section>
+        </nav>
+    </header>
+    <section class="jah jah2">
+        <p>O Em Busca do Código é um site em formato de plataforma de ensino a distância (EAD), totalmente aberta e gratuita.</p>
+        <p>Aprendendo e ensinando, essa é a minha regra para mim.</p>
+    </section>
+    <section class="adesivo adesivo2">
+        <a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+          <p>Compre um adesivo do Em Busca do Código.</p>
+        </a>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe  src="prop/prolat.html" width="250" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+    <section class="prolatgo cachorro" >
+        <p>Publicidade</p>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- EBC JS--> 
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:336px;height:280px"
+             data-ad-client="ca-pub-5020252132627432"
+             data-ad-slot="6229362170"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe src="prop/prolatdaddy.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+<section class="paragrafoscodigos">
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="push-e-unshift-em-javascript.html">anterior</a></li>
+                <li>|</li>
+                <li><a href="index.html">curso</a></li>
+                <li>|</li>
+                <li><a href="reverse-e-slice-em-javascript.html">próxima</a></li>
+            </ul>
+        </nav>
+    </section>
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+    <h1>Remover elemento no inicio ou fim de um array em JavaScripit. Dica 10</h1>
+    <p>
+Nesta dica vemos os métodos pop e shift.
+    </p>
+    <p>
+Quando quisermos, ou melhor, quando precisarmos remover/excluir o ultimo ou primeiro elemento de um array em JavaScript utilizamos os métodos pop ou shift.
+    </p>
+    <h1>Método shift();</h1>
+    <p>
+O método shift é utilizado quando queremos excluir o primeiro elemento de um array em JavaScript.
+    </p>
+    <p>
+Por uma questão de ordem a seguir vemos o código fonte do documento HTML necessário para realizar esta dica.
+    </p>
+    <div class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;Array&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="UTF-8"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;Array parte 5&lt;/h1&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script src="array5.js"&gt;&lt;/script&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+    </div>
+    <p>
+A seguir vemos o arquivo .js inicial, onde já criamos um array com o nome de array5 e utilizamos um document.write para mostra-lo em nosso navegador (pelo documento HTML). E como já vimos em dicas anteriores utilizamos o método join para substituir as vírgulas por espaço e, outro document.write para mostrar essa nova variável que, mostra todos os elementos do nosso array só que, separados por espaço e não por vírgula, faço isso só para ficar mais "bonitinho".
+    </p>
+    <div class="fonte">
+var array5 = new Array("Em","Busca","do","Código");<br />
+document.write("&lt;h1&gt;Array original: "+array5+"&lt;/h1&gt;");<br />
+<br />
+var subvir = array5.join(" ");<br />
+document.write("&lt;h1&gt;Com join: "+ subvir + "&lt;/h1&gt;");<br />
+    </div>
+    <p>
+Agora sim podemos utilizar o método shift para remover o primeiro elemento do array.
+    </p>
+    <div class="fonte">
+document.write("&lt;h1&gt;&lt;/br&gt;NO INICIO shift()&lt;/h1&gt;");<br />
+array5.shift();<br />
+var subvir = array5.join(" ");<br />
+document.write("&lt;h1&gt;Com join: "+ subvir + "&lt;/h1&gt;");<br />
+    </div>
+    <p>
+Se reparar no código fonte acima nós alteramos a variável subvir, a variável "do" join e chamamos ela novamente, assim, novamente os elementos do nosso array aparacem entre espaços e não entre vírgulas.
+    </p>
+    <h1>Método pop();</h1>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p>
+Para remover o ultimo elemento de um array nós utilizamos o método pop.
+    </p>
+    <div class="fonte">
+array5.pop();<br />
+    </div>
+    <p>
+Essa dica número 10 do nosso curso foi curtíssima, mas achei interessante separar esses métodos. Espero que tenha gostado e que tenha sido útil. Compartilhando esse link, além de apoiar o site você poderá ajudar algum amigo que tenha essa dúvida ou que queira aprender JavaScript.
+    </p>
+    <p>
+Eu sei que essas dicas iniciais podem ser chatas, mas temos que conhece-las e, JavaScript é uma linguagem fantástica (quando bem utilizada).
+    </p>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+    <p class="cabe">Assista ao vídeo:</p>
+    <div>
+<iframe class="video" src="https://www.youtube.com/embed/5kmyAiWkox8" frameborder="0" allowfullscreen></iframe>
+<!--<iframe class="video" src="https://www.youtube.com/embed/yorgg2ndlvE" frameborder="0" allowfullscreen></iframe>-->
+    </div>
+    <p class="cabe">Código fonte JavaScript (final)</p>
+    <div class="fonte">
+var array5 = new Array("Em","Busca","do","Código");<br />
+document.write("&lt;h1&gt;Array original: "+array5+"&lt;/h1&gt;");<br />
+<br />
+var subvir = array5.join(" ");<br />
+document.write("&lt;h1&gt;Com join: "+ subvir + "&lt;/h1&gt;");<br />
+<br />
+document.write("&lt;h1&gt;&lt;/br&gt;NO INICIO shift()&lt;/h1&gt;");<br />
+array5.shift();<br />
+var subvir = array5.join(" ");<br />
+document.write("&lt;h1&gt;Com join: "+ subvir + "&lt;/h1&gt;");<br />
+<br />
+document.write("&lt;h1&gt;&lt;/br&gt;REMOVER NO FIM pop()&lt;/h1&gt;");<br />
+array5.pop();<br />
+var subvir = array5.join(" ");<br />
+document.write("&lt;h1&gt;Com join: "+ subvir + "&lt;/h1&gt;");<br />
+    </div>
+    <a class="linkexterno" href="" target="_blank">
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="push-e-unshift-em-javascript.html">anterior</a></li>
+                <li>|</li>
+                <li><a href="index.html">curso</a></li>
+                <li>|</li>
+                <li><a href="reverse-e-slice-em-javascript.html">próxima</a></li>
+            </ul>
+        </nav>
+    </section>
+</section>
+     <footer>
+          <div class="rodape">
+               <img src="../../css/img/001.png">
+               2017 Em Busca do Código
+          </div>
+          <nav class="redes">
+               <ul>
+                    <li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../img/007.png"></a></li>
+		          <li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../img/008.png"></a></li>
+		          <li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../img/009.png"></a></li>
+		          <li><a href="https://www.instagram.com/alamvianna/" target="_blank"><img src="../../img/010.png"></a></li>
+		          <li><a href="https://www.twitter.com/alamvianna/" target="_blank"><img src="../../img/011.png"></a></li>
+	          </ul>
+          </nav>
+     </footer>
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+<iframe class="propmeio2" src="prop/iframepropdois.html" width="728" height="120px" frameborder='0' scrolling="no"></iframe>
+	</body>
+</html>

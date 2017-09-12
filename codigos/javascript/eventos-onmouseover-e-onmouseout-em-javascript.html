@@ -1,0 +1,250 @@
+<!--Padrão 09/02/2017 embuscadocodigo.com v0.5
+
+-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+          <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--titulos-->
+		<title>Eventos onmouseover e onmouseout em JavaScript. Dica 19</title>
+          <meta name="twitter:title" content="Eventos onmouseover e onmouseout em JavaScript. Dica 19">
+<!--descrição-->
+          <meta property="og:description" content="Mais dois eventos em JavaScript relacionados ao mouse."/>
+          <meta name="twitter:description" content="Mais dois eventos em JavaScript relacionados ao mouse.">
+<!--Palavras chave-->
+          <meta name="keywords" content="Curso de JavaScript, javascript,  js, onmouseover, onmouseout">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/javascript/eventos-onmouseover-e-onmouseout-em-javascript.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="http://embuscadocodigo.com/css/img/001.png">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/javascript/img/js19.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/javascript/img/js19.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="../../css/reset.css">
+          <link rel="stylesheet" href="../../css/hefo.css">
+          <link rel="stylesheet" href="../../css/novo.css">
+          <link rel="stylesheet" href="../../css/erro.css">
+          <link rel="stylesheet" href="../../css/fonte.css">
+          <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@alamvianna">
+     </head>
+     <body>
+    <header>
+        <nav class="cabecalho">
+            <ul>
+                <li><a href="../../index.html">home</a></li>
+                <li>|</li>
+                <li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+                <li>|</li>
+                <li><a href="../../sobre.html">Sobre</a></li>
+                <li>|</li>
+                <li><a href="../../codigos.html">Códigos</a></li>
+            </ul>
+            <section class="linhamenus">
+            </section>
+        </nav>
+    </header>
+    <section class="jah jah2">
+        <p>O Em Busca do Código é um site em formato de plataforma de ensino a distância (EAD), totalmente aberta e gratuita.
+        <br><br>
+        Aprendendo e ensinando, essa é a minha regra para mim.
+        <br><br>
+         Publicado dia 10 de abril de 2017.</p>
+    </section>
+    <section class="adesivo adesivo2">
+        <a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+          <p>Compre um adesivo do Em Busca do Código.</p>
+        </a>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe  src="prop/prolat.html" width="250" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+    <section class="prolatgo cachorro" >
+        <p>Publicidade</p>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- EBC JS--> 
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:336px;height:280px"
+             data-ad-client="ca-pub-5020252132627432"
+             data-ad-slot="6229362170"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe src="prop/prolatdaddy.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+<section class="paragrafoscodigos">
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="eventos-onclick-e-ondblclick-em-javascript.html">anterior</a></li>
+                <li>|</li>
+                <li><a href="index.html">curso</a></li>
+                <li>|</li>
+                <li><a href="eventos-onmousemove-e-onmouseenter-javascript.html">próxima</a></li>
+            </ul>
+        </nav>
+    </section>
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+    <h1>Eventos onmouseover e onmouseout em JavaScript. Dica 19</h1>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p>
+Mais dois eventos em JavaScript relacionados ao mouse.
+    </p>
+    <p>
+Nesta dica nós vemos um exemplo utilizando dois eventos do mouse, onmouseover e o evento onmouseout.
+    </p>
+    <h2>onmouseover</h2>
+    <p>
+O evento onmouseover executa um JavaScript quando o ponteiro do mouse é movido para um elemento ou para um de seus filhos.
+    </p>
+    <h2>onmouseout</h2>
+    <p>
+Já o evento onmouseout executa um JavaScript quando o ponteiro do mouse é movido para fora de um elemento ou de seus filhos.
+    </p>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+    <p class="cabe">Leia esta dica ouvindo o vídeo ou, assista ao vídeo:</p>
+    <div>
+<iframe class="video" src="https://www.youtube.com/embed/JZXyn-58scc" frameborder="0" allowfullscreen></iframe>
+<!--<iframe class="video" src="https://www.youtube.com/embed/yorgg2ndlvE" frameborder="0" allowfullscreen></iframe>-->
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p>
+O nosso documento HTML inicial é quase idêntico ao da dica anterior.
+    </p>
+    <div class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;Eventos em JavaScript, parte 01. Dica 19&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script src="eventos02.js"&gt;&lt;/script&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="UTF-8"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;Enventos em JavaScript, parte 02. Dica 19&lt;/h1&gt;<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;<br />  
+    </div>
+    <p>
+O documento .js inicial está em branco, e antes de darmos continuidade nós precisamos declarar um id em nosso HTML, pois vamos utiliza-lo para gerenciar o conteúdo da nossa tag h1.
+    </p>
+    <div class="fonte">
+&lt;h1 id="exemplo"&gt;Enventos em JavaScript, parte 02. Dica 19&lt;/h1&gt; 
+    </div>
+    <p>
+Eu vou utilizar os eventos onmouseover e onmouseout ao mesmo tempo (neste exemplo). Então vamos começar declarando o evento onmouseover.
+    </p>
+    <div class="fonte">
+&lt;h1 id="exemplo" onmouseover="mouseOver();"&gt;Enventos em JavaScript, parte 02. Dica 19&lt;/h1&gt; 
+    </div>
+    <p>
+Já declarei o evento onmouseover com a respectiva função JavaScript que ainda irei cria, agora faço a mesma "coisa" com o evento onmouseout, claro que com funções diferentes.
+    </p>
+    <div class="fonte">
+&lt;h1 id="exemplo" onmouseover="mouseOver();" onmouseout="mouseOut();"&gt;Enventos em JavaScript, parte 02. Dica 19&lt;/h1&gt;
+    </div>
+    <p>
+O nosso HTML está pronto e com relação a criar funções em JavaScript, utilizar getElementById e innerHTML já foram exemplificados e explicados em dicas anteriores não irei entrar em detalhe com relação a isso. Então, o código fonte a seguir é o código fonte completo do nosso documento .js.
+    </p>
+    <div class="fonte">
+function mouseOver () {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("exemplo").innerHTML = "Eventos em JavaScript parte 01, dica 19";<br />
+}<br />
+<br />
+function mouseOut () {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("exemplo").innerHTML = "Enventos em JS parte 01, dica 19";<br />
+}<br />
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+    <h2>Dica</h2>
+    <p>
+Utilize o evento onmouseover sem o evento onmouseout e veja o reultado. Esta dica inteiramente baseada no exemplo que está na documentação da W3C.
+    </p>
+    <p>
+Espero que esta dica tenha sido útil.
+    </p>
+    <section>
+    <nav  class="paginas">
+        <ul>
+            <li><a href="eventos-onclick-e-ondblclick-em-javascript.html">anterior</a></li> 
+            <li>|</li>
+            <li><a href="index.html">curso</a></li>
+                <li>|</li>
+                <li><a href="eventos-onmousemove-e-onmouseenter-javascript.html">próxima</a></li>
+        </ul>
+    </nav>
+    </section>
+</section>
+     <footer>
+          <div class="rodape">
+               <img src="../../css/img/001.png">
+               2017 Em Busca do Código
+          </div>
+          <nav class="redes">
+               <ul>
+                    <li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../img/007.png"></a></li>
+		          <li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../img/008.png"></a></li>
+		          <li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../img/009.png"></a></li>
+		          <li><a href="https://www.instagram.com/alamvianna/" target="_blank"><img src="../../img/010.png"></a></li>
+		          <li><a href="https://www.twitter.com/alamvianna/" target="_blank"><img src="../../img/011.png"></a></li>
+	          </ul>
+          </nav>
+     </footer>
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+<iframe class="propmeio2" src="prop/iframepropdois.html" width="728" height="120px" frameborder='0' scrolling="no"></iframe>
+	</body>
+</html>

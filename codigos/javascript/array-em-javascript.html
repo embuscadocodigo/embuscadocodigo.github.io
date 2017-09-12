@@ -1,0 +1,261 @@
+<!--Padrão 24/12/2016 ?+?-? embuscadocodigo.com v0.4-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+          <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--titulos-->
+		<title>Array em JavaScript. Vídeo 06</title>
+          <meta name="twitter:title" content="Array em JavaScript. Vídeo 06">
+<!--descrição-->
+          <meta property="og:description" content="Três modos diferentes de se criar arrays e outras informações antes de começarmos a ver arrays em JavaScript"/>
+          <meta name="twitter:description" content="Três modos diferentes de se criar arrays e outras informações antes de começarmos a ver arrays em JavaScript">
+<!--Palavras chave-->
+          <meta name="keywords" content="Curso de JavaScript, javascript, array, arrays, document.write, tag script">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/javascript/array-em-javascript.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="http://embuscadocodigo.com/css/img/001.png">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/javascript/img/js06.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/javascript/img/js06.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="../../css/reset.css">
+          <link rel="stylesheet" href="../../css/hefo.css">
+          <link rel="stylesheet" href="../../css/novo.css">
+          <link rel="stylesheet" href="../../css/erro.css">
+          <link rel="stylesheet" href="../../css/fonte.css">
+          <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@alamvianna">
+     </head>
+     <body>
+          <header>
+			<nav class="cabecalho">
+				<ul>
+					<li><a href="../../index.html">home</a></li>
+					<li>|</li>
+					<li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+					<li>|</li>
+					<li><a href="../../sobre.html">Sobre</a></li>
+					<li>|</li>
+					<li><a href="../../codigos.html">Códigos</a></li>
+				</ul>
+<section class="linhamenus">
+</section>
+			</nav>
+		</header>
+          </section>
+     <section class="jah jah2">
+           <p>O Em Busca do Código é um site em formato de plataforma de ensino a distância (EAD), totalmente aberta e gratuita.</p>
+           <p>Aprendendo e ensinando, essa é a minha regra para mim.</p>
+     </section>
+     <section class="adesivo adesivo2">
+          <a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+               <p>Compre um adesivo do Em Busca do Código.</p>
+          </a>
+     </section>
+     <section class="prolat cachorro">
+<p>Publicidade</p>
+<iframe  src="prop/prolat.html" width="250" height="260" frameborder='0' scrolling="no"></iframe>
+     </section>
+<section class="prolatgo cachorro" >
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+<section class="prolat cachorro">
+<p>Publicidade</p>
+<iframe src="prop/prolatdaddy.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+<section class="paragrafoscodigos">
+      <section>
+            <div  class="paginas">
+                  <ul>
+                        <li><a href="conversao-em-javascript.html">anterior</a></li>
+                        <li>|</li>
+                        <li><a href="index.html">curso</a></li>
+                        <li>|</li>
+                        <li><a href="length-array-em-javascript.html">próxima</a></li>
+                  </ul>
+            </div>
+      </section>
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<h1>Array em JavaScript. Vídeo 06</h1>
+      <p>
+A primeira informação que vemos no vídeo é a tag script. Para utilizar script (JavaScript) em um documento/arquivo HTML nós usamos a tag script
+      </p>
+         <nav class="fonte">
+&lt;script&gt;&lt;/script&gt;<br />
+     </nav>
+      <p>
+Como já sabemos, o JavaScript trabalha com objetos e, para utilizar um objeto nós precisamos de um método.
+      </p>
+         <nav class="fonte">
+objeto.metodo();
+     </nav>
+      <p>
+Para vermos nosso array (pelo navegador) utilizaremos o objeto document com o método write.
+      </p>
+     <nav class="fonte">
+document.write();
+     </nav>
+      <p>
+Para escrever números int ou float basta escrever o número entre os parênteses.
+      </p>
+         <nav class="fonte">
+document.write(456654);
+     </nav>
+      <p>
+E se for uma string escrevemos ela entre aspas duplas.
+      </p>
+<!--      <p class="cabe">usar?</p>-->
+     <nav class="fonte">
+document.write(“Olá Mundo!!!”);
+     </nav>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+      <p>
+Caso tenha interesse em ler mais sobre document.write no final deste artigo terá um link muito bom da Imaster, mas vamos dando continuidade em array em JavaScript.
+      </p>
+          <p>
+Antes de criarmos nosso primeiro arquivo “.js” confira este código fonte até aqui.
+      </p>
+<!--      <p class="cabe">usar?</p>-->
+     <nav class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+<br />
+&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;TAG script&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="UTF-8"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.write(“Olá Mundo!!!”);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/script&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+&lt;/html&gt;
+     </nav>
+      <p>
+No decorrer deste curso eu sempre vou utilizar JavaScript a partir de um arquivo “.js”. E para isso eu crio um arquivo com um nome qualquer com a extensão “.js” e "linko" ele dentro da tag script
+      </p>
+         <nav class="fonte">
+&lt;script src="nomedodocumento.js"&gt;&lt;/script&gt;
+     </nav>
+    <h1>Array em JavaScript</h1>
+      <p>
+A partir de agora veremos três modos de se criar arrays em JavaScript.
+      </p>
+      <p>
+Primeiro modo:
+      </p>
+     <nav class="fonte">
+var primeiroArray = new Array("textos",456,45.5);<br />
+document.write(primeiroArray);<br />
+     </nav>
+      <p>
+Segundo modo:
+      </p>
+         <nav class="fonte">
+var segundoArray = Array("elemento",primeiroArray,45);<br />
+document.write("&lt;h1&gt;"+segundoArray +"&lt;/h1&gt;");<br />
+     </nav>
+      <p>
+Terceiro modo:
+      </p>
+     <nav class="fonte">
+var terceiroArray = [456,"string",2];<br />
+<br />
+document.write("&lt;h1&gt;Terceiro Array: "+terceiroArray +"&lt;/h1&gt;");<br />
+document.write("&lt;h1&gt;Indice [0]: "+terceiroArray[0] +"&lt;/h1&gt;");<br />
+document.write("&lt;h1&gt;Indice [1]: "+terceiroArray[1] +"&lt;/h1&gt;");<br />
+document.write("&lt;h1&gt;Indice [2]: "+terceiroArray[2] +"&lt;/h1&gt;");<br />
+     </nav>
+      <p>
+Caso necessite de maiores explicações assista ao vídeo.
+      </p>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+          <p class="cabe">Assista ao vídeo:</p>
+      <nav>
+<iframe class="video" src="https://www.youtube.com/embed/oUTGmngQWpc" frameborder="0" allowfullscreen></iframe>
+<!--<iframe class="video" src="https://www.youtube.com/embed/yorgg2ndlvE" frameborder="0" allowfullscreen></iframe>-->
+      </nav>
+      <p>
+Se esta aula/artigo foi util você pode compartilha-lo com os seus amigos e seguir o Em Busca do Código nas redes sociais.
+      </p>
+      <p>
+Segue um link do Imaster muito bom sobre document.write.
+      </p>
+         <a class="linkexterno" href="http://imasters.com.br/noticia/javascript-objeto-documentwrite/" target="_blank">Imaster: document.write</a></br>
+      <section>
+            <div  class="paginas">
+                  <ul>
+                        <li><a href="conversao-em-javascript.html">anterior</a></li>
+                        <li>|</li>
+                        <li><a href="index.html">curso</a></li>
+                        <li>|</li>
+                        <li><a href="length-array-em-javascript.html">próxima</a></li>
+                  </ul>
+            </div>
+      </section>
+</section>
+     <footer>
+          <div class="rodape">
+               <img src="../../css/img/001.png">
+               2017 Em Busca do Código
+          </div>
+          <nav class="redes">
+               <ul>
+                    <li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../img/007.png"></a></li>
+		          <li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../img/008.png"></a></li>
+		          <li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../img/009.png"></a></li>
+		          <li><a href="https://www.instagram.com/alamvianna/" target="_blank"><img src="../../img/010.png"></a></li>
+		          <li><a href="https://www.twitter.com/alamvianna/" target="_blank"><img src="../../img/011.png"></a></li>
+	          </ul>
+          </nav>
+     </footer> <!--Fim do rodape-->
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+<iframe class="propmeio2" src="prop/iframepropdois.html" width="728" height="120px" frameborder='0' scrolling="no"></iframe>
+	</body>
+</html>

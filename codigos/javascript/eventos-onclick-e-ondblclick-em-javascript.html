@@ -1,0 +1,298 @@
+<!--Padrão 09/02/2017 embuscadocodigo.com v0.5
+
+-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+          <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--titulos-->
+		<title>Eventos onclick e ondblclick em JavaScript. Dica 18</title>
+          <meta name="twitter:title" content="Eventos onclick e ondblclick em JavaScript. Dica 18">
+<!--descrição-->
+          <meta property="og:description" content="Nesta dica você confere uma breve introdução a eventos em JavaScript e um exemplo do evento onclick e ondblclick."/>
+          <meta name="twitter:description" content="Nesta dica você confere uma breve introdução a eventos em JavaScript e um exemplo do evento onclick e ondblclick.">
+<!--Palavras chave-->
+          <meta name="keywords" content="Curso de JavaScript, javascript,  js, switch, botão, button, input">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/javascript/eventos-onclick-e-ondblclick-em-javascript.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="http://embuscadocodigo.com/css/img/001.png">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/javascript/img/js18.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/javascript/img/js18.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="../../css/reset.css">
+          <link rel="stylesheet" href="../../css/hefo.css">
+          <link rel="stylesheet" href="../../css/novo.css">
+          <link rel="stylesheet" href="../../css/erro.css">
+          <link rel="stylesheet" href="../../css/fonte.css">
+          <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@alamvianna">
+     </head>
+     <body>
+    <header>
+        <nav class="cabecalho">
+            <ul>
+                <li><a href="../../index.html">home</a></li>
+                <li>|</li>
+                <li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+                <li>|</li>
+                <li><a href="../../sobre.html">Sobre</a></li>
+                <li>|</li>
+                <li><a href="../../codigos.html">Códigos</a></li>
+            </ul>
+            <section class="linhamenus">
+            </section>
+        </nav>
+    </header>
+    <section class="jah jah2">
+        <p>O Em Busca do Código é um site em formato de plataforma de ensino a distância (EAD), totalmente aberta e gratuita.
+        <br><br>
+        Aprendendo e ensinando, essa é a minha regra para mim.
+        <br><br>
+         Publicado dia 03 de abril de 2017.</p>
+    </section>
+    <section class="adesivo adesivo2">
+        <a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+          <p>Compre um adesivo do Em Busca do Código.</p>
+        </a>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe  src="prop/prolat.html" width="250" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+    <section class="prolatgo cachorro" >
+        <p>Publicidade</p>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- EBC JS--> 
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:336px;height:280px"
+             data-ad-client="ca-pub-5020252132627432"
+             data-ad-slot="6229362170"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe src="prop/prolatdaddy.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+<section class="paragrafoscodigos">
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="selecionar-botao-com-switch-em-javascript.html">anterior</a></li>
+                <li>|</li>
+                <li><a href="index.html">curso</a></li>
+                <li>|</li>
+                <li><a href="eventos-onmouseover-e-onmouseout-em-javascript.html">próxima</a></li>
+            </ul>
+        </nav>
+    </section>
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+    <h1>Eventos onclick e ondblclick em JavaScript. Dica 18</h1>
+    <p>
+Nesta dica você confere uma breve introdução a eventos em JavaScript e um exemplo do evento onclick e ondblclick.
+    </p>
+    <p class="cabe">Leia esta dica ouvindo o vídeo ou, assista ao vídeo:</p>
+    <div>
+<iframe class="video" src="https://www.youtube.com/embed/mLqa69Cr-gg" frameborder="0" allowfullscreen></iframe>
+<!--<iframe class="video" src="https://www.youtube.com/embed/yorgg2ndlvE" frameborder="0" allowfullscreen></iframe>-->
+    </div>
+    <p>
+Muito provavelmente você já leu ou ouviu os termos "web dinâmica" e/ou "interatividade na web" relacionados a palavra JavaScript.
+    </p>
+    <p>
+Grande parte dessa interatividade é gerada a partir de eventos em JavaScript.
+    </p>
+    <p>
+Existem INÚMEROS eventos DIFERENTES e, nesta dica nós veremos dois eventos, relacionados ao clique e ao duplo clique.
+    </p>
+    <p>
+Qualquer elemento em uma página HTML pode conter eventos em JavaScript.
+    </p>
+    <p>
+Como já informei, nesta dica veremos eventos relacionados ao clique do mouse, por isso o código fonte HTML inicial tem apenas um botão.
+    </p>
+    <div class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;Eventos em JavaScript, parte 01. Dica 17&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script src="eventos01.js"&gt;&lt;/script&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="UTF-8"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;Eventos em JavaScript, parte 01. Dica 17&lt;/h1&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;form&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="button" value="Botão" /&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/form&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1 id="clicks"&gt;&lt;/h1&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+    </div>
+    <p>
+Claro que, os eventos relacionados ao clique do mouse podem ser inseridos em diversos elementos HTML, mas eu escolhi um simples botão.
+    </p>
+    <p>
+Dentro da tag input do meu botão eu insiro o evento onclick.
+    </p>
+    <div class="fonte">
+onclick=""
+    </div>
+    <p>
+Eu poderia informar dentro das aspas o que este evento faz, mas, eu prefiro fazer isso em um documento exclusivo para os meus scripts.
+    </p>
+    <p>
+No documento .js eu vou (neste caso) usar uma função, por isso (no HTML) entre as aspas do evento que acabei de criar eu informo essa função.
+    </p>
+    <div class="fonte">
+onclick="umclick();"
+    </div>
+    <p>
+Agora eu crio essa função em meu documento .js, lembrando que caso tenha alguma duvida sobre esta função por favor ver a dica anterior deste curso.
+    </p>
+    <div class="fonte">
+function umclick () {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("clicks").innerHTML = "um click";<br />
+}<br />
+    </div>
+    <p>
+Teste este código fonte até aqui em seu navegador.
+    </p>
+    <p>
+Para utilizar o evento relacionado ao duplo clique do mouse basta usar ondblclick ao invés de onclick.
+    </p>
+    <div class="fonte">
+ondblclick="duploclick();"
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p>
+Depois criar uma função exclusiva para este evento com JavaScript.
+    </p>
+    <div class="fonte">
+function duploclick () {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("clicks").innerHTML = "duplo click";<br />
+}<br />
+    </div>
+    <p>
+Com relação ao código fonte essa dica é pequena, mas se olhar o você já está fazendo com JS verá que já aprendeu muita coisa legal, e depois e a tendência é cada vez ficar mais legal.
+    </p>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+    <p class="cabe">Código fonte HTML completo</p>
+    <div class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;Eventos em JavaScript, parte 01. Dica 17&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script src="eventos01.js"&gt;&lt;/script&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="UTF-8"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;Eventos em JavaScript, parte 01. Dica 17&lt;/h1&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;form&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="button" value="Botão" onclick="umclick();" ondblclick="duploclick();"/&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/form&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1 id="clicks"&gt;&lt;/h1&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p class="cabe">Código fonte JS completo.</p>
+    <div class="fonte">
+function umclick () {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("clicks").innerHTML = "um click";<br />
+}<br />
+function duploclick () {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("clicks").innerHTML = "duplo click";<br />
+}
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+    <h2>Dica</h2>
+    <p>
+Esta é a primeira dica exclusiva sobre eventos em JavaScript da Em Busca do Código, espero que tenha gostado e, como dica, peço que crie outro botão e inclua nele um dos eventos acima citados, o excluindo do outro botão. Alterar o título do seu  arquivo HTML com um desses eventos seria uma boa.
+    </p>
+    <p>
+Espero que esta dica tenha sido útil.
+    </p>
+    <section>
+    <nav  class="paginas">
+        <ul>
+            <li><a href="selecionar-botao-com-switch-em-javascript.html">anterior</a></li> 
+            <li>|</li>
+            <li><a href="index.html">curso</a></li>
+                <li>|</li>
+                <li><a href="eventos-onmouseover-e-onmouseout-em-javascript.html">próxima</a></li>
+        </ul>
+    </nav>
+    </section>
+</section>
+     <footer>
+          <div class="rodape">
+               <img src="../../css/img/001.png">
+               2017 Em Busca do Código
+          </div>
+          <nav class="redes">
+               <ul>
+                    <li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../img/007.png"></a></li>
+		          <li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../img/008.png"></a></li>
+		          <li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../img/009.png"></a></li>
+		          <li><a href="https://www.instagram.com/alamvianna/" target="_blank"><img src="../../img/010.png"></a></li>
+		          <li><a href="https://www.twitter.com/alamvianna/" target="_blank"><img src="../../img/011.png"></a></li>
+	          </ul>
+          </nav>
+     </footer>
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+<iframe class="propmeio2" src="prop/iframepropdois.html" width="728" height="120px" frameborder='0' scrolling="no"></iframe>
+	</body>
+</html>

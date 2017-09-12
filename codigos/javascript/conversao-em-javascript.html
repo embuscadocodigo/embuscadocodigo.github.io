@@ -1,0 +1,280 @@
+<!--Padrão 24/12/2016 ?+?-? embuscadocodigo.com v0.4-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+          <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--titulos-->
+		<title>Conversão de tipos em JavaScript. Vídeo 05</title>
+          <meta name="twitter:title" content="Conversão de tipos em JavaScript. Vídeo 05">
+<!--descrição-->
+          <meta property="og:description" content="A partir de agora você confere conversão de tipos em JavaScript."/>
+          <meta name="twitter:description" content="A partir de agora você confere conversão de tipos em JavaScript.">
+<!--Palavras chave-->
+          <meta name="keywords" content="Curso de JavaScript, javascript, variaveis, variavel, var, JS, conversão, conversões">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/javascript/conversao-em-javascript.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="http://embuscadocodigo.com/css/img/001.png">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/javascript/img/js05.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/javascript/img/js05.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="../../css/reset.css">
+          <link rel="stylesheet" href="../../css/hefo.css">
+          <link rel="stylesheet" href="../../css/novo.css">
+          <link rel="stylesheet" href="../../css/erro.css">
+          <link rel="stylesheet" href="../../css/fonte.css">
+          <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@alamvianna">
+     </head>
+     <body>
+          <header>
+			<nav class="cabecalho">
+				<ul>
+					<li><a href="../../index.html">home</a></li>
+					<li>|</li>
+					<li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+					<li>|</li>
+					<li><a href="../../sobre.html">Sobre</a></li>
+					<li>|</li>
+					<li><a href="../../codigos.html">Códigos</a></li>
+				</ul>
+<section class="linhamenus">
+</section>
+			</nav>
+		</header>
+          </section>
+     <section class="jah jah2">
+           <p>O Em Busca do Código é um site em formato de plataforma de ensino a distância (EAD), totalmente aberta e gratuita.</p>
+           <p>Aprendendo e ensinando, essa é a minha regra para mim.</p>
+     </section>
+     <section class="adesivo adesivo2">
+          <a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+               <p>Compre um adesivo do Em Busca do Código.</p>
+          </a>
+     </section>
+     <section class="prolat cachorro">
+<p>Publicidade</p>
+<iframe  src="prop/prolat.html" width="250" height="260" frameborder='0' scrolling="no"></iframe>
+     </section>
+<section class="prolatgo cachorro" >
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+<section class="prolat cachorro">
+<p>Publicidade</p>
+<iframe src="prop/prolatdaddy.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+<section class="paragrafoscodigos">
+      <section>
+            <div  class="paginas">
+                  <ul>
+                        <li><a href="funcoes-em-javascript.html">anterior</a></li>
+                        <li>|</li>
+                        <li><a href="index.html">curso</a></li>
+                        <li>|</li>
+                        <li><a href="array-em-javascript.html">próxima</a></li>
+                  </ul>
+            </div>
+      </section>
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<h1>Conversão de tipos em JavaScript. Vídeo 05</h1>
+      <p>
+A partir de agora você confere conversão de tipos em JavaScript.
+      </p>
+      <p>
+Em JavaScript você não precisa falar (especificar) o tipo de variável que está criando, isso porque é uma linguagem dinamicamente tipada, que significa que, o tipo de variável (int, string, float [...]) são convertidos automaticamente conforme a execução do script.
+      </p>
+      <p>
+Na aula número 04 deste curso (vídeo anterior) um pouco antes do código fonte final de JavaScript, vídeo este que tem menos de 7 minutos, duas variáveis do tipo inteiras são convertidas para string, no decorrer desta aula vamos ver um exemplo desse.
+      </p>
+      <p>
+Observação: Faça estes exemplos somente com o Scratchpad, escolhi usar somente o Scratchpad nesta aula por tornar a mesma bem mais rápida. E no final de cada código fonte aqui apresentado, sempre clicar em display ou visualizar para seguir os exemplos, se quiser crie os seus depois de testar esses.
+      </p>
+      <p>
+Quando queremos criar (declarar) uma variável do tipo string, no valor desta variável nós utilizamos aspas duplas, segue exemplo.
+      </p>
+<!--      <p class="cabe">usar?</p>-->
+     <nav class="fonte">
+var x = "string qualquer";<br />
+     </nav>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+      <p>
+E para "chama-la" (no Scratchpad) nós apenas colocamos o o nome da mesma na linha de baixo e clicamos em visualizar ou display.
+      </p>
+<!--      <p class="cabe">usar?</p>-->
+     <nav class="fonte">
+x
+     </nav>
+      <p>
+No vídeo número um eu já informo isto, mas caso tenha esquecido, para abrir o Scratchpad você pode clicar em (shift + f4) isso no Firefox.
+      </p>
+      <p>
+E se eu quiser unir (concatenar) um número ao final desta string?
+      </p>
+      <p>
+Se eu quiser unir um inteiro a essa string eu utilizo "+" para concatenar, vamos lá?
+      </p>
+     <nav class="fonte">
+var x = "string"+ 12;<br />
+x<br />
+     </nav>
+      <p>
+Esse número virou uma string, juntamente com a string existente. Faça todos os exemplos aqui descritos em seu notebook ou pc.
+      </p>
+      <p>
+Posso fazer ao contrario também.
+      </p>
+     <nav class="fonte">
+var x = 12+ " string";<br />
+x<br />
+     </nav>
+      <p>
+Minha variável x que era um inteiro se tornou uma string.
+      </p>
+      <p>
+E se eu alterar o valor de uma variável?
+      </p>
+<!--      <p class="cabe">usar?</p>-->
+     <nav class="fonte">
+var x = 12;<br />
+x = "doze";<br />
+x<br />
+     </nav>
+      <p>
+Como JavaScript é dinamicamente tipada ela muda o tipo de variável quando necessário, conforme a execução do script.
+      </p>
+      <p>
+E se eu receber um número como se fosse uma string, posso fazer isso?
+      </p>
+      <p>
+Sim, podemos fazer isso.
+      </p>
+<!--      <p class="cabe">usar?</p>-->
+     <nav class="fonte">
+var x = "12";<br />
+x<br />
+     </nav>
+      <p>
+E se eu quiser somar um número que foi declarado como uma string?
+      </p>
+     <nav class="fonte">
+var x = "12" + 2;<br />
+x<br />
+     </nav>
+      <p>
+A resposta disto será 122.
+      </p>
+      <p>
+Nesse caso os dois números foram convertidos em string.
+      </p>
+      <p>
+Então cuidado, isso foi o que aconteceu no vídeo anterior, só que este é outro exemplo.
+      </p>
+      <p>
+Subtrair funciona.
+      </p>
+     <nav class="fonte">
+var x = "12" - 2;<br />
+x<br />
+     </nav>
+      <p>
+Multiplicar também.
+      </p>
+     <nav class="fonte">
+var x = "12" * 2;<br />
+x<br />
+     </nav>
+      <p>
+Mas também posso converter essa string (número declarado entre aspas) em int e float, e para isso utilizamos parseInt ou parseFloat
+      </p>
+     <nav class="fonte">
+x = parseInt("12");<br />
+<br />
+x = parseFloat("12.5") ;<br />
+<br />
+     </nav>
+      <p>
+Foi muito interessante escrever a parte escrita e fazer este vídeo, espero que tenha sido útil e, até a próxima.
+      </p>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+      <p class="cabe">Assista ao vídeo:</p>
+      <nav>
+<iframe class="video" src="https://www.youtube.com/embed/qmRja3KVD38" frameborder="0" allowfullscreen></iframe>
+<!--<iframe class="video" src="https://www.youtube.com/embed/yorgg2ndlvE" frameborder="0" allowfullscreen></iframe>-->
+      </nav>
+      <section>
+            <div  class="paginas">
+                  <ul>
+                        <li><a href="funcoes-em-javascript.html"">anterior</a></li>
+                        <li>|</li>
+                        <li><a href="index.html">curso</a></li>
+                            <li>|</li>
+                        <li><a href="array-em-javascript.html">próxima</a></li>
+                  </ul>
+            </div>
+      </section>
+</section>
+     <footer>
+          <div class="rodape">
+               <img src="../../css/img/001.png">
+               2017 Em Busca do Código
+          </div>
+          <nav class="redes">
+               <ul>
+                    <li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../img/007.png"></a></li>
+		          <li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../img/008.png"></a></li>
+		          <li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../img/009.png"></a></li>
+		          <li><a href="https://www.instagram.com/alamvianna/" target="_blank"><img src="../../img/010.png"></a></li>
+		          <li><a href="https://www.twitter.com/alamvianna/" target="_blank"><img src="../../img/011.png"></a></li>
+	          </ul>
+          </nav>
+     </footer> <!--Fim do rodape-->
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+<iframe class="propmeio2" src="prop/iframepropdois.html" width="728" height="120px" frameborder='0' scrolling="no"></iframe>
+	</body>
+</html>

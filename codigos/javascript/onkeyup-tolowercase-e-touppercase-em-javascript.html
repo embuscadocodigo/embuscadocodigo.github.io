@@ -1,0 +1,356 @@
+<!--Padrão 30/04/2017 embuscadocodigo.com v0.5
+n. classe ex video
+
+-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+          <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--titulos-->
+		<title>Evento onkeyup e métodos toLowerCase e toUpperCase em JavaScript. Dica 23</title>
+          <meta name="twitter:title" content="Evento onkeyup e métodos toLowerCase e toUpperCase em JavaScript. Dica 23">
+<!--descrição-->
+          <meta property="og:description" content="Conferimos o evento onkeyup e como converter todas as letras em minúsculo e maiúsculo utilizando JS"/>
+          <meta name="twitter:description" content="Conferimos o evento onkeyup e como converter todas as letras em minúsculo e maiúsculo utilizando JS">
+<!--Palavras chave-->
+          <meta name="keywords" content="Curso de JavaScript, javascript,  js, onkeyup, toUpperCase, toLowerCase">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/javascript/onkeyup-tolowercase-e-touppercase-em-javascript.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="http://embuscadocodigo.com/css/img/001.png">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/javascript/img/js23.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/javascript/img/js23.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="../../css/reset.css">
+          <link rel="stylesheet" href="../../css/hefo.css">
+          <link rel="stylesheet" href="../../css/novo.css">
+          <link rel="stylesheet" href="../../css/erro.css">
+          <link rel="stylesheet" href="../../css/fonte.css">
+          <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@alamvianna">
+     </head>
+     <body>
+    <header>
+        <nav class="cabecalho">
+            <ul>
+                <li><a href="../../index.html">home</a></li>
+                <li>|</li>
+                <li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+                <li>|</li>
+                <li><a href="../../sobre.html">Sobre</a></li>
+                <li>|</li>
+                <li><a href="../../codigos.html">Códigos</a></li>
+            </ul>
+            <section class="linhamenus">
+            </section>
+        </nav>
+    </header>
+    <section class="jah jah2">
+        <p>O Em Busca do Código é um site em formato de plataforma de ensino a distância (EAD), totalmente aberta e gratuita.
+        <br><br>
+        Aprendendo e ensinando, essa é a minha regra para mim.
+        <br><br>
+         Publicado dia 07 de maio de 2017.</p>
+    </section>
+    <section class="adesivo adesivo2">
+        <a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+          <p>Compre um adesivo do Em Busca do Código.</p>
+        </a>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe  src="prop/prolat.html" width="250" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+    <section class="prolatgo cachorro" >
+        <p>Publicidade</p>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- EBC JS--> 
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:336px;height:280px"
+             data-ad-client="ca-pub-5020252132627432"
+             data-ad-slot="6229362170"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe src="prop/prolatdaddy.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+<section class="paragrafoscodigos">
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="alterar-imagem-com-javascript.html">anterior</a></li>
+                <li>|</li>
+                <li><a href="index.html">curso</a></li>
+                <li>|</li>
+                <li><a href="verificar-cookies-em-javascript.html">próxima</a></li>
+            </ul>
+        </nav>
+    </section>
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+    <h1>Evento onkeyup e métodos toLowerCase e toUpperCase em JavaScript. Dica 23</h1>
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p>
+Nesta dica nós conferimos como funciona o acionamento do evento onkeyup e como converter todas as letras em minúsculo e maiúsculo utilizando os métodos toLowerCase e toUpperCase em JavaScript.
+    </p>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+    <p class="cabe">O vídeo complementa o texto e o texto completa o vídeo, assista.</p>
+    <div>
+<iframe class="video" src="https://www.youtube.com/embed/tawUB0EZKqY" frameborder="0" allowfullscreen></iframe>
+<!-- class="video" -->
+    </div>
+    <p>
+Em nosso documento HTML inicial temo três inputs do tipo texto, onde o primeiro está acompanhado de uma tag span e, os outros dois só tem um id, um para cada input.
+    </p>
+    <div class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;JavaScript dica 23&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script src="js23.js"&gt;&lt;/script&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="UTF-8"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;JavaScript dica 23&lt;/h1&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Evento onkeyup&lt;/p&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span id="eventoKeyup"&gt;&lt;/span&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;br&gt;&lt;br&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;onkeyup + toLowerCase&lt;/p&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="tudasminusculas"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;br&gt;&lt;br&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;onkeyup + toUpperCase&lt;/p&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="tudasmaiusculas"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+    </div>
+    <p>
+O nosso arquivo .js está em branco e começaremos editando o HTML.
+    </p>
+    <p>
+No primeiro input nós vamos declarar o evento onkeyup já informando uma função que ainda criaremos no JS.
+    </p>
+    <div class="fonte">
+ &lt;p&gt;Evento onkeyup&lt;/p&gt;<br />
+ &lt;input type="text" onkeyup="up()"&gt;<br />
+ &lt;span id="eventoKeyup"&gt;&lt;/span&gt;<br />
+    </div>
+    <p>
+Nesta dica temos três exemplos, o primeiro exemplo é baseado na dica 21 deste curso, vamos contar quantas vezes o evento é acionado. Já no JS criamos uma variável de valor inicial 0 (zero).
+    </p>
+    <div class="fonte">
+var a = 0;
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p>
+Criamos uma função, cujo o nome acabamos de informar no HTML.
+    </p>
+    <div class="fonte">
+function up () {<br />
+}<br />
+    </div>
+    <p>
+E usamos document.getElementById para gerenciar o conteúdo da tag span a partir do seu id, id este que já estava declarado no HTML inicial.
+    </p>
+    <div class="fonte">
+function up () {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("eventoKeyup")<br />
+}<br />
+    </div>
+    <p>
+E utilizamos innerHTML para fazer esta contagem.
+    </p>
+    <div class="fonte">
+function up () {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("eventoKeyup").innerHTML = a+=1;<br />
+}<br />
+    </div>
+    <p>
+Teste em seu navegador.
+    </p>
+    <p>
+Depois de conferir como o evento onkeyup é acionado nós damos continuidade nesta dica, já informando que os exemplos dois e três serão feitos juntos.
+    </p>
+    <h2>Método toLowerCase</h2>
+    <p>
+O método toLowerCase converte uma sequência de letras em letras minúsculas.
+    </p>
+    <h2>Método toUpperCase</h2>
+    <p>
+Já o método toUpperCase converte uma sequência de letras em letras maiúsculas.
+    </p>
+    <p>
+Em nosso segundo e terceiro input declaramos o evento onkeyup novamente, já informando a função que criaremos no JS.
+    </p>
+    <div class="fonte">
+ &lt;p&gt;onkeyup + toLowerCase&lt;/p&gt;<br />
+ &lt;input type="text" id="tudasminusculas" onkeyup="minuscula()"&gt;<br />
+ &lt;br&gt;&lt;br&gt;<br />
+ &lt;p&gt;onkeyup + toUpperCase&lt;/p&gt;<br />
+ &lt;input type="text" id="tudasmaiusculas" onkeyup="maiuscula()"&gt;<br />
+    </div>
+    <p>
+Para esses dois exemplos vamos precisar de mais duas variáveis, eu gosto de declarar variáveis tudo no mesmo lugar.
+    </p>
+    <div class="fonte">
+var a = 0;<br />
+var min;<br />
+var mai;<br />
+    </div>
+    <p>
+A função que vamos utilizar o método toLowerCase eu coloquei o nome de minuscula.
+    </p>
+    <div class="fonte">
+function minuscula () {<br />
+}<br />
+    </div>
+    <p>
+E a função que vamos utilizar o método toUpperCase dei o nome de maiuscula.
+    </p>
+    <div class="fonte">
+function maiuscula () {<br />
+}<br />
+    </div>
+    <p>
+Essas funções serão um pouco diferentes, mas por que?
+    </p>
+    <p>
+Porque eu preciso declarar o valor das minhas variáveis. Mas antes de declarar que essas variáveis converterão tudo em maiúsculo ou minúscula precisamos declarar onde iremos utilizar essas variáveis.
+    </p>
+    <p>
+Dentro da função com o nome minuscula declaramos a variável min, igualando ela a um document.getElementById para gerenciar o conteúdo desse input a partir do seu id.
+    </p>
+    <div class="fonte">
+min = document.getElementById("tudasminusculas");
+    </div>
+    <p>
+Já na linha de baixo do código fonte informo que eu quero o valor da variável min.
+    </p>
+    <div class="fonte">
+min.value
+    </div>
+    <p>
+Mas o que vamos fazer com esse valor?
+    </p>
+    <div class="fonte">
+min.value =
+    </div>
+    <p>
+Vamos informar que esse valor será convertido todo em letras maiúsculas.
+    </p>
+    <div class="fonte">
+min.value = min.value.toLowerCase();
+    </div>
+    <p>
+Antes de conferir esse exemplo funcionando já vamos fazer quase a mesma coisa com a outra função.
+    </p>
+    <p>
+Dentro da função declaramos nossa variável mai, informando onde iremos gerenciar o conteúdo.
+    </p>
+    <div class="fonte">
+mai = document.getElementById("tudasmaiusculas");
+    </div>
+    <p>
+Informamos que queremos o valor que está no input e, que vamos converter tudo em letras maiúsculas.
+    </p>
+    <div class="fonte">
+mai.value = mai.value.toUpperCase();
+    </div>
+    <p>
+Teste em se navegador.
+    </p>
+    <p>
+Observação, códigos fontes desse "tipo" eu não libero mais o código fonte final.
+    </p>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+    <h2>Dica</h2>
+    <p>
+Altere o nome de todas as funções e de todos os IDs, um de cada vez para não correr o risco de se perder.
+    </p>
+    <p>
+Espero que tenha gostado e que este código fonte e dica tenha sido útil, até mais.
+    </p>
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="alterar-imagem-com-javascript.html">anterior</a></li> 
+                <li>|</li>
+                <li><a href="index.html">curso</a></li>
+                <li>|</li>
+                <li><a href="verificar-cookies-em-javascript.html">próxima</a></li>
+            </ul>
+        </nav>
+    </section>
+</section>
+     <footer>
+          <div class="rodape">
+               <img src="../../css/img/001.png">
+               2017 Em Busca do Código
+          </div>
+          <nav class="redes">
+               <ul>
+                    <li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../img/007.png"></a></li>
+		          <li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../img/008.png"></a></li>
+		          <li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../img/009.png"></a></li>
+		          <li><a href="https://www.instagram.com/alamvianna/" target="_blank"><img src="../../img/010.png"></a></li>
+		          <li><a href="https://www.twitter.com/alamvianna/" target="_blank"><img src="../../img/011.png"></a></li>
+	          </ul>
+          </nav>
+     </footer>
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+<iframe class="propmeio2" src="prop/iframepropdois.html" width="728" height="120px" frameborder='0' scrolling="no"></iframe>
+	</body>
+</html>

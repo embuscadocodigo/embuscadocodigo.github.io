@@ -1,0 +1,370 @@
+<!--Padrão 09/02/2017 embuscadocodigo.com v0.5-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+          <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--titulos-->
+		<title>Selecionar botão com switch em JavaScript. Dica 17</title>
+          <meta name="twitter:title" content="Selecionar botão com switch em JavaScript. Dica 17">
+<!--descrição-->
+          <meta property="og:description" content="Nesta dica conferimos como selecionar um botão utilizando switch em JavaScript."/>
+          <meta name="twitter:description" content="Nesta dica conferimos como selecionar um botão utilizando switch em JavaScript.">
+<!--Palavras chave-->
+          <meta name="keywords" content="Curso de JavaScript, javascript,  js, switch, botão, button, input, function, função, selecionar">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/javascript/selecionar-botao-com-switch-em-javascript.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="http://embuscadocodigo.com/css/img/001.png">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/javascript/img/js17.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/javascript/img/js17.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="../../css/reset.css">
+          <link rel="stylesheet" href="../../css/hefo.css">
+          <link rel="stylesheet" href="../../css/novo.css">
+          <link rel="stylesheet" href="../../css/erro.css">
+          <link rel="stylesheet" href="../../css/fonte.css">
+          <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@alamvianna">
+     </head>
+     <body>
+    <header>
+        <nav class="cabecalho">
+            <ul>
+                <li><a href="../../index.html">home</a></li>
+                <li>|</li>
+                <li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+                <li>|</li>
+                <li><a href="../../sobre.html">Sobre</a></li>
+                <li>|</li>
+                <li><a href="../../codigos.html">Códigos</a></li>
+            </ul>
+            <section class="linhamenus">
+            </section>
+        </nav>
+    </header>
+    <section class="jah jah2">
+        <p>O Em Busca do Código é um site em formato de plataforma de ensino a distância (EAD), totalmente aberta e gratuita.
+        </br></br>
+        Aprendendo e ensinando, essa é a minha regra para mim.
+        </br></br>
+         Publicado dia 27 de março de 2017.</p>
+    </section>
+    <section class="adesivo adesivo2">
+        <a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+          <p>Compre um adesivo do Em Busca do Código.</p>
+        </a>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe  src="prop/prolat.html" width="250" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+    <section class="prolatgo cachorro" >
+        <p>Publicidade</p>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- EBC JS--> 
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:336px;height:280px"
+             data-ad-client="ca-pub-5020252132627432"
+             data-ad-slot="6229362170"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe src="prop/prolatdaddy.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+<section class="paragrafoscodigos">
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="while-e-do-while-em-javascript.html">anterior</a></li>
+                <li>|</li>
+                <li><a href="index.html">curso</a></li>
+                <li>|</li>
+                <li><a href="eventos-onclick-e-ondblclick-em-javascript.html">próxima</a></li>
+            </ul>
+        </nav>
+    </section>
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+    <h1>Selecionar botão com switch em JavaScript. Dica 17</h1>
+    <p>
+Nesta dica conferimos como selecionar um botão utilizando switch em JavaScript.
+    </p>
+    <p>
+Para isto temos um documento HTML padrão
+    </p>
+    <div class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;switch em JavaScript. Dica 17&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script src="switch.js"&gt;&lt;/script&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="UTF-8"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;switch em JavaScript. Dica 17&lt;/h1&gt;<br />
+<br />
+&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+    </div>
+    <p class="cabe">Assista ao vídeo:</p>
+    <div>
+<iframe class="video" src="https://www.youtube.com/embed/sxSPoR5zKE4" frameborder="0" allowfullscreen></iframe>
+<!--<iframe class="video" src="https://www.youtube.com/embed/yorgg2ndlvE" frameborder="0" allowfullscreen></iframe>-->
+    </div>
+    <p>
+E inicialmente o documento JS está em branco.
+    </p>
+    <p>
+A primeira coisa que faremos são os botões, para fazer os botões eu utilizo input pois utilizando a tag button da um pequeno bug no final.
+    </p>
+    <div class="fonte">
+ &lt;form&gt;<br />
+ &lt;input type="button" value="P" /&gt;<br />
+ &lt;input type="button" value="M"&nbsp; /&gt;<br />
+ &lt;input type="button" value="G" /&gt;<br />
+ &lt;/form&gt;<br />
+    </div>
+    <p>
+Agora precisamos vincular nossos botões feitos no HTML no JS, e para isso eu utilizarei o evento onclick.
+    </p>
+    <div class="fonte">
+onclick=""
+    </div>
+    <p>
+Isto em cada botão. Dentro deste evento onclick vou informar uma função que será criada no JS.
+    </p>
+    <div class="fonte">
+ &lt;input type="button" value="P" onclick="selecionar();" /&gt;<br />
+ &lt;input type="button" value="M" onclick="selecionar();" /&gt;<br />
+ &lt;input type="button" value="G" onclick="selecionar();" /&gt;<br />
+    </div>
+    <p>
+E neste momento vamos começar a escrever nosso código fonte JavaScript. Criando a função que acabamos de citar no HTML.
+    </p>
+    <div class="fonte">
+function selecionar () {<br />
+<br />
+}<br />
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p>
+Relembrando a dica 4 deste curso, vemos que podemos inserir parâmetros a nossa função, então, neste caso, eu vou informar um parâmetro que, servirá como a variável do nosso switch.
+    </p>
+    <a class="linkexterno" href="http://embuscadocodigo.com/codigos/javascript/funcoes-em-javascript.html" target="_blank">Link da dica 4, funções em JavaScript (abre em outra aba)</a>
+    <div class="fonte">
+function selecionar (qualBotao) {<br />
+}<br />
+    </div>
+    <h2>Switch em JavaScript</h2>
+    <p>
+Se você já programou em outra linguagem de programação, muito provavelmente já utilizou algum switch e sabe que o switch trabalha com opções.
+    </p>
+    <div class="fonte">
+switch (variável) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; opção :<br />
+}<br />
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+    <p>
+Então, nosso switch inicialmente fica assim:
+    </p>
+    <div class="fonte">
+switch (qualBotao) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case :<br />
+}<br />
+    </div>
+    <p>
+Quando o switch é "simples", quando for uma variável eu só precisarei informar os possíveis valores dessa variável nos cases. Mas como eu estou trabalhando com botões, preciso conferir qual botão foi clicado.
+    </p>
+    <p>
+Voltando ao HTML, dentro de cada onclick eu informo qual o valor de cada botão.
+    </p>
+    <div class="fonte">
+ &lt;input type="button" value="P" onclick="selecionar('P');" /&gt;<br />
+ &lt;input type="button" value="M" onclick="selecionar('M');" /&gt;<br />
+ &lt;input type="button" value="G" onclick="selecionar('G');" /&gt;<br />
+    </div>
+    <p>
+E a partir dos valores que eu inseri vou criando os cases do meu switch.
+    </p>
+    <div class="fonte">
+ case 'P':<br />
+ document.getElementById("botaoSelecionado").innerHTML = "Tamanho P";<br />
+ break;<br />
+    </div>
+    <p>
+No código fonte acima temos "muita" informação nova, então vamos cita-las.
+    </p>
+    <h2>innerHTML</h2>
+    <p>
+Neste caso, a propriedade innerHTML é utilizada para escrever no documento HTML.
+    </p>
+    <h2>getElementById</h2>
+    <p>
+E getElementById é utilizado para informar onde será escrito. getElementById é responsável por gerenciar o conteúdo de um determinado elemento a partir do seu ID, então, precisamos criar uma tag atribuindo a ela o id informado no ultimo código fonte.
+    </p>
+    <div class="fonte">
+&lt;p id="botaoSelecionado"&gt;&lt;/p&gt;
+    </div>
+    <p>
+Neste caso eu utilizei a tag p, mas você pode utilizar outras tags, assim como h1, span, e outras.
+    </p>
+    <h2>break</h2>
+    <p>
+Neste exemplo o break serve para informar que, caso o case seja verdade pare o script.
+    </p>
+    <p>
+O código fonte a seguir são os cases de todos os botões
+    </p>
+    <div class="fonte">
+ case 'P':<br />
+ document.getElementById("botaoSelecionado").innerHTML = "Tamanho P";<br />
+ break;<br />
+ case 'M':<br />
+ document.getElementById("botaoSelecionado").innerHTML = "Tamanho M";<br />
+ break;<br />
+ case 'G':<br />
+ document.getElementById("botaoSelecionado").innerHTML = "Tamanho G";<br />
+ break;<br />
+    </div>
+    <p>
+Agora precisamos criar um default para quando o valor informado não for nenhum dos cases, nesta dica nós criamos um default somente para finalizar nosso switch.
+    </p>
+    <div class="fonte">
+ default:<br />
+ document.getElementById("botaoSelecionado").innerHTML = "erro";<br />
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p class="cabe">Agora é só testar este código fonte em seu navegador, a seguir temos o código fonte HTML final.</p>
+    <div class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;switch em JavaScript. Dica 17&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script src="switch.js"&gt;&lt;/script&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="UTF-8"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;switch em JavaScript. Dica 17&lt;/h1&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;form&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="button" value="P" onclick="selecionar('P');" /&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="button" value="M" onclick="selecionar('M');" /&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="button" value="G" onclick="selecionar('G');" /&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/form&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p id="botaoSelecionado"&gt;&lt;/p&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+    </div>
+    <p class="cabe">E agora o código fonte JS final.</p>
+    <div class="fonte">
+function selecionar (qualBotao) {<br />
+switch (qualBotao) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case 'P':<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("botaoSelecionado").innerHTML = "Tamanho P";<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case 'M':<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("botaoSelecionado").innerHTML = "Tamanho M";<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case 'G':<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("botaoSelecionado").innerHTML = "Tamanho G";<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break;<br />
+&nbsp;&nbsp;&nbsp; default:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("botaoSelecionado").innerHTML = "erro";<br />
+&nbsp;&nbsp;&nbsp; }<br />
+}<br />
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+    <p>
+Lembrando que eu quebrei a identação (um pouco) do código fonte JS para que não precisa-se diminuir a letra durante o vídeo. Valendo a pena salientar que se for implementar isso na pratica e, selecionar esse botão alterar algo dentro do seu servidor (diretamente), vale a pena fazer essa seleção com alguma linguagem backend.
+    </p>
+    <h2>Dica</h2>
+    <p>
+Lembra que no inicio desta dica eu informei que não utilizo a tag button? Troque a tag input pela tag button e veja o resultado você mesmo. Por curiosidade você pode inserir algum CSS neste código fonte, deixando os botões verticais, aumentando, diminuindo. Altere o id, o parâmetro da função, crie mais botões.
+    </p>
+    <p>
+Espero que esta dica tenha sido útil.
+    </p>
+    <section>
+    <nav  class="paginas">
+        <ul>
+            <li><a href="while-e-do-while-em-javascript.html">anterior</a></li> 
+            <li>|</li>
+            <li><a href="index.html">curso</a></li>
+                <li>|</li>
+                <li><a href="eventos-onclick-e-ondblclick-em-javascript.html">próxima</a></li>
+        </ul>
+    </nav>
+    </section>
+</section>
+     <footer>
+          <div class="rodape">
+               <img src="../../css/img/001.png">
+               2017 Em Busca do Código
+          </div>
+          <nav class="redes">
+               <ul>
+                    <li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../img/007.png"></a></li>
+		          <li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../img/008.png"></a></li>
+		          <li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../img/009.png"></a></li>
+		          <li><a href="https://www.instagram.com/alamvianna/" target="_blank"><img src="../../img/010.png"></a></li>
+		          <li><a href="https://www.twitter.com/alamvianna/" target="_blank"><img src="../../img/011.png"></a></li>
+	          </ul>
+          </nav>
+     </footer>
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+<iframe class="propmeio2" src="prop/iframepropdois.html" width="728" height="120px" frameborder='0' scrolling="no"></iframe>
+	</body>
+</html>

@@ -1,0 +1,244 @@
+<!--Padrão 24/12/2016 ?+?-? embuscadocodigo.com v0.4-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+          <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--titulos-->
+		<title>Funções em JavaScript. Vídeo 04 do curso de JS</title>
+          <meta name="twitter:title" content="Funções em JavaScript. Vídeo 04 do curso de JS">
+<!--descrição-->
+          <meta property="og:description" content="O primeiro exemplo visto no vídeo é somar utilizando uma função em JavaScript, só que essa função não faz a soma sozinha e para isso criamos três variáveis."/>
+          <meta name="twitter:description" content="O primeiro exemplo visto no vídeo é somar utilizando uma função em JavaScript, só que essa função não faz a soma sozinha e para isso criamos três variáveis.">
+<!--Palavras chave-->
+          <meta name="keywords" content="Curso de JavaScript, javascript, variaveis, variavel, var, JS, função, functions, funções">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/javascript/funcoes-em-javascript.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="embuscadocodigo.ico">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/javascript/img/js04.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/javascript/img/js04.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="../../css/reset.css">
+          <link rel="stylesheet" href="../../css/hefo.css">
+          <link rel="stylesheet" href="../../css/novo.css">
+          <link rel="stylesheet" href="../../css/erro.css">
+          <link rel="stylesheet" href="../../css/fonte.css">
+          <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@alamvianna">
+     </head>
+     <body>
+          <header>
+			<nav class="cabecalho">
+				<ul>
+					<li><a href="../../index.html">home</a></li>
+					<li>|</li>
+					<li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+					<li>|</li>
+					<li><a href="../../sobre.html">Sobre</a></li>
+					<li>|</li>
+					<li><a href="../../codigos.html">Códigos</a></li>
+				</ul>
+<section class="linhamenus">
+</section>
+			</nav>
+		</header>
+          </section>
+     <section class="jah jah2">
+           <p>O Em Busca do Código é um site em formato de plataforma de ensino a distância (EAD), totalmente aberta e gratuita.</p>
+           <p>Aprendendo e ensinando, essa é a minha regra para mim.</p>
+     </section>
+     <section class="adesivo adesivo2">
+          <a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+               <p>Compre um adesivo do Em Busca do Código.</p>
+          </a>
+     </section>
+     <section class="prolat cachorro">
+<p>Publicidade</p>
+<iframe  src="prop/prolat.html" width="250" height="260" frameborder='0' scrolling="no"></iframe>
+     </section>
+<section class="prolatgo cachorro" >
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+<section class="prolat cachorro">
+<p>Publicidade</p>
+<iframe src="prop/prolatdaddy.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+<section class="paragrafoscodigos">
+      <section>
+            <div  class="paginas">
+                  <ul>
+                        <li><a href="variaveis-em-javascript.html">anterior</a></li>
+                        <li>|</li>
+                        <li><a href="index.html">curso</a></li>
+                        <li>|</li>
+                        <li><a href="conversao-em-javascript.html">próxima</a></li>
+                  </ul>
+            </div>
+      </section>
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<h1>Funções em JavaScript. Vídeo 04 do curso de JS</h1>
+      <p>
+O primeiro exemplo visto no vídeo é somar utilizando uma função em JavaScript, só que essa função não faz a soma sozinha e para isso criamos três variáveis.
+      </p>
+     <nav class="fonte">
+function soma (x , y) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; return "”+ (x + y);<br />
+};<br />
+&nbsp;&nbsp;&nbsp;&nbsp; var x = 4;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; var y = 5;<br />
+console.log(soma);<br />
+     </nav>
+      <p>
+Ao fazer este exemplo em seu navegador verá que o resultado que aparece no console é:
+      </p>
+     <nav class="fonte">
+function soma()
+     </nav>
+      <p>
+Isso porque não fizemos a soma em s.
+      </p>
+      <p>
+Para fazer uma soma em JavaScript (utilizando função) criamos uma outra variável e, para deixar claro o que ela faz damos a ela o nome de "resultado" e o valor dessa variável será a função "soma".
+      </p>
+<!--      <p class="cabe">usar?</p>-->
+     <nav class="fonte">
+var resultado = soma (x,y);
+     </nav>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+      <p>
+Mas ainda não acabou, em nosso primeiro código fonte desta aula nós pedimos ao console para que seja mostrada diretamente a nossa função, sendo que nós queremos o resultado da função. Então nós chamamos a nossa variável resultado.
+      </p>
+<!--      <p class="cabe">usar?</p>-->
+     <nav class="fonte">
+console.log(resultado);
+     </nav>
+      <p>
+Não vou facilitar para ninguém não. Você que insira a nossa variável "resultado" e o console.log no lugar certo.
+      </p>
+<h1>Olá Mundo!!!</h1>
+      <p>
+Se você quiser pode clicar em play no vídeo, pois o que está escrito aqui eu falo lá. E logo depois de realizar esta soma eu copio e colo o olá mundo que está no código fonte do primeiro vídeo deste curso.
+      </p>
+      <p>
+Mas eu não utilizo este código fonte, mas falo uma coisa que eu acho importante também escrever. A maioria só lê, não aperta o play.
+      </p>
+      <p>
+Mas tem outro motivo de não utilizar o código fonte e mesmo assim o inserir no meio do vídeo. Explicar o passo a passo da construção de uma função.
+      </p>
+<!--      <p class="cabe">usar?</p>-->
+     <nav class="fonte">
+function nomeDaFuncao () {<br />
+};<br />
+console.log(nomeDaFuncao);<br />
+     </nav>
+      <p>
+Este é o primeiro escopo do que preciso, ao chamar uma função no console aparece a palavra function o nome da função e abre e fecha parênteses.
+      </p>
+      <p>
+E resumindo essa parte do vídeo mostro que podemos escrever algo entre as aspas do return de uma função, mas porque?
+      </p>
+<!--      <p class="cabe">usar?</p>-->
+     <nav class="fonte">
+function nomeDaFuncao (param) {<br />
+&nbsp; return "Escrever "+param;<br />
+};<br />
+console.log(nomeDaFuncao(""));<br />
+     </nav>
+      <p>
+Porque a nossa função soma pode ficar ainda mais bonita se junto com o resultado estar escrito algo antes. Segue o código fonte da nossa primeira soma em JavaScript.
+      </p>
+     <nav class="fonte">
+function soma (x , y) {<br />
+&nbsp; return "Resultado "+ (x + y);<br />
+};<br />
+&nbsp;&nbsp;&nbsp; var x = 4;<br />
+&nbsp;&nbsp;&nbsp; var y = 5;<br />
+&nbsp;&nbsp;&nbsp; var resultado = soma (x,y);<br />
+console.log(resultado);<br />
+     </nav>
+      <p>
+Agora eu te pergunto, vale a pena clicar em play?
+      </p>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+      <p class="cabe">Assista ao vídeo:</p>
+      <nav>
+<iframe class="video" src="https://www.youtube.com/embed/3h75iM756vA" frameborder="0" allowfullscreen></iframe>
+<!--<iframe class="video" src="https://www.youtube.com/embed/yorgg2ndlvE" frameborder="0" allowfullscreen></iframe>-->
+      </nav>
+      <section>
+            <div  class="paginas">
+                  <ul>
+                        <li><a href="variaveis-em-javascript.html">anterior</a></li>
+                        <li>|</li>
+                        <li><a href="index.html">curso</a></li>
+                        <li>|</li>
+                        <li><a href="conversao-em-javascript.html">próxima</a></li>
+                  </ul>
+            </div>
+      </section>
+</section>
+     <footer>
+          <div class="rodape">
+               <img src="../../css/img/001.png">
+               Desde 2015 Em Busca do Código
+          </div>
+          <nav class="redes">
+               <ul>
+                    <li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../img/007.png"></a></li>
+		          <li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../img/008.png"></a></li>
+		          <li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../img/009.png"></a></li>
+		          <li><a href="https://www.instagram.com/alamvianna/" target="_blank"><img src="../../img/010.png"></a></li>
+		          <li><a href="https://www.twitter.com/alamvianna/" target="_blank"><img src="../../img/011.png"></a></li>
+	          </ul>
+          </nav>
+     </footer> <!--Fim do rodape-->
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+<iframe class="propmeio2" src="prop/iframepropdois.html" width="728" height="120px" frameborder='0' scrolling="no"></iframe>
+	</body>
+</html>

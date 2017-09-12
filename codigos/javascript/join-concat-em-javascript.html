@@ -1,0 +1,298 @@
+<!--Padrão 24/12/2016 ?+?-? embuscadocodigo.com v0.4-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+          <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--titulos-->
+		<title>join e concat em JavaScript. Dica 08</title>
+          <meta name="twitter:title" content="join e concat em JavaScript. Dica 08">
+<!--descrição-->
+          <meta property="og:description" content="Seguindo o nosso curso de dicas em JavaScript em frente agora vemos dois métodos muito importantes e utilizados em JavaScript. Estamos falando dos métodos join e concat."/>
+          <meta name="twitter:description" content="Seguindo o nosso curso de dicas em JavaScript em frente agora vemos dois métodos muito importantes e utilizados em JavaScript. Estamos falando dos métodos join e concat.">
+<!--Palavras chave-->
+          <meta name="keywords" content="Curso de JavaScript, javascript, array, arrays, document.write, join, concat, concatenar">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/javascript/join-concat-em-javascript.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="http://embuscadocodigo.com/css/img/001.png">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/javascript/img/js08.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/javascript/img/js08.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="../../css/reset.css">
+          <link rel="stylesheet" href="../../css/hefo.css">
+          <link rel="stylesheet" href="../../css/novo.css">
+          <link rel="stylesheet" href="../../css/erro.css">
+          <link rel="stylesheet" href="../../css/fonte.css">
+          <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@alamvianna">
+     </head>
+     <body>
+          <header>
+			<nav class="cabecalho">
+				<ul>
+					<li><a href="../../index.html">home</a></li>
+					<li>|</li>
+					<li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+					<li>|</li>
+					<li><a href="../../sobre.html">Sobre</a></li>
+					<li>|</li>
+					<li><a href="../../codigos.html">Códigos</a></li>
+				</ul>
+<section class="linhamenus">
+</section>
+			</nav>
+		</header>
+          </section>
+     <section class="jah jah2">
+           <p>O Em Busca do Código é um site em formato de plataforma de ensino a distância (EAD), totalmente aberta e gratuita.</p>
+           <p>Aprendendo e ensinando, essa é a minha regra para mim.</p>
+     </section>
+     <section class="adesivo adesivo2">
+          <a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+               <p>Compre um adesivo do Em Busca do Código.</p>
+          </a>
+     </section>
+     <section class="prolat cachorro">
+<p>Publicidade</p>
+<iframe  src="prop/prolat.html" width="250" height="260" frameborder='0' scrolling="no"></iframe>
+     </section>
+<section class="prolatgo cachorro" >
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+<section class="prolat cachorro">
+<p>Publicidade</p>
+<iframe src="prop/prolatdaddy.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+<section class="paragrafoscodigos">
+      <section>
+            <div  class="paginas">
+                  <ul>
+                        <li><a href="length-array-em-javascript.html">anterior</a></li>
+                        <li>|</li>
+                        <li><a href="index.html">curso</a></li>
+                        <li>|</li>
+                        <li><a href="push-e-unshift-em-javascript.html">próxima</a></li>
+
+                  </ul>
+            </div>
+      </section>
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->                     <!--Título--><!--Título-->
+<h1>join e concat em JavaScript. Dica 08</h1>
+      <p>
+ Se você assistiu ao vídeo anterior reparou que, em um determinado momento  apareceu concat.
+      </p>
+      <p>
+Seguindo o nosso curso de dicas em JavaScript em frente agora vemos dois métodos muito importantes e utilizados em JavaScript. Estamos falando dos métodos join e concat.
+      </p>
+      <p>
+Mas antes de falarmos sobre concatenar arrays em JavaScript vamos ver o método join.
+      </p>
+      <p>
+Quando utilizamos document.write para mostrar os valores de um array em nosso documento HTML utilizando JavaScript vemos que os elementos do array aparecem separados por , (vírgula). Como retirar as vírgulas entre os elementos do array? Como inserir outro caractere ou até mesmo strings entre os elementos de um array?
+      </p>
+    <h1>Usando join</h1>
+      <p>
+Para substituir as vírgulas que aparecem entre os elementos de um array nós utilizamos o método join, mas antes e darmos continuidade precisamos de um código fonte inicial, eu separo o HTML do JavaScript então, a seguir você vê o código fonte inicial deste vídeo.
+      </p>
+    <p class="cabe">HTML</p>
+         <nav class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+<br />
+&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;Array&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="UTF-8"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;Array parte 3&lt;/h1&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script src="array03.js"&gt;&lt;/script&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+     </nav>
+    <p class="cabe">JavaScript</p>
+         <nav class="fonte">
+var array1 = new Array(0,1,2);<br />
+document.write("&lt;h1&gt;Primeiro array: "+ array1 + "&lt;/h1&gt;");
+     </nav>
+          <p>
+Seguindo o código fonte acima vemos que existe um array qualquer e, para usarmos o método join precisamos criar uma variável.
+      </p>
+     <nav class="fonte">
+var subvir
+     </nav>
+          <p>
+Logo após criarmos a variável precisamos iguala-la ao array que queremos substituir as vírgulas.
+      </p>
+     <nav class="fonte">
+var subvir = array1
+     </nav>
+          <p>
+Adicionamos o método join.
+      </p>
+     <nav class="fonte">
+var subvir = array1.join();
+     </nav>
+          <p>
+E entre os parênteses e aspas duplas inserir a string que será o valor do novo elemento.
+      </p>
+     <nav class="fonte">
+var subvir = array1.join("novo valor");
+     </nav>
+    <p>
+Pode ser um int ou float?
+      </p>
+      <p>
+Isso você pode testar sozinho.
+      </p>
+          <p>
+Agora nós precisamos apenas "chamar" a variável criada.
+      </p>
+     <nav class="fonte">
+document.write("&lt;h1&gt;join: "+ subvir + "&lt;/h1&gt;");
+     </nav>
+    <h1>Concatenar arrays em JavaScript</h1>
+      <p>
+Para concatenar arrays precisamos de no mínimo dois arrays.
+      </p>
+         <nav class="fonte">
+var array2 = new Array("oi",456,987);<br />
+document.write("&lt;h1&gt;Segundo array: "+ array2 + "&lt;/h1&gt;");<br />
+     </nav>
+      <p>
+Agora voltaremos um pouco ao pensamento lógico. Preciso concatenar um array.
+      </p>
+<!--      <p class="cabe">usar?</p>-->
+     <nav class="fonte">
+array1
+     </nav>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+      <p>
+Em JavaScript o primeiro array informado na hora de concatenar tem que ser o primeiro declarado. Esse array estará recebendo os valores deles mesmo e mais outro array.
+      </p>
+     <nav class="fonte">
+array1 = array1
+     </nav>
+          <p>
+Antes de informar qual o segundo array precisamos utilizar o método concat.
+      </p>
+<!--      <p class="cabe">usar?</p>-->
+     <nav class="fonte">
+array1 = array1.concat();
+     </nav>
+      <p>
+E entre os parênteses informamos o nome do segundo array.
+      </p>
+         <nav class="fonte">
+array1 = array1.concat(array2);
+     </nav>
+      <p>
+Neste inicio deste curso eu estou utilizando document.write para "imprimir" de uma maneira visível e eficaz o código JS no HTML, agora, sobre criar alertas, eu não gostei de utiliza-los como exemplo, ninguém é obrigado a aprender alert(); sem fazer algo útil com ele e, document.write é bem mais útil que alert.
+      </p>
+      <p class="cabe">Código fonte JavaScript</p>
+         <nav class="fonte">
+document.write("&lt;h1&gt;Primeiro array (concat): "+ array1 + "&lt;/h1&gt;"); <br />
+<br />
+Existe um exemplo de join no vídeo que eu não inserir aqui, fica como curiosidade caso queira ver.<br />
+<br />
+&nbsp;Agora o código fonte JS completo.<br />
+var array1 = new Array(0,1,2);<br />
+document.write("&lt;h1&gt;Primeiro array: "+ array1 + "&lt;/h1&gt;");<br />
+document.write("&lt;h1&gt;&lt;/br&gt;JOIN&lt;/h1&gt;");<br />
+<br />
+var subvir = array1.join(" - ");<br />
+document.write("&lt;h1&gt;join: "+ subvir + "&lt;/h1&gt;");<br />
+<br />
+document.write("&lt;h1&gt;&lt;/br&gt;CONCATENAR&lt;/h1&gt;");<br />
+<br />
+var array2 = new Array("oi",456,987);<br />
+document.write("&lt;h1&gt;Segundo array: "+ array2 + "&lt;/h1&gt;");<br />
+array1 = array1.concat(array2);<br />
+document.write("&lt;h1&gt;Primeiro array (concat): "+ array1 + "&lt;/h1&gt;");<br />
+<br />
+document.write("&lt;h1&gt;join: "+ subvir + "&lt;/h1&gt;");<br />
+var subvir = array1.join(" - ");<br />
+document.write("&lt;h1&gt;join: "+ subvir + "&lt;/h1&gt;");<br />
+     </nav>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+          <p class="cabe">Assista ao vídeo:</p>
+      <nav>
+<iframe class="video" src="https://www.youtube.com/embed/qsaziqNfcYo" frameborder="0" allowfullscreen></iframe>
+<!--<iframe class="video" src="https://www.youtube.com/embed/yorgg2ndlvE" frameborder="0" allowfullscreen></iframe>-->
+      </nav>
+         <a class="linkexterno" href="" target="_blank">
+            <div  class="paginas">
+                  <ul>
+                        <li><a href="length-array-em-javascript.html">anterior</a></li>
+                        <li>|</li>
+                        <li><a href="index.html">curso</a></li>
+                        <li>|</li>
+                        <li><a href="push-e-unshift-em-javascript.html">próxima</a></li>
+                  </ul>
+            </div>
+      </section>
+</section>
+     <footer>
+          <div class="rodape">
+               <img src="../../css/img/001.png">
+               2017 Em Busca do Código
+          </div>
+          <nav class="redes">
+               <ul>
+                    <li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../img/007.png"></a></li>
+		          <li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../img/008.png"></a></li>
+		          <li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../img/009.png"></a></li>
+		          <li><a href="https://www.instagram.com/alamvianna/" target="_blank"><img src="../../img/010.png"></a></li>
+		          <li><a href="https://www.twitter.com/alamvianna/" target="_blank"><img src="../../img/011.png"></a></li>
+	          </ul>
+          </nav>
+     </footer> <!--Fim do rodape-->
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+<iframe class="propmeio2" src="prop/iframepropdois.html" width="728" height="120px" frameborder='0' scrolling="no"></iframe>
+	</body>
+</html>

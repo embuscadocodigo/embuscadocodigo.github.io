@@ -1,0 +1,278 @@
+<!--Padrão 09/02/2017 embuscadocodigo.com v0.5-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+          <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--titulos-->
+		<title>if e else (calculadora simples) em JavaScript</title>
+          <meta name="twitter:title" content="if e else (calculadora simples) em JavaScript">
+<!--descrição-->
+          <meta property="og:description" content="Nesta dica vemos if e else em JavaScript fazendo uma calculadora simples."/>
+          <meta name="twitter:description" content="Nesta dica vemos if e else em JavaScript fazendo uma calculadora simples.">
+<!--Palavras chave-->
+          <meta name="keywords" content="Curso de JavaScript, javascript, if, else, calculadora, js">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/javascript/if-e-else-calculadora.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="http://embuscadocodigo.com/css/img/001.png">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/javascript/img/js12.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/javascript/img/js12.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="../../css/reset.css">
+          <link rel="stylesheet" href="../../css/hefo.css">
+          <link rel="stylesheet" href="../../css/novo.css">
+          <link rel="stylesheet" href="../../css/erro.css">
+          <link rel="stylesheet" href="../../css/fonte.css">
+          <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@alamvianna">
+     </head>
+     <body>
+    <header>
+        <nav class="cabecalho">
+            <ul>
+                <li><a href="../../index.html">home</a></li>
+                <li>|</li>
+                <li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+                <li>|</li>
+                <li><a href="../../sobre.html">Sobre</a></li>
+                <li>|</li>
+                <li><a href="../../codigos.html">Códigos</a></li>
+            </ul>
+            <section class="linhamenus">
+            </section>
+        </nav>
+    </header>
+    <section class="jah jah2">
+        <p>O Em Busca do Código é um site em formato de plataforma de ensino a distância (EAD), totalmente aberta e gratuita.
+        </br></br>
+        Aprendendo e ensinando, essa é a minha regra para mim.
+        </br></br>
+         Publicado dia 20 de fevereiro de 2017.</p>
+    </section>
+    <section class="adesivo adesivo2">
+        <a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+          <p>Compre um adesivo do Em Busca do Código.</p>
+        </a>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe  src="prop/prolat.html" width="250" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+    <section class="prolatgo cachorro" >
+        <p>Publicidade</p>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- EBC JS--> 
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:336px;height:280px"
+             data-ad-client="ca-pub-5020252132627432"
+             data-ad-slot="6229362170"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe src="prop/prolatdaddy.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+<section class="paragrafoscodigos">
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="reverse-e-slice-em-javascript.html">anterior</a></li>
+                <li>|</li>
+                <li><a href="index.html">curso</a></li>
+                <li>|</li>
+                <li><a href="ordenar-array-javascript.html">próxima</a></li>
+            </ul>
+        </nav>
+    </section>
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+    <h1>if e else (calculadora simples) em JavaScript. Dica 12</h1>
+    <p>
+Nesta dica nós fazemos uma calculadora simples e quando falo simples quero dizer que, os valores e o tipo de conta são informados no código fonte.
+    </p>
+    <p>
+Podemos usar if e else sem usar uma função, mas escolhi este exemplo para explicar if e else.
+    </p>
+    <p>
+A seguir temos o código fonte HTML para iniciarmos essa dica. Salve-o com o nome que quiser no editor ou IDE de sua preferência como uma extensão .html.
+    </p>
+    <div class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;if e else em JavaScript&nbsp; (calculadora simples)&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="UTF-8"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;if e else em JavaScript (calculadora simples)&lt;/h1&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script src="ifelse.js"&gt;&lt;/script&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+    </div>
+    <p>
+A seguir crie um documento chamado ifelse.js e as dicas a seguir são para serem escritas nele.
+    </p>
+    <p>
+Em dicas anteriores já foi explicado o que é uma função, então, a primeira informação que iremos inserir em nosso .js é uma função.
+    </p>
+    <div class="fonte">
+function calculadora (q,w,conta) {}
+    </div>
+    <h1>Condicional if</h1>
+    <p>
+Para a Fundação Mozilla a condicional if é uma estrutura condicional que 
+executa a afirmação, dentro do bloco, se determinada condição for 
+verdadeira. Se for falsa, executa as afirmações dentro de else.
+    </p>
+    <div class="fonte">
+if (condição verdadeira) { } else {instrução}
+    </div>
+    <p>
+Considere sempre que, o if é verdade.
+    </p>
+    <div class="fonte">
+if (conta === "+") {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return q + w;<br />
+&nbsp;&nbsp;&nbsp; }<br />
+    </div>
+    <p>
+Nós teremos 4 "verdades" em nossa calculadora, por isso, utilizaremos else if.
+    </p>
+    <div class="fonte">
+else if(conta === "-") {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return q - w;<br />
+&nbsp;&nbsp;&nbsp; }else if (conta === "*") {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return q * w;<br />
+&nbsp;&nbsp;&nbsp; }else if (conta === "/") {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return q / w;<br />
+&nbsp;&nbsp;&nbsp; }<br />
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p>
+E se o valor da nossa variável conta não for nenhum dos valores informados teremos um erro, então, precisamos tratar esse possível erro utilizando apenas else.
+    </p>
+    <div class="fonte">
+else{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.write("&lt;h1&gt;Não foi possível calcular.&lt;/h1&gt;");<br />
+}
+<br />
+    </div>
+    <p>
+Agora criamos mais um document.write para chamar a nossa função calculadora.
+    </p>
+    <div class="fonte">
+document.write("&lt;h1&gt;"+q+" "+conta+" "+w+" = "+calculadora(q,w,conta)+"&lt;/h1&gt;")
+    </div>
+    <p>
+Esse document.write parece estranho?
+    </p>
+    <p>
+Fiz isso nele apenas para ele ficar mais bonito. Mas ainda não informamos os valores das variáveis.
+    </p>
+    <div class="fonte">
+var q = 10;<br />
+var w = 5;<br />
+var conta = "/";<br />
+    </div>
+    <p>
+Essa dica é isso, confira o vídeo.
+    </p>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+    <p class="cabe">Assista ao vídeo:</p>
+    <div>
+<iframe class="video" src="https://www.youtube.com/embed/ncGvKhqyspg" frameborder="0" allowfullscreen></iframe>
+<!--<iframe class="video" src="https://www.youtube.com/embed/yorgg2ndlvE" frameborder="0" allowfullscreen></iframe>-->
+    </div>
+    <p class="cabe">Código fonte JavaScript (completo)</p>
+    <div class="fonte">
+function calculadora (q,w,conta) {<br />
+&nbsp;&nbsp;&nbsp; if (conta === "+") {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return q + w;<br />
+&nbsp;&nbsp;&nbsp; }else if(conta === "-") {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return q - w;<br />
+&nbsp;&nbsp;&nbsp; }else if (conta === "*") {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return q * w;<br />
+&nbsp;&nbsp;&nbsp; }else if (conta === "/") {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return q / w;<br />
+&nbsp;&nbsp;&nbsp; }else{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.write("&lt;h1&gt;Não foi possível calcular.&lt;/h1&gt;");<br />
+&nbsp;&nbsp;&nbsp; }<br />
+}<br />
+    </div>
+    <h1>Dica</h1>
+    <p>
+Brinque com os valores das variáveis, com os nomes das variáveis, ao invés de document.write utilize um alert. Espero que essa dica tenha sido útil e, até a próxima.
+    </p>
+    <p>
+Espero que esta dica tenha sido útil.
+    </p>
+    <a class="linkexterno" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/if...else" target="_blank">Link externo da Fundação Mozilla sobre if e else.</a>
+    <section>
+    <nav  class="paginas">
+        <ul>
+            <li><a href="reverse-e-slice-em-javascript.html">anterior</a></li>
+            <li>|</li>
+            <li><a href="index.html">curso</a></li>
+            <li>|</li>
+            <li><a href="ordenar-array-javascript.html">próxima</a></li>
+        </ul>
+    </nav>
+    </section>
+</section>
+     <footer>
+          <div class="rodape">
+               <img src="../../css/img/001.png">
+               2017 Em Busca do Código
+          </div>
+          <nav class="redes">
+               <ul>
+                    <li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../img/007.png"></a></li>
+		          <li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../img/008.png"></a></li>
+		          <li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../img/009.png"></a></li>
+		          <li><a href="https://www.instagram.com/alamvianna/" target="_blank"><img src="../../img/010.png"></a></li>
+		          <li><a href="https://www.twitter.com/alamvianna/" target="_blank"><img src="../../img/011.png"></a></li>
+	          </ul>
+          </nav>
+     </footer>
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+<iframe class="propmeio2" src="prop/iframepropdois.html" width="728" height="120px" frameborder='0' scrolling="no"></iframe>
+	</body>
+</html>

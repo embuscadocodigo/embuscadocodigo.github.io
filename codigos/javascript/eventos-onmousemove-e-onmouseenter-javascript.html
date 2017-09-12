@@ -1,0 +1,369 @@
+<!--Padrão 09/02/2017 embuscadocodigo.com v0.5
+
+-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+          <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--titulos-->
+		<title>Diferença entre onmousemove e onmouseenter em JavaScript. Dica 20</title>
+          <meta name="twitter:title" content="Diferença entre onmousemove e onmouseenter em JavaScript. Dica 20">
+<!--descrição-->
+          <meta property="og:description" content="Nesta dica conferimos a diferença entre os eventos onmousemove e onmouseenter em JavaScript."/>
+          <meta name="twitter:description" content="Nesta dica conferimos a diferença entre os eventos onmousemove e onmouseenter em JavaScript.">
+<!--Palavras chave-->
+          <meta name="keywords" content="Curso de JavaScript, javascript,  js, onmousemove, onmouseenter">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/javascript/eventos-onmousemove-e-onmouseenter-javascript.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="http://embuscadocodigo.com/css/img/001.png">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/javascript/img/js20.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/javascript/img/js20.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="../../css/reset.css">
+          <link rel="stylesheet" href="../../css/hefo.css">
+          <link rel="stylesheet" href="../../css/novo.css">
+          <link rel="stylesheet" href="../../css/erro.css">
+          <link rel="stylesheet" href="../../css/fonte.css">
+          <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@alamvianna">
+     </head>
+     <body>
+    <header>
+        <nav class="cabecalho">
+            <ul>
+                <li><a href="../../index.html">home</a></li>
+                <li>|</li>
+                <li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+                <li>|</li>
+                <li><a href="../../sobre.html">Sobre</a></li>
+                <li>|</li>
+                <li><a href="../../codigos.html">Códigos</a></li>
+            </ul>
+            <section class="linhamenus">
+            </section>
+        </nav>
+    </header>
+    <section class="jah jah2">
+        <p>O Em Busca do Código é um site em formato de plataforma de ensino a distância (EAD), totalmente aberta e gratuita.
+        <br><br>
+        Aprendendo e ensinando, essa é a minha regra para mim.
+        <br><br>
+         Publicado dia 16 de abril de 2017.</p>
+    </section>
+    <section class="adesivo adesivo2">
+        <a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+          <p>Compre um adesivo do Em Busca do Código.</p>
+        </a>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe  src="prop/prolat.html" width="250" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+    <section class="prolatgo cachorro" >
+        <p>Publicidade</p>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- EBC JS--> 
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:336px;height:280px"
+             data-ad-client="ca-pub-5020252132627432"
+             data-ad-slot="6229362170"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe src="prop/prolatdaddy.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+<section class="paragrafoscodigos">
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="eventos-onmouseover-e-onmouseout-em-javascript.html">anterior</a></li>
+                <li>|</li>
+                <li><a href="index.html">curso</a></li>
+                <li>|</li>
+                <li><a href="eventos-onkeydown-e-onkeypress-javascript.html">próxima</a></li>
+            </ul>
+        </nav>
+    </section>
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+    <h1>Diferença entre onmousemove e onmouseenter em JavaScript. Dica 20</h1>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p class="cabe">Leia esta dica ouvindo o vídeo ou, assista ao vídeo:</p>
+    <div>
+<iframe class="video" src="https://www.youtube.com/embed/IT2nwc_X4io" frameborder="0" allowfullscreen></iframe>
+<!--<iframe class="video" src="https://www.youtube.com/embed/yorgg2ndlvE" frameborder="0" allowfullscreen></iframe>-->
+    </div>
+    <p>
+Nesta dica conferimos a diferença entre os eventos onmousemove e onmouseenter em JavaScript.
+    </p>
+    <p>
+O HTML inicial está com título, um documento JS e um CSS linkado. Duas divs onde já declarei os eventos onmousemove e onmouseenter, já informando as funções que iremos criar no JavaScript.
+    </p>
+    <div class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;Eventos em JavaScript, parte 03. Dica 20&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script src="eventos03.js"&gt;&lt;/script&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="UTF-8"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel="stylesheet" href="eventos03.css"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;Enventos em JavaScript, parte 03. Dica 20&lt;/h1&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div onmousemove="movaSobreOElemento()"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div onmouseenter="entreNoElemento()"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;<br />
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+    <p>
+O documento JS está em branco e o CSS existe apenas para dar um formato visivel aos nossos elementos HTML (div).
+    </p>
+    <div class="fonte">
+ &nbsp;div {<br />
+&nbsp;&nbsp;&nbsp; width: 90%;<br />
+&nbsp;&nbsp;&nbsp; height: 150px;<br />
+&nbsp;&nbsp;&nbsp; margin: 0 0 3% 3%;<br />
+&nbsp;&nbsp;&nbsp; float: left;<br />
+&nbsp;&nbsp;&nbsp; padding: 30px;<br />
+&nbsp;&nbsp;&nbsp; text-align: center;<br />
+&nbsp;&nbsp;&nbsp; background-color: gray;<br />
+}<br />
+h2 {<br />
+&nbsp;&nbsp;&nbsp; background-color: white;<br />
+&nbsp;&nbsp;&nbsp; font-size: 40px;<br />
+}<br />
+    </div>
+    <p>
+Como podemos ver em nosso CSS, nós utilizaremos tags h2, e utilizaremos essas tags dentro de cada div.
+    </p>
+    <div class="fonte">
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div onmousemove="movaSobreOElemento()"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h2&gt;&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/h2&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div onmouseenter="entreNoElemento()"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h2&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/h2&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br />
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <h2>Evento onmousemove</h2>
+    <p>
+O evento onmousemove ocorre sempre que o ponteiro do mouse se movimentar dentro de um elemento div.
+    </p>
+    <div class="fonte">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div onmousemove="movaSobreOElemento()"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h2&gt;Acionando o evento onmousemove:&lt;br&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span id="mover"&gt;Passe o mouse&lt;/span&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/h2&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+    </div>
+    <p>
+Como podemos ver, neste exemplo eu utilizei uma tag span e, iremos gerenciar o conteúdo dessa tag span a partir do seu id. Agora inserimos uma configuração quase idêntica dentro da nossa div onde está o evento onmouseenter.
+    </p>
+    <div class="fonte">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div onmouseenter="entreNoElemento()"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h2&gt;Acionando o evento onmouseenter:&lt;br&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span id="entrar"&gt;entre com o mouse&lt;/span&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/h2&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br />
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+    <h2>Evento onmouseenter</h2>
+    <p>
+O evento onmouseenter ocorre apenas quando o ponteiro do mouse entra no elemento div.
+    </p>
+    <h2>JavaScript</h2>
+    <p>
+A primeira coisa que fazemos é criar as funções.
+    </p>
+    <div class="fonte">
+function movaSobreOElemento () {<br />
+<br />
+}<br />
+function entreNoElemento () {<br />
+<br />
+}<br />
+    </div>
+    <p>
+Lembrando que o nome dessas funções (neste exemplo) já foram informadas no código fonte inicial de HTML. Com essas funções vamos gerenciar o conteúdo das nossas tags span, enfatizando que já foi criado um id diferente para cada tag span. E como vamos gerenciar esse conteúdo a partir de seu id, utilizamos getElementById (já visto em dicas anteriores).
+    </p>
+    <div class="fonte">
+function movaSobreOElemento () {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("mover")<br />
+}<br />
+function entreNoElemento () {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("entrar")<br />
+}<br />
+<br />
+Vamos alterar o que está escrito nessas tags, então utilizamos innerHTML (já visto em outras dicas).<br />
+<br />
+function movaSobreOElemento () {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("mover").innerHTML = ;<br />
+}<br />
+function entreNoElemento () {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("entrar").innerHTML = ;<br />
+}<br />
+    </div>
+    <p>
+O que vamos escrever?
+    </p>
+    <p>
+Nós vamos contar quantas vezes o evento é acionado e, para isso precisamos criar variáveis com valor inicial 0 (zero). Sugiro que as crie antes mesmo da declaração das funções.
+    </p>
+    <div class="fonte">
+var a = 0;<br />
+var b = 0;<br />
+    </div>
+    <p>
+Agora informamos que nosso innerHTML receberá o valor dessa variável mais 1. Assim, na primeira vez que o evento for acionado vai aparecer o número 1, depois o dois e assim consecutivamente.
+    </p>
+    <div class="fonte">
+function movaSobreOElemento () {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("mover").innerHTML = a+=1;<br />
+}<br />
+function entreNoElemento () {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("entrar").innerHTML = b+=1;<br />
+}<br />
+    </div>
+<p class="cabe">Código fonte HTML final</p>
+    <div class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;Eventos em JavaScript, parte 03. Dica 20&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script src="eventos03.js"&gt;&lt;/script&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="UTF-8"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel="stylesheet" href="eventos03.css"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;Enventos em JavaScript, parte 03. Dica 20&lt;/h1&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div onmousemove="movaSobreOElemento()"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h2&gt;Acionando o evento onmousemove:&lt;br&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span id="mover"&gt;Passe o mouse&lt;/span&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/h2&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div onmouseenter="entreNoElemento()"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h2&gt;Acionando o evento onmouseenter:&lt;br&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span id="entrar"&gt;entre com o mouse&lt;/span&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/h2&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;<br />
+    </div>
+<p class="cabe">Código fonte JavaScript final</p>
+    <div class="fonte">
+var a = 0;<br />
+var b = 0;<br />
+<br />
+function movaSobreOElemento () {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("mover").innerHTML = a+=1;<br />
+}<br />
+function entreNoElemento () {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("entrar").innerHTML = b+=1;<br />
+}<br />
+    </div>
+    <h2>Dica</h2>
+    <p>
+Na dica anterior nós vimos o evento onmouseover que por algum acaso é bem similar aos eventos apresentados nesta dica. O desafio é o seguinte, criar uma div e uma função para ver quando e como o evento onmouseover é acionado. Será mais interessante inserir este novo exemplo juntamente com o exemplo apresentado nesta dica.
+    </p>
+    <h2>Pergunta</h2>
+    <p>
+Depois dessas 20 dicas de JavaScript, já estamos preparados para começar os exemplos práticos?
+    </p>
+    <p>
+Espero que esta dica tenha sido útil.
+    </p>
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="eventos-onmouseover-e-onmouseout-em-javascript.html">anterior</a></li> 
+                <li>|</li>
+                <li><a href="index.html">curso</a></li>
+                <li>|</li>
+                <li><a href="eventos-onkeydown-e-onkeypress-javascript.html">próxima</a></li>
+            </ul>
+        </nav>
+    </section>
+</section>
+     <footer>
+          <div class="rodape">
+               <img src="../../css/img/001.png">
+               2017 Em Busca do Código
+          </div>
+          <nav class="redes">
+               <ul>
+                    <li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../img/007.png"></a></li>
+		          <li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../img/008.png"></a></li>
+		          <li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../img/009.png"></a></li>
+		          <li><a href="https://www.instagram.com/alamvianna/" target="_blank"><img src="../../img/010.png"></a></li>
+		          <li><a href="https://www.twitter.com/alamvianna/" target="_blank"><img src="../../img/011.png"></a></li>
+	          </ul>
+          </nav>
+     </footer>
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+<iframe class="propmeio2" src="prop/iframepropdois.html" width="728" height="120px" frameborder='0' scrolling="no"></iframe>
+	</body>
+</html>

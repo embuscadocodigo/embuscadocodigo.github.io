@@ -1,0 +1,404 @@
+<!--Padrão 30/04/2017 embuscadocodigo.com v2.g
+
+-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+          <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--titulos-->
+		<title>Identificar navegadores utilizando JavaScript. Dica 25</title>
+          <meta name="twitter:title" content="Identificar navegadores utilizando JavaScript. Dica 25">
+<!--descrição-->
+          <meta property="og:description" content="Como identificar o navegador que o visitante do seu site está utilizando"/>
+          <meta name="twitter:description" content="Como identificar o navegador que o visitante do seu site está utilizando">
+<!--Palavras chave-->
+          <meta name="keywords" content="Curso de JavaScript, javascript,  js, objeto navigator, navigator JS, propriedade userAgent, userAgent JS, userAgent, navigator, identificar navegador">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/javascript/identificar-navegadores-em-javascript.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="http://embuscadocodigo.com/css/img/001.png">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/javascript/img/js25.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/javascript/img/js25.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="../../css/reset.css">
+          <link rel="stylesheet" href="../../css/hefo.css">
+          <link rel="stylesheet" href="../../css/novo.css">
+          <link rel="stylesheet" href="../../css/erro.css">
+          <link rel="stylesheet" href="../../css/fonte.css">
+          <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@alamvianna">
+     </head>
+     <body>
+    <header>
+        <nav class="cabecalho">
+            <ul>
+                <li><a href="../../index.html">home</a></li>
+                <li>|</li>
+                <li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+                <li>|</li>
+                <li><a href="../../sobre.html">Sobre</a></li>
+                <li>|</li>
+                <li><a href="../../codigos.html">Códigos</a></li>
+            </ul>
+            <section class="linhamenus">
+            </section>
+        </nav>
+    </header>
+    <section class="jah jah2">
+        <p>O Em Busca do Código é um site em formato de plataforma de ensino a distância (EAD), totalmente aberta e gratuita.
+        <br><br>
+        Aprendendo e ensinando, essa é a minha regra para mim.
+        <br><br>
+         Publicado dia 31 de maio de 2017.</p>
+    </section>
+    <section class="adesivo adesivo2">
+        <a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+          <p>Compre um adesivo do Em Busca do Código.</p>
+        </a>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe  src="prop/prolat.html" width="250" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+    <section class="prolatgo cachorro" >
+        <p>Publicidade</p>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- EBC JS--> 
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:336px;height:280px"
+             data-ad-client="ca-pub-5020252132627432"
+             data-ad-slot="6229362170"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <iframe src="prop/prolatdaddy.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+    </section>
+<section class="paragrafoscodigos">
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="verificar-cookies-em-javascript.html">anterior</a></li>
+                <li>|</li>
+                <li><a href="index.html">curso</a></li>
+            </ul>
+        </nav>
+    </section>
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+    <h1>Identificar navegadores utilizando JavaScript. Dica 25</h1>
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+    <p>
+Como identificar o navegador que o visitante do seu site está utilizando
+    </p>
+    <p class="cabe">
+O vídeo complementa o texto e o texto completa o vídeo, assista.
+    </p>
+    <div>
+
+<!-- class="video" -->
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+    <p>
+O próprio vídeo desta dica começa de uma maneira diferente, pois as propriedades apresentadas na documentação da W3C para fazer isso não funcionam como deveriam.
+    </p>
+    <p>
+A propriedade appName e appCodeName retornam sempre os mesmo valores, Netscape e Mozilla respectivamente. Perguntando no grupo Desenvolvimento Web do Facebook (o maior com este nome) o primeiro comentário me indicava um artigo em inglês que era quase o que eu precisava.
+    </p>
+    <p>
+Antes de dar continuidade se você só veio pelo código fonte que identifica o navegador que o usuário está utilizando, aqui está ele.
+    </p>
+    <div class="fonte">
+var navegadores = "";<br />
+<br />
+if (navegadores = navigator.userAgent.toLowerCase().indexOf('op') &gt; -1) {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("browser").innerHTML = "Opera";<br />
+}else if (navegadores = navigator.userAgent.indexOf('MSIE') &gt; -1) {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("browser").innerHTML = "Internet Explorer ou Edge";<br />
+}else if (navegadores = navigator.userAgent.indexOf('Firefox') &gt; -1) {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("browser").innerHTML = "Mozilla Firefox";<br />
+}else if (navegadores = navigator.userAgent.indexOf('Epiphany') &gt; -1) {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("browser").innerHTML = "Epiphany";<br />
+}else if (navegadores = navigator.userAgent.indexOf('Chrome') &gt; -1) {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("browser").innerHTML = "Google Chome";<br />
+}else if (navegadores = navigator.userAgent.indexOf('Safari') &gt; -1) {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("browser").innerHTML = "Safari";<br />
+}<br />
+<br />
+if ((chrome) &amp;&amp; (safari)) safari = false;<br />
+if ((chrome) &amp;&amp; (opera)) chrome = false;<br />
+if ((safari) &amp;&amp; (epiphany)) safari = false;<br />
+<br />
+    </div>
+    <p>
+Agora posso continuar meu artigo sentindo-me em paz. Voltando ao nosso curso :) agora vou descrever o código fonte desse site que está em inglês e logo em seguida começar a explicar minhas edições.
+    </p>
+    <p>
+No código fonte do site wp-mix.com o autor (Jeff Starr) cria uma variável para cada navegador, depois iguala (cada variável) ao objeto navigator com a propriedade userAgent buscando com indexOf o nome do navegador.
+    </p>
+    <p>
+No código fonte deste site também tem um maior que menos um ( > -1 ), confesso que não entendi ao certo o porque disto, mas a busca por um dos navegadores não funciona se, todos não tiverem esse detalhe.
+    </p>
+    <p>
+Para ver a resposta ele sugere um if com alert, o alert no exemplo que eu queria para esta dica pode ser ignorado, o mais importante é o if. Eu não postarei o código fonte deste site aqui por uma questão de respeito, o link para este artigo em inglês está no final deste artigo.
+    </p>
+    <p>
+No vídeo eu mostro um exemplo da resposta das propriedades appName e appCodeName em três navegadores (Google Chrome, Mozilla Firefox e Epiphany), a seguir nós temos o código fonte HTML inicial.
+    </p>
+    <div class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;Qual navegador? JavaScript dica 25&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="UTF-8"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;Qual navegador? JavaScript dica 25&lt;/h1&gt;<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h2 id="name"&gt;&lt;/h2&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h2 id="codename"&gt;&lt;/h2&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+&lt;/body&gt;<br />
+&lt;/html&gt;<br />
+&lt;script src="qual.js"&gt;&lt;/script&gt;<br />
+<br />
+    </div>
+    <p>
+No vídeo eu também tenho um código fonte JS inicial, teste eu seus navegadores, é legal conferir.
+    </p>
+    <div class="fonte">
+var q = "";<br />
+var w = "";<br />
+<br />
+q = " Propriedade appName: " +navigator.appName;<br />
+document.getElementById("name").innerHTML = q;<br />
+w = " Propriedade appCodeName: " +navigator.appCodeName;<br />
+document.getElementById("codename").innerHTML = w;<br />
+    </div>
+    <h2>Propriedade userAgent</h2>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p>
+No código fonte que está no site wp-mix.com ele utiliza a propriedade userAgent, e como ainda não expliquei nem citei ela, vejo um exemplo. Já vimos tudo o que está junto com a propriedade userAgent, caso tenha alguma dúvida de algo do próximo código fonte, por favor conferir a aba curso deste curso (as dicas anteriores).
+    </p>
+    <div class="fonte">
+var e = "";<br />
+<br />
+e = " Propriedade userAgent: " +navigator.userAgent;<br />
+document.getElementById("info").innerHTML = e;<br />
+    </div>
+    <p>
+Estou citando um ID chamado info, então voltei no HTML e criei uma tag p com este nome de ID, lembrando, o ID pode ter o nome que você quiser.
+    </p>
+    <div class="fonte">
+&lt;p id="info"&gt;&lt;/p&gt;
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p>
+A propriedade userAgent retorna um cabeçalho do navegador, com informações como nome, versão e S.O.
+    </p>
+    <p>
+Agora sim podemos começar com o código fonte desta dica, e a primeira diferença entre o meu código fonte final e o código fonte do site wp-mix.com é que, para o que eu quero, preciso de apenas uma variável para todos os navegadores, e ele utilizou uma variável para cada navegador.
+    </p>
+    <div class="fonte">
+var navegadores = "";
+    </div>
+    <p>
+Lembra que ele (Jeff Starr) utiliza if para ver a resposta, então, isso fica.
+    </p>
+    <div class="fonte">
+if () {<br />
+<br />
+}else if () {<br />
+<br />
+}<br />
+    </div>
+    <p>
+Voltando ao HTML pela última vez, criamos uma tag h2 com um id com nome qualquer, vamos escrever o nome do navegador nessa tag h2.
+    </p>
+    <div class="fonte">
+&lt;h2 id="browser"&gt;&lt;/h2&gt;
+    </div>
+    <p>
+A lógica aqui é, em cada if, um navegador. Em outras palavras a condicional de cada if será nossa variável navegadores igual a busca por determinado navegador.
+    </p>
+    <div class="fonte">
+if (navegadores = navigator.userAgent.toLowerCase().indexOf('op') &gt; -1) {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("browser").innerHTML = "Opera";<br />
+}<br />
+    </div>
+    <p>
+Se você leu até aqui já aviso que o vídeo está bem mais completo. O código fonte acima busca op, que segundo o código fonte do site wp-mix.com é Opera, eu não tenho Opera.
+    </p>
+    <div class="fonte">
+else if (navegadores = navigator.userAgent.indexOf('MSIE') &gt; -1) {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("browser").innerHTML = "Internet Explorer ou Edge";<br />
+}else if (navegadores = navigator.userAgent.indexOf('Firefox') &gt; -1) {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("browser").innerHTML = "Mozilla Firefox";<br />
+}
+    </div>
+    <p>
+O código fonte acima busca por MSIE ou Firefox, se encontrar, a respostas será que a pessoa que está visitando o seu site está utilizando Internet Explorer ou Edge, ou, Mozilla Firefox".
+    </p>
+    <div class="fonte">
+else if (navegadores = navigator.userAgent.indexOf('Epiphany') &gt; -1) {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("browser").innerHTML = "Epiphany";<br />
+}else if (navegadores = navigator.userAgent.indexOf('Chrome') &gt; -1) {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("browser").innerHTML = "Google Chrome";<br />
+}else if (navegadores = navigator.userAgent.indexOf('Safari') &gt; -1) {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("browser").innerHTML = "Safari";<br />
+}<br />
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<iframe src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no"></iframe>
+</section>
+    <p>
+Agora temos algo interessante (NOVO). O Epiphany é o navegador padrão do Elementary OS, e ele tem algo em comum com o Google Chrome, ambos aparecem a palavra também Safari quando você utiliza a propriedade userAgent, e se você colocasse a condicional do Safari antes desses navegadores, nesses navegadores só iria aparecer Safari.
+    </p>
+    <p>
+ Este código fonte não acabou, no código fonte do Jeff ele também usa alguns if em separado.
+    </p>
+    <div class="fonte">
+if ((chrome) &amp;&amp; (safari)) safari = false;<br />
+if ((chrome) &amp;&amp; (opera)) chrome = false;<br />
+if ((safari) &amp;&amp; (epiphany)) safari = false;<br />
+    </div>
+    <p>
+ Na verdade ele utiliza dois deles, adicionei o do Epiphany durante o vídeo. Isso pode servir para evitar problemas com relação a busca.
+    </p>
+    <p>
+ Alias, Segundo esses ifs, quando chamar a propriedade useAgent no Opera, também aparecerá Chrome, igual no caso do Chrome e Epiphany aparece Safari. Por isso, já para evitar possíveis erros, eu deixei a condicional (if) do Opera, antes que o if do Google Chrome. Lembrando, eu não tenho Opera, isto é quase que uma suposição.
+    </p>
+    <p>
+Eu testei aqui em três navegadores, quais navegadores você usa, tem algum navegador que eu não testei aqui?
+    </p>
+    <p>
+Se sim, de preferência no YouTube, comente onde a condicional deste navegador tem que estar dentro dessa praticamente lista.
+    </p>
+    <p>
+Código fonte JS completo.
+    </p>
+    <div class="fonte">
+var q = "";<br />
+var w = "";<br />
+var e = "";<br />
+<br />
+q = " Propriedade appName: " +navigator.appName;<br />
+document.getElementById("name").innerHTML = q;<br />
+w = " Propriedade appCodeName: " +navigator.appCodeName;<br />
+document.getElementById("codename").innerHTML = w;<br />
+<br />
+e = " Propriedade userAgent: " +navigator.userAgent;<br />
+document.getElementById("info").innerHTML = e;<br />
+<br />
+var navegadores = "";<br />
+<br />
+if (navegadores = navigator.userAgent.toLowerCase().indexOf('op') &gt; -1) {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("browser").innerHTML = "Opera";<br />
+}else if (navegadores = navigator.userAgent.indexOf('MSIE') &gt; -1) {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("browser").innerHTML = "Internet Explorer ou Edge";<br />
+}else if (navegadores = navigator.userAgent.indexOf('Firefox') &gt; -1) {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("browser").innerHTML = "Mozilla Firefox";<br />
+}else if (navegadores = navigator.userAgent.indexOf('Epiphany') &gt; -1) {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("browser").innerHTML = "Epiphany";<br />
+}else if (navegadores = navigator.userAgent.indexOf('Chrome') &gt; -1) {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("browser").innerHTML = "Google Chrome";<br />
+}else if (navegadores = navigator.userAgent.indexOf('Safari') &gt; -1) {<br />
+&nbsp;&nbsp;&nbsp; document.getElementById("browser").innerHTML = "Safari";<br />
+}<br />
+<br />
+if ((chrome) &amp;&amp; (safari)) safari = false;<br />
+if ((chrome) &amp;&amp; (opera)) chrome = false;<br />
+if ((safari) &amp;&amp; (epiphany)) safari = false;<br />
+    </div>
+    <p>
+Vai precisar criar mais desses ifs em separado, precisa mesmo dessas condicionais?
+    </p>
+    <p>
+Se você utiliza um navegador que não está nem nesse código fonte, aí sim seria interessante comentar. Se puder mandar imagem da userAgent deste navegador que está aqui, pode mandar para a página do Em Busca do Código. Ficarei feliz em atualizar este código fonte.
+    </p>
+    <p>
+Espero que você tenha gostado desta dica e leitura, e até mais. Observação, agora vem as fontes.
+    </p>
+    <a class="linkexterno" href="https://www.facebook.com/groups/desenvolvimentoweb" target="_blank">Grupo Desenvolvimento Web (Facebook)</a><br><br>
+    <a class="linkexterno" href="https://wp-mix.com/detect-chrome-ie-firefox-opera-safari/" target="_blank">WP Mix: Detect Chrome, IE, Firefox, Opera, and Safari</a>
+    <p>
+Confira outras dicas de JS do site. Já temos muito mais que o básico.
+    </p>
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="verificar-cookies-em-javascript.html">anterior</a></li> 
+                <li>|</li>
+                <li><a href="index.html">curso</a></li>
+            </ul>
+        </nav>
+    </section>
+</section>
+     <footer>
+          <div class="rodape">
+               <img src="../../css/img/001.png">
+               2017 Em Busca do Código
+          </div>
+          <nav class="redes">
+               <ul>
+                    <li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../img/007.png"></a></li>
+		          <li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../img/008.png"></a></li>
+		          <li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../img/009.png"></a></li>
+		          <li><a href="https://www.instagram.com/alamvianna/" target="_blank"><img src="../../img/010.png"></a></li>
+		          <li><a href="https://www.twitter.com/alamvianna/" target="_blank"><img src="../../img/011.png"></a></li>
+	          </ul>
+          </nav>
+     </footer>
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+<iframe class="propmeio2" src="prop/iframepropdois.html" width="728" height="120px" frameborder='0' scrolling="no"></iframe>
+	</body>
+</html>
