@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Vídeo 35</title>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" href="../../css/reset.css">
+		<link rel="stylesheet" href="../../css/roca.css">
+		<link rel="stylesheet" href="../../css/padrao.css">
+		<link rel="stylesheet" href="../../css/erro.css">
+		<link rel="stylesheet" href="../../css/fonte.css">
+		<link rel="icon" href="embuscadocodigo.ico">
+
+	</head>
+	<body>
+		<header>
+			<nav class="cabecalho">
+				<ul>
+					<li><a href="../../index.html">home</a></li>
+					<li>|</li>
+					<li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+					<li>|</li>
+					<li><a href="../../sobre.html">Sobre</a></li>
+					<li>|</li>
+					<li><a href="../../codigos.html">Códigos</a></li>
+				</ul>
+<section class="linhamenus">
+</section>
+			</nav>
+		</header>
+      <section>
+            <div  class="paginas">
+                  <ul>
+                        <li><a href="video34.html">anterior</a></li>
+                        <li>|</li>
+                        <li><a href="../html.html">curso</a></li>
+                        <li>|</li>
+                        <li><a href="video36.html">próxima</a></li>
+                  </ul>
+            </div>
+      </section>
+<section class="propmeio">
+<p>Publicidade</p>
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- em busca do codigo 01 -->
+				<ins class="adsbygoogle"
+				style="display:inline-block;width:728px;height:90px"
+				data-ad-client="ca-pub-5020252132627432"
+				data-ad-slot="7324870979"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+</section>
+<a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+<section class="paragrafoscodigos">
+<p>Compre um adesivo e ajude o Em Busca do Código a continuar.</p>
+</section>
+</a>
+</br>
+<section class="paragrafoscodigos">
+<h1> Carrinho de compra [parte 01]. HTML5 CSS3 aula 35</h1>
+</br><p>
+Nesse vídeo vemos o inicio de como inserir um carinho de compras, no final desse vídeo o carrinho não está funcionando ainda, pois esse tutorial está seguindo uma ordem e primeiramente inserimos a base do nosso site, antes de vermos conceitos mais avançados.
+</p></br>
+<p>Código fonte HTML</p>
+</br>
+<nav class="fonte">
+<br />
+&lt;nav class="cabecalho"&gt;<br />
+&lt;div class="cabeloja"&gt; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;ul&gt;<br />
+&lt;!-- .... --&gt;<br />
+&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="compras"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="carrinho.html"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;ol&gt; &lt;!--sub lista da primeira lista--&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Minhas compras&lt;/li&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;img class="carrinho" src="css/img/01.png"&gt;&lt;/li&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/ol&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/a&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br />
+</nav></br>
+<p>Código fonte CSS:</p>
+</br>
+<nav class="fonte">
+<br />
+.compras img {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; height: 30px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; width: 30px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; line-height: 10px;<br />
+}<br />
+.compras {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size: 12px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding-right: 35px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align: right;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; width: 150px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; height: 25px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; position: relative;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; float: right;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bottom: 14px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; clear: right;<br />
+}<br />
+.compras ol li {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; display: inline;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align: center;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; list-style-type: none;<br />
+}<br />
+.carrinho {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; position: absolute;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /*right: Npx; depende da imagem ela pode estar tocando no seu texto*/<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bottom: 5px;<br />
+}<br />
+.compras a {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-decoraton: none;<br />
+}<br />
+.cabeloja {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; left: 150px;<br />
+}</br>
+</nav>
+</br>
+<iframe class="propmeio3" src="iframepropdois.html" width="100%" height="120px" frameborder='0' scrolling="no"></iframe>
+<p>Vídeo aula: </p>
+<nav class="video">
+<iframe width="90%" height="500px" src="https://www.youtube.com/embed/SQeypF2m99M?controls=1&amp;autoplay=1&amp;mute=1&amp;rel=1&amp;showinfo=1" frameborder="0" allowfullscreen></iframe>
+</nav>
+</section>
+</br>
+<a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+<section class="paragrafoscodigos">
+<p>Compre um adesivo e ajude o Em Busca do Código a continuar.</p>
+</section>
+</a>
+      <section>
+            <div  class="paginas">
+                  <ul>
+                        <li><a href="video34.html">anterior</a></li>
+                        <li>|</li>
+                        <li><a href="../html.html">curso</a></li>
+                        <li>|</li>
+                        <li><a href="video36.html">próxima</a></li>
+                  </ul>
+            </div>
+      </section>
+<footer id="rodape">
+
+<form class="procurar">
+      <script>
+        (function() {
+          var cx = '003467032773945451414:czc04qxogy0';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+              '//cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+</form> <!--Fim do form de pesquisa-->
+			<img src="../../css/img/001.png">
+                  Desde 2015 Em Busca do Código
+			<ul class="redes">
+				<li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../css/img/007.png"></a></li>
+				<li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../css/img/008.png"></a></li>
+				<li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../css/img/009.png"></a></li>
+			</ul>
+
+</footer> <!--Fim do rodape-->
+
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+<iframe class="propmeio2" src="iframepropaganda.html" width="100%" height="90px" frameborder='0' scrolling="no"></iframe>
+	</body>
+</html>
