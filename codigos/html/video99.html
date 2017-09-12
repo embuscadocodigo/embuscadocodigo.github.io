@@ -1,0 +1,381 @@
+<!--Padrão 31/08/2016 embuscadocodigo.com v0.2-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+          <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<!--titulos-->
+		<title>Álbum modal em HTML5 CSS3. Vídeo 99</title>
+          <meta name="twitter:title" content="Álbum modal em HTML5 CSS3. Vídeo 99">
+<!--descrição-->
+          <meta property="og:description" content="Agora nós criamos um álbum de fotos modal, isso mesmo, um álbum de imagens que abra dentro de um modal."/>
+          <meta name="twitter:description" content="Agora nós criamos um álbum de fotos modal, isso mesmo, um álbum de imagens que abra dentro de um modal.">
+<!--Palavras chave-->
+          <meta name="keywords" content="modal, target, pseudo-classe, album, album de fotos, album modal, html, css, album de imagens, album de imagem">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/html/video99.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="embuscadocodigo.ico">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/html/img/99.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/html/img/99.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="../../css/reset.css">
+          <link rel="stylesheet" href="../../css/roca.css">
+          <link rel="stylesheet" href="liststyletype.css">
+          <link rel="stylesheet" href="../../css/padrao.css">
+          <link rel="stylesheet" href="../../css/erro.css">
+          <link rel="stylesheet" href="../../css/fonte.css">
+          <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@embuscadocodigo">
+     </head>
+     <body>
+          <header>
+			<nav class="cabecalho">
+				<ul>
+					<li><a href="../../index.html">home</a></li>
+					<li>|</li>
+					<li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+					<li>|</li>
+					<li><a href="../../sobre.html">Sobre</a></li>
+					<li>|</li>
+					<li><a href="../../codigos.html">Códigos</a></li>
+				</ul>
+<section class="linhamenus">
+</section>
+			</nav>
+		</header>
+      <section>
+            <div  class="paginas">
+                  <ul>
+                        <li><a href="video98.html">anterior</a></li>
+                        <li>|</li>
+                        <li><a href="../html.html">curso</a></li>
+                        <li>|</li>
+                        <li><a href="#">#</a></li>
+                  </ul>
+            </div>
+      </section>
+<section class="propmeio">
+<p>Publicidade</p>
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- em busca do codigo 01 -->
+				<ins class="adsbygoogle"
+				style="display:inline-block;width:728px;height:90px"
+				data-ad-client="ca-pub-5020252132627432"
+				data-ad-slot="7324870979"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+</section>
+<a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+<section class="paragrafoscodigos">
+<p>Compre um adesivo e ajude o Em Busca do Código a continuar.</p>
+</section>
+</a>
+</br>
+<section class="paragrafoscodigos">
+<!--Título--><!--Título--><!--Título--><!--Título--><!--Título--><!--Título--><!--Título--><!--Título-->
+<h1>Álbum modal em HTML5 CSS3. Vídeo 99</h1>
+</br>
+      <p>
+Na videoaula anterior nós vimos como funciona uma imagem modal, o que é um modal e como fazer para que uma imagem abra em um modal.
+      </p>
+</br>
+      <p>
+Agora nós criamos um álbum de fotos modal, isso mesmo, um álbum de imagens que abra dentro de um modal.
+      </p>
+</br>
+      <p>
+Alterei minimamente o código fonte anterior, então, antes de darmos continuidade nesta "aula"crie um documento HTML e outro CSS, lembrando, estes dois documentos podem ter qualquer nome, mas não se esqueça de linkar seu documento CSS no documento HTML.
+      </p>
+</br>
+      <p class="cabe">Código fonte HTML (inicial):</p>
+            <nav class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+<br />
+&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta http-equiv="Content-type" content="text/html; charset=UTF-8"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;Imagem modal&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel="stylesheet" href="modal.css"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="#Bookmark01"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;figure&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="img01.png" width="12%"&gt;&lt;/img&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;figcaption&gt;imagem&lt;/figcaption&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/figure&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/a&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div id="Bookmark01" class="dialogo"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="imgfake"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="fechar" title="Fechar" href="#qualquernome"&gt;X&lt;/a&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img class="imagemmodal" src="img01.png"&gt;&lt;/img&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+            </nav>
+</br>
+      <p class="cabe">Código fonte CSS (inicial):</p>
+            <nav class="fonte">
+.dialogo {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; position: fixed;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; top: 0;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; right: 0;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; left: 0;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; bottom: 0;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background: rgba(255,193,193,0.5);<br />
+&nbsp;&nbsp;&nbsp;&nbsp; z-index: 11111111;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; opacity: 0;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; pointer-events: none;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; overflow: scroll;<br />
+}<br />
+<br />
+.dialogo:target {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; opacity: 1;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; pointer-events: auto;<br />
+}<br />
+<br />
+.imgfake {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; position: relative;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; margin-left: 25%;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; margin-top: 5%;<br />
+}<br />
+<br />
+.imagemmodal {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; display: block;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; float: center;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width: 50%;<br />
+}<br />
+.fechar {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; color: #ffffff;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; position: absolute;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; text-align: left;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width: 24px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; text-decoration: none;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; font-weight: bold;<br />
+}
+            </nav>
+</br>
+      <p>
+Antes de assistir ao vídeo tenha em mente que para fazer seu álbum modal você tem que saber o número de imagens que terão em seu álbum (isso utilizando somente "HTML5 e CSS3").
+      </p>
+</br>
+      <p>
+Mas o que nós vemos no vídeo?
+      </p>
+</br>
+      <p>
+A primeira coisa que fazemos é inserir todas as imagens no HTML, essa parte eu dei Ctrl+C / Ctrl+V mesmo pois o posicionamento das imagens no seu site depende do seu layout (depende de você), nesse tutorial o foco é fazer um álbum modal.
+      </p>
+</br>
+<iframe class="propmeio3" src="iframepropdois.html" width="100%" height="120px" frameborder='0' scrolling="no"></iframe>
+      <p class="cabe">Assista ao vídeo: </p>
+      <nav class="video">
+<iframe width="90%" height="500" src="https://www.youtube.com/embed/AXcD2DKj9ok?controls=1&amp;autoplay=1&amp;mute=1&amp;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </nav>
+      <p>
+Por favor, não saia copiando e colocando o código fonte do álbum, o foco do Em Busca do Código é entender como se faz, entender como se cria um modal ("aula" anterior), entender o passo a passo do álbum dentro de um modal.
+      </p>
+</br>
+      <p>
+A partir do momento que você entende como funciona um modal, você faz qualquer tipo de modal, inclusive adicionando outras linguagens.
+      </p>
+</br>
+</p>
+      <p class="cabe">Código fonte HTML (final):</p>
+            <nav class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+<br />
+&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta http-equiv="Content-type" content="text/html; charset=UTF-8"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;Imagem modal&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel="stylesheet" href="modal.css"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="#Bookmark01"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;figure&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="img01.png" width="12%"&gt;&lt;/img&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;figcaption&gt;imagem&lt;/figcaption&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/figure&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/a&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="#Bookmark02"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;figure&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="img02.png" width="12%"&gt;&lt;/img&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;figcaption&gt;imagem&lt;/figcaption&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/figure&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/a&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="#Bookmark03"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;figure&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="img03.png" width="12%"&gt;&lt;/img&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;figcaption&gt;imagem&lt;/figcaption&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/figure&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/a&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div id="Bookmark01" class="dialogo"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="imgfake"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="fechar" title="Fechar" href="#qualquernome"&gt;X&lt;/a&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img class="imagemmodal" src="img01.png"&gt;&lt;/img&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;ul class="listafixa"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#Bookmark01"&gt;&lt;img src="img01.png"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#Bookmark02"&gt;&lt;img src="img02.png"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#Bookmark03"&gt;&lt;img src="img03.png"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div id="Bookmark02" class="dialogo"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="imgfake"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="fechar" title="Fechar" href="#qualquernome"&gt;X&lt;/a&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img class="imagemmodal" src="img02.png"&gt;&lt;/img&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;ul class="listafixa"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#Bookmark01"&gt;&lt;img src="img01.png"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#Bookmark02"&gt;&lt;img src="img02.png"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#Bookmark03"&gt;&lt;img src="img03.png"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div id="Bookmark03" class="dialogo"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="imgfake"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="fechar" title="Fechar" href="#qualquernome"&gt;X&lt;/a&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img class="imagemmodal" src="img03.png"&gt;&lt;/img&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;ul class="listafixa"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#Bookmark01"&gt;&lt;img src="img01.png"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#Bookmark02"&gt;&lt;img src="img02.png"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#Bookmark03"&gt;&lt;img src="img03.png"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+            </nav>
+</br>
+      <p class="cabe">Código fonte CSS (final):</p>
+            <nav class="fonte">
+.dialogo {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; position: fixed;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; top: 0;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; right: 0;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; left: 0;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; bottom: 0;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background: rgba(255,193,193,0.5);<br />
+&nbsp;&nbsp;&nbsp;&nbsp; z-index: 11111111;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; opacity: 0;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; pointer-events: none;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; overflow: scroll;<br />
+}<br />
+<br />
+.dialogo:target {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; opacity: 1;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; pointer-events: auto;<br />
+}<br />
+<br />
+.imgfake {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; position: relative;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; margin-left: 25%;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; margin-top: 5%;<br />
+}<br />
+<br />
+.imagemmodal {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; display: block;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; float: center;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width: 50%;<br />
+}<br />
+<br />
+.fechar {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; color: #ffffff;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; position: absolute;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; text-align: left;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width: 24px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; text-decoration: none;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; font-weight: bold;<br />
+}<br />
+.listafixa {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; position: fixed;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; text-align: left;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; top: 0px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; right: 0px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; list-style-type: none;<br />
+}<br />
+.listafixa img {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width:&nbsp; 100px<br />
+}<br />
+li {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; opacity: 0.5;<br />
+}<br />
+li:hover {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; opacity: 1;<br />
+}<br />
+            </nav>
+<iframe class="propmeio3" src="iframepropdois.html" width="100%" height="120px" frameborder='0' scrolling="no"></iframe>
+</br></br>
+     <p>
+Caso não entenda ou conheça algo que está no código fonte busque por esse termo logo a seguir (campo de pesquisa), este é o nosso código fonte número 99, existem mais 98 códigos fontes de HTML e CSS neste site, esses códigos fontes são nossos. Espero que este link tenha sido útil.
+      </p>
+</br>
+</section>
+</br>
+<a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+<section class="paragrafoscodigos">
+<p>Compre um adesivo e ajude o Em Busca do Código a continuar.</p>
+</section>
+</a>
+      <section>
+            <div  class="paginas">
+                  <ul>
+                        <li><a href="video98.html">anterior</a></li>
+                        <li>|</li>
+                        <li><a href="../html.html">curso</a></li>
+                        <li>|</li>
+                        <li><a href="#">#</a></li>
+                  </ul>
+            </div>
+      </section>
+<footer id="rodape">
+
+<form class="procurar">
+      <script>
+        (function() {
+          var cx = '003467032773945451414:czc04qxogy0';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+              '//cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+</form> <!--Fim do form de pesquisa-->
+			<img src="../../css/img/001.png">
+                  Desde 2015 Em Busca do Código
+			<ul class="redes">
+				<li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../css/img/007.png"></a></li>
+				<li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../css/img/008.png"></a></li>
+				<li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../css/img/009.png"></a></li>
+			</ul>
+
+</footer> <!--Fim do rodape-->
+
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+<iframe class="propmeio2" src="iframepropaganda.html" width="100%" height="90px" frameborder='0' scrolling="no"></iframe>
+	</body>
+</html>

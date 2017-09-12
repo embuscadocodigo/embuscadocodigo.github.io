@@ -1,0 +1,233 @@
+<!--Padrão 31/08/2016 embuscadocodigo.com v0.2-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+          <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<!--titulos-->
+		<title>z-index em HTML5 CSS3. Vídeo 97</title>
+          <meta name="twitter:title" content="z-index em HTML5 CSS3. Vídeo 97">
+<!--descrição-->
+          <meta property="og:description" content="Nessa videoaula vemos um exemplo do uso de z-index em CSS"/>
+          <meta name="twitter:description" content="Nessa videoaula vemos um exemplo do uso de z-index em CSS">
+<!--Palavras chave-->
+          <meta name="keywords" content="z-index, zindex, html, hmtl5, css, css3, na frente, atrás, elemento, elemento se esconde, nav, div">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/html/video97.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="embuscadocodigo.ico">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/html/img/97.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/html/img/97.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="../../css/reset.css">
+          <link rel="stylesheet" href="../../css/roca.css">
+          <link rel="stylesheet" href="liststyletype.css">
+          <link rel="stylesheet" href="../../css/padrao.css">
+          <link rel="stylesheet" href="../../css/erro.css">
+          <link rel="stylesheet" href="../../css/fonte.css">
+          <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@embuscadocodigo">
+     </head>
+     <body>
+          <header>
+			<nav class="cabecalho">
+				<ul>
+					<li><a href="../../index.html">home</a></li>
+					<li>|</li>
+					<li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+					<li>|</li>
+					<li><a href="../../sobre.html">Sobre</a></li>
+					<li>|</li>
+					<li><a href="../../codigos.html">Códigos</a></li>
+				</ul>
+<section class="linhamenus">
+</section>
+			</nav>
+		</header>
+      <section>
+            <div  class="paginas">
+                  <ul>
+                        <li><a href="video96.html">anterior</a></li>
+                        <li>|</li>
+                        <li><a href="../html.html">curso</a></li>
+                        <li>|</li>
+                        <li><a href="video98.html">próxima</a></li>
+                  </ul>
+            </div>
+      </section>
+<section class="propmeio">
+<p>Publicidade</p>
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- em busca do codigo 01 -->
+				<ins class="adsbygoogle"
+				style="display:inline-block;width:728px;height:90px"
+				data-ad-client="ca-pub-5020252132627432"
+				data-ad-slot="7324870979"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+</section>
+<a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+<section class="paragrafoscodigos">
+<p>Compre um adesivo e ajude o Em Busca do Código a continuar.</p>
+</section>
+</a>
+</br>
+<section class="paragrafoscodigos">
+<!--Título--><!--Título--><!--Título--><!--Título--><!--Título--><!--Título--><!--Título--><!--Título-->
+<h1>z-index em HTML5 CSS3. Vídeo 97</h1>
+</br>
+      <p>
+Já estudou o eixo X e o eixo Y na escola? Pois bem, também existe o eixo Z e, em todos os casos que conheço o eixo Z é relativo a profundidade. O que não é nada diferente no caso do z-index em HTML, na verdade o z-index é uma propriedade do CSS (das CSS).
+      </p>
+</br>
+      <p>
+No site da fundação Mozilla a respeito do z-index encontrei um termo bem "elegante" para não chamar de diferente, este termo é "ordem Z". Então o que o z-index faz é especificar a ordem dos elementos no eixo Z (profundidade).
+      </p>
+</br>
+      <p>
+Para acompanhar essa videoaula você precisa de um documento HTML e um CSS, o documento HTML não mudará em nada, a única coisa que alteramos é o documento CSS. Pegue os códigos fontes a seguir.
+      </p>
+</br>
+      <p class="cabe">Código fonte HTML (inicial):</p>
+            <nav class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta http-equiv="Content-type" content="text/html; charset=UTF-8"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;z-index em HTML5 CSS3&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel="stylesheet" href="zindex.css"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img class="um" src="info01.png"&gt;&lt;/img&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img class="dois" src="info02.png"&gt;&lt;/img&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img class="tres" src="info4.png"&gt;&lt;/img&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+            </nav>
+</br>
+      <p class="cabe">Código fonte CSS (inicial):</p>
+            <nav class="fonte">
+img {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width: 700px;<br />
+} 
+            </nav>
+<iframe class="propmeio3" src="iframepropdois.html" width="100%" height="120px" frameborder='0' scrolling="no"></iframe>
+      <p class="cabe">Assista ao vídeo: </p>
+      <nav class="video">
+<iframe width="90%" height="500px" src="https://www.youtube.com/embed/L6RitiV-5ZE?controls=1&amp;autoplay=1&amp;mute=1&amp;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </nav>
+      <p>
+Mas seu exemplo é tão simples?
+      </p>
+</br>
+      <p>
+É aí que está o que você pode fazer com z-index. Menu superior fixo (position: absolute;) que não se esconde, menu superior sempre a frente dos outros elementos (HTML5 CSS3).
+      </p>
+</br>
+      <p>
+Mas cuidado, por exemplo o Em Busca do Código utiliza "serviços" de terceiros dentro do site e isso pode atrapalhar o z-index, por isso, nesses casos é bom sempre inserir um valor para a propriedade z-index dentro do CSS bem auto.
+      </p>
+</br>
+      <p>
+Exemplo um pouco diferente: No meu segundo site a propaganda era igual essa fixa na parte inferior do site, mas em determinados momentos ela mesma se escondia atrás do conteúdo do próprio site. E neste exemplo peculiar eu tiver que configurar um z-index para a pessoa ver a propaganda. Isso mesmo, eu escondia as propagandas presentes em um dos meus sites.
+      </p>
+</br>
+      <p>
+Código fonte CSS do final dessa vídeoaula.
+      </p>
+</br>
+      <p class="cabe">Código fonte CSS (final):</p>
+            <nav class="fonte">
+img {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width: 700px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; position: absolute;<br />
+}<br />
+.um {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; z-index: 4;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; top: 100px;<br />
+}<br />
+.dois {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; z-index: 2;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; top: 400px;<br />
+}<br />
+.tres {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; z-index: 3;<br />
+}<br />
+            </nav>
+</br>
+      <p>
+Caso entenda que faltou algo confira nossas fontes, pode completar ainda mais o conhecimento a respeito da propriedade z-index.
+      </p>
+</br>
+<a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/z-index" target="_blank">Fonte (externa, abre em outra aba): Fundação Mozilla</a></br>
+<a href="http://pt-br.html.net/tutorials/css/lesson15.php" target="_blank">Fonte (externa, abre em outra aba): HTML . NET</a></br>
+<a href="http://www.devmedia.com.br/css-z-index-entendendo-sobre-o-eixo-z-na-web/28698" target="_blank">Fonte (externa, abre em outra aba): DevMedia</a></br>
+</section>
+</br>
+<a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+<section class="paragrafoscodigos">
+<p>Compre um adesivo e ajude o Em Busca do Código a continuar.</p>
+</section>
+</a>
+      <section>
+            <div  class="paginas">
+                  <ul>
+                        <li><a href="video96.html">anterior</a></li>
+                        <li>|</li>
+                        <li><a href="../html.html">curso</a></li>
+                        <li>|</li>
+                        <li><a href="video98.html">próxima</a></li>
+                  </ul>
+            </div>
+      </section>
+<footer id="rodape">
+
+<form class="procurar">
+      <script>
+        (function() {
+          var cx = '003467032773945451414:czc04qxogy0';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+              '//cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+</form> <!--Fim do form de pesquisa-->
+			<img src="../../css/img/001.png">
+                  Desde 2015 Em Busca do Código
+			<ul class="redes">
+				<li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../css/img/007.png"></a></li>
+				<li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../css/img/008.png"></a></li>
+				<li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../css/img/009.png"></a></li>
+			</ul>
+
+</footer> <!--Fim do rodape-->
+
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<section class="prose">
+		</section>
+<iframe class="propmeio2" src="iframepropaganda.html" width="100%" height="90px" frameborder='0' scrolling="no"></iframe>
+	</body>
+</html>
