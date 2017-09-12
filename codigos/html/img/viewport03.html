@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <style>
+* {
+    box-sizing: border-box;
+}
+     .grid01 {
+          width: 8.33%;
+     }
+     .grid02 {
+          width: 16.66%;
+     }
+     .grid03 {
+          width: 25%;
+     }
+     .grid04 {
+          width: 33.33%;
+     }
+     .grid05 {
+          width: 41.66%;
+     }
+     .grid06 {
+          width: 50%;
+     }
+     .grid07 {
+          width: 58.33%;
+     }
+     .grid08 {
+          width: 66.66%;
+     }
+     .grid09 {
+          width: 75%;
+     }
+     .grid10 {
+          width: 83.33%;
+     }
+     .grid11 {
+          width: 91.66%;
+     }
+     .grid12 {
+          width: 100%;
+     }
+     [class*="grid"] {
+         float: left;
+         padding: 15px;
+         border: 1px solid #90EE90;
+     }
+.linha::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+ html {
+    font-family: "Lucida Sans", sans-serif;
+}
+header {
+    background-color: #458B00;
+    color: #ffffff;
+    padding: 1%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 1%;
+    margin-bottom: 7px;
+    background-color :#33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #458B00;
+}
+     </style>
+</head>
+<body>
+<header>
+  <h1>Exemplo</h1>
+</header>
+
+<div class="linha">
+
+<div class="grid03 menu">
+  <ul>
+    <li>Voar</li>
+    <li>Cidade</li>
+    <li>Ilha</li>
+    <li>Comida</li>
+  </ul>
+</div>
+
+<div class="grid09">
+  <h1>A cidade</h1>
+  <p>Bauru uma cidade com quase 400 mil habitantes, tem zoologico, bares, o Parque Vitoria Regia e muito mais.</p>
+  <p>Tem mais de 10 universidades. Proibindo festas em republicas por causa da concorrencia com as baladas e bares.</p>
+</div>
+</body>
+
