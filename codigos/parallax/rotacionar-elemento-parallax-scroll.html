@@ -1,0 +1,303 @@
+<!--Padrão 31/08/2016 embuscadocodigo.com v0.2-->
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+	<head>
+          <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!--titulos-->
+		<title>9º exercício: Rotacionando elemento com parallax (scroll)</title>
+          <meta name="twitter:title" content="9º exercício: Rotacionando elemento com parallax (scroll)">
+<!--descrição-->
+          <meta property="og:description" content="Neste exercício nós rotacionamos um elemento HTML, isso utilizando a rolagem da tela como base, mas como assim?"/>
+          <meta name="twitter:description" content="Neste exercício nós rotacionamos um elemento HTML, isso utilizando a rolagem da tela como base, mas como assim?">
+<!--Palavras chave-->
+          <meta name="keywords" content="Curso de parallax, parallax, gratis, gratuito, embuscadocodigo, Em Busca do Código, parallax simples">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/parallax/rotacionar-elemento-parallax-scroll.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta property="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="embuscadocodigo.ico">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/parallax/img/parallax-09.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/parallax/img/parallax-09.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="../../css/reset.css">
+          <link rel="stylesheet" href="../../css/hefo.css">
+          <link rel="stylesheet" href="../../css/novo.css">
+          <link rel="stylesheet" href="../../css/erro.css">
+          <link rel="stylesheet" href="../../css/fonte.css">
+          <link rel="stylesheet" href="../../css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@alamvianna">
+<!--analytics-->
+        <!--Google-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86654507-1"></script>
+        <script src="http://embuscadocodigo.com/gtag.js"></script>
+        <!--Mixpanel-->
+        <script type="text/javascript" src="http://embuscadocodigo.com/mxp.js"></script>
+     </head>
+     <body>
+          <header>
+			<nav class="cabecalho">
+				<ul>
+					<li><a href="../../index.html">home</a></li>
+					<li>|</li>
+					<li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+					<li>|</li>
+					<li><a href="../../sobre.html">Sobre</a></li>
+					<li>|</li>
+					<li><a href="../../codigos.html">Códigos</a></li>
+				</ul>
+                <div class="linhamenus"></div>
+			</nav>
+         </header>
+         <div class="jah jah2">
+           <p>O Em Busca do Código é um site em formato de plataforma de ensino a distância (EAD), totalmente aberta e gratuita.</p>
+           <p>Aprendendo e ensinando, essa e a minha regra para mim.</p>
+         <p>Publicado dia 28 de setembro de 2017.</p>
+     </div>
+     <div class="adesivo adesivo2">
+          <a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+               <p>Compre um adesivo do Em Busca do Código.</p>
+          </a>
+     </div>
+     <section class="prolat cachorro">
+<p>Publicidade</p>
+<embed  src="prop/prolat.html" width="250" height="260" frameborder='0' scrolling="no">
+     </section>
+<div class="prolatgo cachorro" >
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="prolat cachorro">
+<p>Publicidade</p>
+<embed src="prop/prolatdaddy.html" width="310" height="260" frameborder='0' scrolling="no">
+</div>
+<section class="paragrafoscodigos">
+            <div  class="paginas">
+                  <ul>
+                      <li><a href="cabecalho-reaparece.html">8º ex</a></li>
+                      <li>|</li>
+                      <li><a href="index.html">Parallax</a></li>
+                      <!--
+                      <li>|</li>
+                      <li><a href="">6º exercício</a></li>
+-->
+                  </ul>
+            </div>
+<!--Título--><!--Título--><!--Título--><!--Título--><!--Título--><!--Título--><!--Título--><!--Título-->
+<h1>9º exercício: Rotacionando elemento com parallax (scroll)</h1>
+    <div class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+      <p>
+Neste exercício nós rotacionamos um elemento HTML, isso utilizando a rolagem da tela como base, mas como assim?
+      </p>
+      <p>
+Quando o usuário estiver descendo pela página o elemento ira girar em um sentido, e quando estiver subindo irá girar em outro sentido. Parece simples e, no final do exercício anterior informei que é simples, mas, é bem simples.
+      </p>
+    <p>
+O código fonte inicial deste exercício é o código fonte final do exercício anterior, dica. Aumente o número de pixels que fazem com que o cabeçalho reapareça, ou, se preferir, pode excluir esse efeito. Eu irei exclui-lo. Então, o meu JS começa em branco, mas nada o impede de utilizar esses efeitos em conjunto.
+    </p>
+      <p>
+Não se esqueça do padrão de nome dos arquivos e de linkar os novos arquivos CSS e JS em seu HTML, e alterar o título também.
+      </p>
+    <p class="cabe">Vídeo:</p>
+    <div>
+
+<!-- class="video" -->
+    </div>
+<div class="prom ign">
+<p>Publicidade</p>
+<embed src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no">
+</div>
+      <p>
+Neste exercício nós iremos rotacionar o texto da imagem.
+      </p>
+      <p>
+Nosso JavaScript começará um pouco diferente, isso com relação aos outros arquivos JS deste ebook. Vamos começar criando duas variáveis, que serão responsáveis por rotacionar o que queremos rotacionar, cada uma será responsável por rotacionar em uma direção.
+      </p>
+    <div class="fonte">
+var rotate = "";<br />
+var gira = "";<br />
+    </div>
+      <p>
+E agora sim criamos nossa função.
+      </p>
+    <div class="fonte">
+function girando() {<br />
+}<br />
+    </div>
+      <p>
+A primeira informação que inserimos na função é criar a variável responsável por verificar a quantidade de pixels que a página já rolou verticalmente.
+      </p>
+    <div class="fonte">
+var desceSobe = window.scrollY;
+    </div>
+      <p>
+Logo em seguida dizemos que uma das variáveis que, por uma questão de escolha criei fora da função, é igual ao número de pixels que a página já rolou verticalmente.
+      </p>
+    <div class="fonte">
+rotate = desceSobe;
+    </div>
+      <p>
+Antes da próxima linha JS, preciso informar que, vamos ver a quantidade de pixels que a página web já rolou. E para isso escolhi criar uma &lt;p&gt; em nosso HTML.
+      </p>
+    <div class="fonte">
+&lt;p class="escrever"&gt;&lt;/p&gt;
+    </div>
+      <p>
+E com CSS vamos deixar ela fixa e sempre visível.
+      </p>
+    <div class="fonte">
+.escrever {<br />
+&nbsp;&nbsp;&nbsp; position: fixed;<br />
+&nbsp;&nbsp;&nbsp; margin-left: 1200px;<br />
+&nbsp;&nbsp;&nbsp; top: 20%;<br />
+&nbsp;&nbsp;&nbsp; background-color: aqua;<br />
+&nbsp;&nbsp;&nbsp; font-size: 2em;<br />
+}<br />
+    </div>
+      <p>
+Lembra que antes eu citei que tínhamos que testar, pois bem, agora conseguimos ver. Voltando ao JS.
+      </p>
+      <p>
+Na próxima linha do nosso JS vamos informar, através de um querySelector que, nesta &lt;p&gt; irá aparecer o número de pixels que a página web já rolou verticalmente.
+      </p>
+    <div class="fonte">
+document.querySelector(".escrever").innerHTML = rotate;
+    </div>
+      <p>
+Adicione um addEventListener no final da nossa função e teste em seu navegador.
+      </p>
+    <div class="fonte">
+window.addEventListener('scroll', girando);
+    </div>
+      <p>
+Considero este exemplo bem legal. Na hora que estiver inserindo isso realmente em um projeto para ser colocado em prática, você não precisa deixar isso visível, mas neste exercício essa &lt;p&gt; será visível. Considero que é muito legal ver a variável que estamos trabalhando.
+      </p>
+      <p>
+Voltando ao nosso exercício, precisamos pegar o valor que aparece, e para isso utilizamos a nossa segunda variável declarada fora da nossa função.
+      </p>
+    <div class="fonte">
+gira = document.querySelector('.escrever').value;
+    </div>
+      <p>
+Algumas informações que já apresentei não precisariam, mas, achei interessante, pois fica mais fácil de entender com essas redundâncias. Agora está na hora do nosso if, e ele é bem simples. Se a variável gira for igual a variável rotate, determinado elemento HTML gira.
+      </p>
+    <div class="fonte">
+&nbsp; if (gira = rotate) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.querySelector(".textoimg").style.transform = "rotate("+rotate+"deg)";<br />
+&nbsp; }<br />
+    </div>
+      <p>
+Teste em seu navegador e veja funcionando. Mas nesse momento vemos algo muito interessante. O elemento não volta certinho, a 0 (zero) de rotação ao voltarmos para o topo.
+      </p>
+      <p>
+Para isso precisamos zerar uma dessas variáveis dentro do if.
+      </p>
+    <div class="fonte">
+gira = 0;
+    </div>
+      <p>
+E pasme, retirar o querySelector de dentro do if. Caso tenha ficado em dúvida, o código fonte fica assim.
+      </p>
+    <div class="fonte">
+&nbsp; if (gira = rotate) {gira = 0;}<br />
+&nbsp;&nbsp;&nbsp; document.querySelector(".textoimg").style.transform = "rotate("+rotate+"deg)";
+    </div>
+      <p>
+Este código fonte está funcionando assim, mas como eu citei anteriormente, existem redundâncias. Está aí um ótimo exercício. Retire as redundâncias e boa sorte.
+      </p>
+      <p>
+A seguir você confere o código fonte final (JavaScript), como foi adicionado apenas um elemento no HTML e a configuração do mesmo, não postarei o código fonte final do CSS e do HTML neste exercício, mas eles são extremamente simples, você não terá dificuldade com eles.
+      </p>
+            <p>
+Caso queira ajuar o projeto você pode comprar o ebook ou um adesivo.
+        </p>
+<a class="linkexterno" href="http://a.co/g54na70" target="_blank">Link para adquirir o ebook.</a><br>
+        <p class="cabe">
+Código fonte JavaScript final:
+        </p>
+    <div class="fonte">
+var rotate = "";<br />
+var gira = "";<br />
+<br />
+function girando() {<br />
+&nbsp;&nbsp;&nbsp; var desceSobe = window.scrollY;<br />
+&nbsp;&nbsp;&nbsp; rotate = desceSobe;<br />
+&nbsp;&nbsp;&nbsp; document.querySelector(".escrever").innerHTML = rotate;<br />
+&nbsp;&nbsp;&nbsp; gira = document.querySelector('.escrever').value;<br />
+<br />
+&nbsp; if (gira = rotate) {gira = 0;}<br />
+&nbsp;&nbsp;&nbsp; document.querySelector(".textoimg").style.transform = "rotate("+rotate+"deg)";<br />
+&nbsp; <br />
+}<br />
+&nbsp;&nbsp;&nbsp; window.addEventListener('scroll', girando);<br />
+    </div>
+        <p>
+Como já concluiu esse exercício deve saber que falta apenas mais um exercício para concluir esse ebook/curso aberto.
+        </p>
+            <div  class="paginas">
+                  <ul>
+                      <li><a href="cabecalho-reaparece.html">8º ex</a></li>
+                      <li>|</li>
+                      <li><a href="index.html">Parallax</a></li>
+                  </ul>
+            </div>
+         </section>
+     <footer>
+          <div class="rodape">
+               <img src="../../css/img/001.png" alt="logotipo Em Busca do Código">
+               2017 Em Busca do Código
+          </div>
+          <nav class="redes">
+               <ul>
+                    <li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../img/007.png" alt="Nossa página no Facebook"></a></li>
+                   
+		          <li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../img/008.png" alt="Nosso perfil no Google+"></a></li>
+                   
+		          <li><a href="https://www.youtube.com/embuscadocodigo" target="_blank"><img src="../../img/009.png" alt="Nosso canal no YouTube"></a></li>
+                   
+		          <li><a href="https://www.instagram.com/embuscadocodigo/" target="_blank"><img src="../../img/010.png" alt="Nosso perfil no Instagram"></a></li>
+                   
+		          <li><a href="https://www.twitter.com/embuscadocodigo/" target="_blank"><img src="../../img/011.png" alt="Nossa conta no twitter"></a></li>
+	          </ul>
+          </nav>
+     </footer> <!--Fim do rodape-->
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<div class="prose">
+		</div>
+    </body>
+</html>
