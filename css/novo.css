@@ -1,4 +1,34 @@
-/*quando alterar class fonte também alterar ubhs01 21/06/2017*/
+/*mais1 - classe nova relacionada a outros artigos de interesse - 1ª versao*/
+
+.mais1 {
+	background-color: #FFFFF0;
+	box-shadow:  -0.1em 0.3em 0.5em #EEDD82;
+	padding: 1%;
+	text-align: justify;
+	letter-spacing: 0.1em; /*espaço entre letras*/
+	line-height: 1.3em; /*altura da linha*/
+	word-spacing: 0.1em; /*espaço entre palavras*/
+	border-radius: 0.2em;
+	width: 98%;
+    position: relative;
+    float: left;
+    margin: 1% 1% 3% 1%;
+    
+}
+.mais1 a {
+    text-decoration: none;
+}
+.mais1 a:hover {
+    text-decoration: underline;
+}
+.mais1 h2 {
+    color: #8B0A50;
+    font-size: 1.5em;
+    margin-bottom: .5em;
+}
+.mais1 p {
+    color: #0000CD;
+}
 
 .ubhs01 {
     margin-top: 1em;
@@ -215,6 +245,12 @@ body {
 .propagando {
     	position: fixed;
     	left: 999999px;
+}
+@media only screen and (min-width: 520px) {
+    .mais1 {
+        width: 46%;
+        margin: 0 1% 1% 1%;
+    } 
 }
 @media only screen and (min-width: 520px) and (max-width: 629px) {
     .itemindex {
