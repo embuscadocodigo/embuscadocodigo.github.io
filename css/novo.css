@@ -1,5 +1,3 @@
-/*mais1 - classe nova relacionada a outros artigos de interesse - 1ª versao*/
-
 .mais1 {
 	background-color: #FFFFF0;
 	box-shadow:  -0.1em 0.3em 0.5em #EEDD82;
@@ -197,7 +195,7 @@ body {
 }
 .jah h1 {
 	color: #8B0A50;
-	font-size: 1.5em; /*-------------------------------------------------------------------- Alterar para 3em desktop*/
+	font-size: 1.5em;
 }
 .jah p {
 	color: black;
