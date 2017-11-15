@@ -1,0 +1,341 @@
+<!--
+
+Corrigido alguns warning"s" da W3C - embuscadocodigo.com 15/11/2017
+Conferir resultado e corrigir no proximo video de HTML e CSS.
+
+-->
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+	<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--titulos-->
+		<title>Barrinha de progresso em HTML5 CSS3, vídeo 102</title>
+          <meta name="twitter:title" content="Barrinha de progresso em HTML5 CSS3, vídeo 102">
+<!--descrição-->
+          <meta property="og:description" content="Bem vindo a mais um exercício da Em Busca do Código, e neste exercício nós iremos criar uma barrinha de progresso utilizando HTML e CSS."/>
+          <meta name="twitter:description" content="Bem vindo a mais um exercício da Em Busca do Código, e neste exercício nós iremos criar uma barrinha de progresso utilizando HTML e CSS.">
+<!--Palavras chave-->
+          <meta name="keywords" content="barra de progresso, barrinha de progresso, html, html5, css3, css, tutorial, curso, free, grátis, open-source, Em Busca do Código">
+<!--Meta Tags globais-->
+          <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+          <meta property="og:url" content="http://embuscadocodigo.com/codigos/html/barrinha-de-progresso-com-html-css.html"/>
+          <meta property="og:site_name" content="http://embuscadocodigo.com">
+          <meta property="og:type" content="article">
+          <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="http://embuscadocodigo.com/img/001.png">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image" content="http://embuscadocodigo.com/codigos/html/img/barrinha.png" />
+          <meta property="og:image:width" content="1280">
+          <meta property="og:image:height" content="720">
+      <!--Twitter-->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/html/img/graficodebarras.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+          <link rel="stylesheet" href="http://embuscadocodigo.com/css/reset.css">
+          <link rel="stylesheet" href="http://embuscadocodigo.com/css/hefo.css">
+          <link rel="stylesheet" href="http://embuscadocodigo.com/css/novo.css">
+          <link rel="stylesheet" href="http://embuscadocodigo.com/css/erro.css">
+          <link rel="stylesheet" href="http://embuscadocodigo.com/css/fonte.css">
+          <link rel="stylesheet" href="http://embuscadocodigo.com/css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+          <meta property="fb:app_id" content="966242223397117">
+          <meta name="twitter:site" content="@embuscadocodigo">
+          <meta name="twitter:creator" content="@alamvianna">
+     </head>
+     <body>
+    <header>
+        <nav class="cabecalho">
+            <ul>
+                <li><a href="../../index.html">home</a></li>
+                <li>|</li>
+                <li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+                <li>|</li>
+                <li><a href="../../sobre.html">Sobre</a></li>
+                <li>|</li>
+                <li><a href="../../codigos.html">Códigos</a></li>
+            </ul>
+            <section class="linhamenus">
+            </section>
+        </nav>
+    </header>
+    <section class="jah jah2">
+        <p>O Em Busca do Código é um site em formato de plataforma de ensino a distância (EAD), totalmente aberta e gratuita.
+        <br><br>
+        Aprendendo e ensinando, essa é a minha regra para mim.
+        <br><br>
+         Publicado dia 15 de novembro de 2017.</p>
+    </section>
+    <section class="adesivo adesivo2">
+        <a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+          <p>Compre um adesivo do Em Busca do Código.</p>
+        </a>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <embed  src="../../prop/prolat.html" width="250" height="260" frameborder='0' scrolling="no">
+    </section>
+    <section class="prolatgo cachorro" >
+        <p>Publicidade</p>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- EBC JS--> 
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:336px;height:280px"
+             data-ad-client="ca-pub-5020252132627432"
+             data-ad-slot="6229362170"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </section>
+    <section class="prolat cachorro">
+        <p>Publicidade</p>
+        <embed src="../../prop/prolatdaddy.html" width="310" height="260" frameborder='0' scrolling="no">
+    </section>
+<section class="paragrafoscodigos">
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="grafico-de-barras-com-html-e-css.html">Gráfico com HTML e CSS</a></li>
+                <li>|</li>
+                <li><a href="../html.html">+ sobre HTML e CSS</a></li>
+            </ul>
+        </nav>
+    </section>
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+        <h1>Barrinha de progresso em HTML5 CSS3, vídeo 102</h1>
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+    <p>
+Bem vindo a mais um exercício da Em Busca do Código, e neste exercício nós iremos criar uma barrinha de progresso utilizando HTML e CSS.
+    </p>
+    <p>
+Faz um tempo que eu queria inserir uma barrinha dessa no site e, fiz isso a uns dias atrás em nosso curso de Parallax. Por mais que de para inserir detalhes com JavaScript achei legal deixar apenas HTML e CSS.
+    </p>
+    <p class="cabe">Assista ao vídeo:</p>
+    <div>
+
+<!-- class="video" embed-->
+    </div>
+    <p>
+Uma simples barrinha de progresso pode engajar, motivar e até terminar de fidelizar seu usuário como um cliente, sim estamos falando de gamificação, mas sobre este termo, eu paro por aqui.
+    </p>
+    <p>
+Para realizar esse exercício eu preciso de um navegador e um editor de código fonte, para isso eu utilizo o Brackets e o Firefox, utilize o de sua preferencial.
+    </p>
+    <p>
+Trabalharemos com dois arquivos, o HTML inicialmente tem o padrão inicial HTML, caso precise, aqui vai um.
+    </p>
+    <p class="cabe">Código fonte HTML (inicial)</p>
+    <div class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+<br />
+&lt;html&nbsp; lang="pt-BR"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;Barinha de progresso&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="utf-8"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel="stylesheet" href="reset.css"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel="stylesheet" href="progresso.css"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;Barrinha de progresso&lt;/h1&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+    </div>
+    <p>
+O reset.css eu utilizo o do Eric Meyer caso queira (abre em outra aba):
+    </p>
+    <a class="linkexterno" href="http://embuscadocodigo.com/codigos/html/video12.html" target="_blank">Resetando a configuração padrão dos navegadores.</a>
+    <p>
+O segundo arquivo CSS linkado é o que nós vamos trabalhar. Neste exemplo irei inserir minha barrinha de progresso dentro de uma &lt;section&gt;, que terá como filha uma &lt;div&gt;. A tag section em si, neste caso, não é tão importante, na pratica você irá inserir nossa barrinha de progresso dentro de uma section, ou alguma outra tag.
+    </p>
+    <div class="fonte">
+&lt;section&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="barrinha"&gt;&lt;/div&gt;<br />
+&lt;/section&gt;<br />
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p>
+Repare que eu à inseri uma classe em nossa tag div, então vamos ao arquivo CSS que esta em branco, mas o que é uma barrinha de progresso?
+    </p>
+    <div class="fonte">
+.barrinha {<br />
+}<br />
+    </div>
+    <p>
+Uma barrinha de progresso tem um tamanho horizontal proporcional a tela do usuário, por isso o width será em porcentagem.
+    </p>
+    <div class="fonte">
+width: 90;
+    </div>
+    <p>
+A altura da nossa barrinha de progresso é fixa.
+    </p>
+    <div class="fonte">
+height: 20px;
+    </div>
+    <p>
+Um detalhe legal para a nossa barrinha de progresso é retirar as quinas, e para isso utilizamos border-radius.
+    </p>
+    <div class="fonte">
+border-radius: 10px;
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<embed src="../../prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no">
+</section>
+    <p>
+Já inserimos uma margem que, muito provavelmente será alterada quando você inserir essa barrinha em algum app ou site.
+    </p>
+    <div class="fonte">
+margin: 5%;
+    </div>
+    <p>
+Precisamos de uma borda, e neste exemplo deixo ela o mais simples possível.
+    </p>
+    <div class="fonte">
+border: medium solid black;
+    </div>
+    <p>
+E por último o degrade responsável pelo progresso.
+    </p>
+    <div class="fonte">
+background: linear-gradient(to right, #4cf24c 0%, #4cf24c 10%, #bcb9b9 10%);
+    </div>
+    <p>
+Nossa barrinha de progresso já está ok, em meu uso pratico no Em Busca do Código eu altero o valor do progresso pelo HTML. Vamos voltar ao arquivo HTML e multiplicar por 4 a barrinha existente, olhe em seu navegador e veja que todas as barrinhas estão iguais, por isso insiro o valor do progresso no HTML.
+    </p>
+    <div class="fonte">
+&lt;div class="barrinha" style="background: linear-gradient(to right, #4cf24c 0%, #4cf24c 90%, #bcb9b9 90%);"&gt;&lt;/div&gt;
+    </div>
+    <p>
+Faça isso com as outras três barrinhas que você inseriu no HTML, e antes de concluir vamos ao CSS para arrumarmos a cor de fundo.
+    </p>
+    <div class="fonte">
+background-color: #bcb9b9;
+    </div>
+    <p>
+Um exercício extra legal seria você alterar o progresso da barrinha de progresso por JavaScript.
+    </p>
+    <p>
+Se você acompanha nossos vídeos, você sabe fazer isso, mesmo que precise pesquisar um pouco, você consegue.
+    </p>
+    <p>
+Este exercício fica por aqui, espero que tenha gostado, se quiser pode compartilhar esse exercício, e até mais, Fica aqui com duas sugestões de conteúdo que talvez goste.
+    </p>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p class="cabe">Código fonte HTML (completo)</p>
+    <div class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+<br />
+&lt;html&nbsp; lang="pt-BR"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;Barinha de progresso&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="utf-8"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel="stylesheet" href="reset.css"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel="stylesheet" href="progresso.css"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;Barrinha de progresso&lt;/h1&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;section&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="barrinha" style="background: linear-gradient(to right, #4cf24c 0%, #4cf24c 25%, #bcb9b9 25%)"&gt;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/section&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;section&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="barrinha" style="background: linear-gradient(to right, #4cf24c 0%, #4cf24c 50%, #bcb9b9 50%)"&gt;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/section&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;section&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="barrinha" style="background: linear-gradient(to right, #4cf24c 0%, #4cf24c 90%, #bcb9b9 90%)"&gt;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/section&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+    </div>
+    <p class="cabe">Código fonte CSS (completo)</p>
+    <div class="fonte">
+.barrinha {<br />
+&nbsp;&nbsp;&nbsp; width: 90%;<br />
+&nbsp;&nbsp;&nbsp; height: 20px;<br />
+&nbsp;&nbsp;&nbsp; border-radius: 10px;<br />
+&nbsp;&nbsp;&nbsp; margin: 5%;<br />
+&nbsp;&nbsp;&nbsp; border: medium solid black;<br />
+&nbsp;&nbsp;&nbsp; background-color: #bcb9b9;<br />
+} <br />
+
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<embed src="../../prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no">
+</section>
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="grafico-de-barras-com-html-e-css.html">Gráfico com HTML e CSS</a></li>
+                <li>|</li>
+                <li><a href="../html.html">+ sobre HTML e CSS</a></li>
+            </ul>
+        </nav>
+    </section>
+         </section>
+    <div class="mais1">
+        <a href="http://embuscadocodigo.com/codigos/parallax/index.html">
+            <div>
+                <h2>Curso aberto de Parallax</h2> 
+                <p>Para a W3C, parallax é uma tendência, onde o conteúdo do fundo é movido em uma velocidade diferente do conteúdo do primeiro plano.</p>
+            </div>
+        </a>
+    </div>
+    <div class="mais1">
+        <a href="http://embuscadocodigo.com/codigos/html/video53.html">
+            <div>
+                <h2>Degradê (posição das cores), vídeo 53</h2> 
+                <p>Vemos 8 modos diferentes de posicionar as cores em um degradê utilizando HTML5 e CSS3.</p>
+            </div>
+        </a>
+    </div>
+     <footer>
+          <div class="rodape">
+               <img src="../../img/001.png">
+               2017 Em Busca do Código
+          </div>
+          <nav class="redes">
+               <ul>
+                    <li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../img/007.png"></a></li>
+		          <li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../img/008.png"></a></li>
+		          <li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../img/009.png"></a></li>
+		          <li><a href="https://www.instagram.com/alamvianna/" target="_blank"><img src="../../img/010.png"></a></li>
+		          <li><a href="https://www.twitter.com/alamvianna/" target="_blank"><img src="../../img/011.png"></a></li>
+	          </ul>
+          </nav>
+     </footer>
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<div class="prose">
+		</div>
+	</body>
+</html>
