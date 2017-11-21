@@ -12,9 +12,9 @@ div{
 }
 .propaganda {
     width: 100%;
-    min-height: 500px;
+    min-height: 250px;
     text-align: center;
-    top: 25vh;
+    top: 45vh;
     position: fixed;
     font-size: 0.5em;
     color: black;
