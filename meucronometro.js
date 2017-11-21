@@ -13,9 +13,8 @@ if (tempo >= 0) {
 		tempo = tempo - 1;
 		setTimeout("aguarda()", 1000);
 		}if (tempo == 0) {
-            var playplayplay = document.getElementById('audio');
-            function play(){
-                playplayplay.play();
+			var v = document.getElementsByTagName("audio")[0];
+			v.play();
             }
             }else{
             } 
