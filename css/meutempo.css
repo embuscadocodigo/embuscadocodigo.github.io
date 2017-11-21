@@ -15,9 +15,17 @@ div{
     width: 100%;
     min-height: 250px;
     text-align: center;
-    top: 40vh;
+    top: 30vh;
     position: fixed;
     font-size: 0.5em;
-    color: black;
     background-color: yellow;
+}
+.propaganda p {
+    color: black;
+}
+.propitem {
+    background-color: green;
+    height: 100px;
+    width: 320px;
+    z-index: 11111;
 }
