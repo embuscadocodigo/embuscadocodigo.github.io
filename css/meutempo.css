@@ -12,7 +12,7 @@ div{
 }
 .propaganda {
     width: 100%;
-    min-height: 350px;
+    height: 350px;
     text-align: center;
     margin-bottom: 0px;
     position: fixed;
