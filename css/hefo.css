@@ -90,7 +90,7 @@ and (max-width: 769px){
         float: left;
         text-align: center;
      }
-     .rodape img, redes img {
+     .rodape img, .redes img {
          width: 10%;
      }
      .redes {
