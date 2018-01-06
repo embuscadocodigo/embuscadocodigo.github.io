@@ -1,0 +1,373 @@
+<!--
+06/01/2018
+<a class="linkexterno" href="" target="_blank"></a>
+-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--titulos-->
+		<title>Somar valores de &lt;input&gt;s. Dica 31</title>
+        <meta name="twitter:title" content="Somar valores de &lt;input&gt;s. Dica 31">
+<!--descrição-->
+        <meta property="og:description" content="Este exercício foi sugerido em um dos nossos vídeos de JS"/>
+        <meta name="twitter:description" content="Este exercício foi sugerido em um dos nossos vídeos de JS">
+<!--Palavras chave-->
+        <meta name="keywords" content="somar input, JS, JavaScript, Curso de JavaScript, curso de javascript gratuito, querySlector">
+<!--Meta Tags globais-->
+        <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+        <meta property="og:url" content="http://embuscadocodigo.com/codigos/javascript/somar-valores-de-input.html"/>
+        <meta property="og:site_name" content="http://embuscadocodigo.com">
+        <meta property="og:type" content="article">
+        <meta proterty="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="http://embuscadocodigo.com/img/001.png">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image" content="http://embuscadocodigo.com/codigos/javascript/img/js31.png" />
+        <meta property="og:image:width" content="1280">
+        <meta property="og:image:height" content="720">
+      <!--Twitter-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="http://embuscadocodigo.com/codigos/javascript/img/js31.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+        <link rel="stylesheet" href="http://embuscadocodigo.com/css/reset.css">
+        <link rel="stylesheet" href="http://embuscadocodigo.com/css/hefo.css">
+        <link rel="stylesheet" href="http://embuscadocodigo.com/css/novo.css">
+        <link rel="stylesheet" href="http://embuscadocodigo.com/css/erro.css">
+        <link rel="stylesheet" href="http://embuscadocodigo.com/css/fonte.css">
+        <link rel="stylesheet" href="http://embuscadocodigo.com/css/tabelas.css">
+<!--MetaTags exclusivas para Redes Sociais-->
+        <meta property="fb:app_id" content="966242223397117">
+        <meta name="twitter:site" content="@embuscadocodigo">
+        <meta name="twitter:creator" content="@alamvianna">
+     </head>
+     <body>
+    <header>
+        <nav class="cabecalho">
+            <ul>
+                <li><a href="../../index.html">home</a></li>
+                <li>|</li>
+                <li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+                <li>|</li>
+                <li><a href="../../sobre.html">Sobre</a></li>
+                <li>|</li>
+                <li><a href="../../codigos.html">Códigos</a></li>
+            </ul>
+            <section class="linhamenus">
+            </section>
+        </nav>
+    </header>
+    <section class="jah jah2">
+        <p>O Em Busca do Código é um site em formato de plataforma de ensino a distância (EAD), totalmente aberta e gratuita.
+        <br><br>
+        Aprendendo e ensinando, essa é a minha regra para mim.
+        <br><br>
+         Publicado dia 07 de janeiro de 2018.</p>
+    </section>
+    <section class="adesivo adesivo2">
+        <a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+          <p>Compre um adesivo do Em Busca do Código.</p>
+        </a>
+    </section>
+    <div class="prolat cachorro">
+        <p>Publicidade</p>
+        <embed  src="prop/prolat.html" width="250" height="260" frameborder='0' scrolling="no">
+    </div>
+    <section class="prolatgo cachorro" >
+        <p>Publicidade</p>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- EBC JS--> 
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:336px;height:280px"
+             data-ad-client="ca-pub-5020252132627432"
+             data-ad-slot="6229362170"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </section>
+    <div class="prolat cachorro">
+        <p>Publicidade</p>
+        <embed src="prop/prolatdaddy.html" width="310" height="260" frameborder='0' scrolling="no">
+    </div>
+<section class="paragrafoscodigos">
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="capturar-valor-digitado-javascript.html">&lt;&lt;</a></li>
+                <li>|</li>
+                <li><a href="index.html">curso</a></li>
+            </ul>
+        </nav>
+    </section>
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+    <h1>Somar valores de &lt;input&gt;s. Dica 31</h1>
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<div class="prom ign">
+<p>Publicidade</p>
+<embed src="prop/prolatgomo.html" width="310" height="260" frameborder='0' scrolling="no">
+</div>
+    <p>
+Bem vindos a mais uma dica de JavaScript da Em Busca do Código, e como o título já diz vamos somar valores digitados em &lt;input&gt;s diferentes. Este exercício foi sugerido em um dos nossos vídeos de JS, caso tenha uma sugestão (de JS), pode comentar também.
+    </p>
+    
+<!-- class="video" embed -->
+    <p>
+Sem mais delongas temos três arquivos iniciais, o HTML:
+    </p>
+    <div class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+<br />
+&lt;html lang="pt-br"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;Somar valores de input&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="utf-8"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script src="somar.js"&gt;&lt;/script&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel="stylesheet" href="somar.css"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel="stylesheet" href="reset.css"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+    </div>
+    <p>
+Algo importante nesse arquivo inicial é o arquivo .js linkado, este arquivo está em branco. O arquivo reset.css apenas reseta as configurações padrões dos navegadores, e o arquivo somar.css apenas deixa um pouco mais bonito o que formos editando no HTML, caso queira, a seguir temos o código fonte do arquivo somar.css:
+    </p>
+    <div class="fonte">
+section {<br />
+&nbsp;&nbsp;&nbsp; text-align: center;<br />
+&nbsp;&nbsp;&nbsp; vertical-align: middle;<br />
+&nbsp;&nbsp;&nbsp; width: 100%;<br />
+&nbsp;&nbsp;&nbsp; height: 100vh;<br />
+&nbsp;&nbsp;&nbsp; background-color: aqua;<br />
+}<br />
+.centro {<br />
+&nbsp;&nbsp;&nbsp; top: 50%;<br />
+&nbsp;&nbsp;&nbsp; left: 50%;<br />
+&nbsp;&nbsp;&nbsp; transform: translateY(35vh);<br />
+}<br />
+.resultado {<br />
+&nbsp;&nbsp;&nbsp; font-size: 3em;<br />
+}<br />
+    </div>
+    <p>
+Em nosso HTML, dentro da tag body vamos inserir uma &lt;section&gt;.
+    </p>
+    <div class="fonte">
+&lt;section&gt;<br />
+&lt;/section&gt;<br />
+    </div>
+    <p>
+E dentro desta &lt;section&gt; vamos inserir uma &lt;div&gt;, já informando uma classe que dei a ela o nome de centro.
+    </p>
+    <div class="fonte">
+&lt;div class="centro"&gt;<br />
+&lt;/div&gt;<br />
+    </div>
+    <p>
+Dentro desta &lt;div&gt; vamos criar dois &lt;input&gt;s com uma classe para cada &lt;input&gt;, sendo um do tipo text e outro do tipo number, inserimos também uma quebra de linha após cada &lt;input&gt;.
+    </p>
+    <div class="fonte">
+&lt;input class="num1" type="text"&gt;&lt;br&gt;<br />
+&lt;input class="num2" type="number"&gt;&lt;br&gt;<br />
+    </div>
+    <p>
+Só para deixar mais bonito, antes de cada &lt;input&gt; escrevemos valor um e valor dois.
+    </p>
+    <div class="fonte">
+Primeiro valor: <br />
+&lt;input class="num1" type="text"&gt;&lt;br&gt;<br />
+Segundo valor: <br />
+&lt;input class="num2" type="number"&gt;&lt;br&gt;<br />
+    </div>
+    <p>
+Logo depois do segundo &lt;input&gt; criamos um botão, já declarando um evento onclick já informando uma função que iremos criar no JS.
+    </p>
+    <div class="fonte">
+&lt;button onclick="clicar()"&gt;Resultado&lt;/button&gt;<br />
+    </div>
+    <p>
+Eu criei essa função com o nome de clicar, você pode cria-la com o nome que quiser, assim como modificar os nomes das classes. Depois do botão criamos uma tag p que será utilizada para mostrar o resultado da soma.
+    </p>
+    <div class="fonte">
+&lt;p class="resultado"&gt;&lt;/p&gt;
+    </div>
+    <p>
+Para realizar este exercício eu estou utilizando o editor Brackets e o navegador Firefox, mas você pode utilizar o de sua preferência. Terminamos nosso HTML, agora vamos ao JS.
+    </p>
+    <h2>JavaScript</h2>
+<div class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+    <p>
+Dentro do arquivo JS criamos uma função chamada clicar, a mesma já informada em nosso .html. Nesta função criamos duas variáveis que podem ter qualquer nome, e vamos atribuir a elas o valor digitado em cada &lt;input&gt;.
+    </p>
+    <div class="fonte">
+function clicar() {<br />
+&nbsp;&nbsp;&nbsp; var num1 = document.querySelector(".num1").value;<br />
+&nbsp;&nbsp;&nbsp; var num2 = document.querySelector(".num2").value;<br />
+}<br />
+    </div>
+    <p>
+Ainda dentro da função criamos uma variável para o resultado.
+    </p>
+    <div class="fonte">
+var resultado =
+    </div>
+    <p>
+Sabemos que serão digitados apenas números, mas se escrevermos apenas:
+    </p>
+    <div class="fonte">
+&nbsp;var resultado = num1 +num2;
+    </div>
+    <p>
+Os números serão concatenados e não somados, Contra isso podemos utilizar parseInt, para que nossos números sejam interpretados como números e sejam somados e não concatenados.
+    </p>
+    <div class="fonte">
+var resultado = parseInt(num1) + parseInt(num2);
+    </div>
+    <p>
+A partir desse momento utilizamos um simples querySelector para mostrarmos o resultado em nossa tag p.
+    </p>
+    <div class="fonte">
+document.querySelector(".resultado").innerHTML = resultado;
+    </div>
+     <p>
+Testando em nosso navegador vemos que os valores estão sendo somados.
+    </p>
+    <p>
+A seguir temos o código fonte HTML completo:
+    </p>
+<div class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+    <div class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+<br />
+&lt;html lang="pt-br"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;Somar valores de input&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="utf-8"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script src="somar.js"&gt;&lt;/script&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel="stylesheet" href="somar.css"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel="stylesheet" href="reset.css"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;section&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="centro"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Primeiro valor: <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input class="num1" type="text"&gt;&lt;br&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Segundo valor: <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input class="num2" type="number"&gt;&lt;br&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;button onclick="clicar()"&gt;Resultado&lt;/button&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="resultado"&gt;&lt;/p&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/section&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+    </div>
+    <p>
+E agora o código fonte JavaScript:
+    </p>
+    <div class="fonte">
+function clicar() {<br />
+&nbsp;&nbsp;&nbsp; var num1 = document.querySelector(".num1").value;<br />
+&nbsp;&nbsp;&nbsp; var num2 = document.querySelector(".num2").value;<br />
+&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp; var resultado = parseInt(num1) + parseInt(num2);<br />
+&nbsp;&nbsp;&nbsp; document.querySelector(".resultado").innerHTML = resultado;<br />
+}<br />
+    </div>
+    <p>
+Espero que esta dica tenha ajudado e caso você tenha clicado apenas por curiosidade espero que tenha gostado da leitura, essa dica fica por aqui e até mais.
+    </p>
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="querySelector-javascript-dica-30.html">&lt;&lt;</a></li>
+                <li>|</li>
+                <li><a href="index.html">curso</a></li>
+            </ul>
+        </nav>
+    </section>
+</section>
+<form class="procurar">
+      <script>
+        (function() {
+          var cx = '003467032773945451414:czc04qxogy0';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+              '//cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+</form> <!--Fim do form de pesquisa-->
+     <footer>
+          <div class="rodape">
+               <img src="../../img/001.png" alt="logotipo do nosso site">
+               2k18 Em Busca do Código
+          </div>
+          <nav class="redes">
+               <ul>
+                   <li>
+                       <a href="https://www.facebook.com/embuscadocodigo" target="_blank">
+                           <img src="../../img/007.png" alt="Nosso perfil no Facebook">
+                       </a>
+                   </li>
+                   <li>
+                       <a href="https://plus.google.com/115289918651298518386" target="_blank">
+                           <img src="../../img/008.png" alt="Nosso perfil no Google+">
+                       </a>
+                   </li>
+                   <li>
+                       <a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank">
+                           <img src="../../img/009.png" alt="Nosso perfil no YouTube">
+                       </a>
+                   </li>
+                   <li>
+                       <a href="https://www.instagram.com/embuscadocodigo/" target="_blank">
+                           <img src="../../img/010.png" alt="Nosso perfil no Instagram">
+                       </a>
+                   </li>
+                   <li>
+                       <a href="https://www.twitter.com/alamvianna/" target="_blank">
+                           <img src="../../img/011.png" alt="Nosso perfil no Twitter">
+                       </a>
+                   </li>
+	          </ul>
+          </nav>
+     </footer>
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<!--<section class="prose">
+		</section>-->
+	</body>
+</html>
