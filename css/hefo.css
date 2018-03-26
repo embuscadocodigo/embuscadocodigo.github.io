@@ -53,6 +53,9 @@
     height: 0.5em;
     margin: auto;
 }
+footer {
+    clear: both;
+}
 @media only screen and (min-width: 480px)
 and (max-width: 769px){
     footer {

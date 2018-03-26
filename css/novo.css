@@ -1,3 +1,23 @@
+    .pai {
+        width: 100%;
+    }
+    .inicio {
+        position: relative;
+        width:  100px;
+        height: 100px;
+        float: left;
+        text-align: center;
+        line-height:100px;
+        border-radius: 50%;
+        margin: 0.5em;
+        font-size: 1em;
+    } 
+    .inicio:hover {
+        color: #e5e5e5;
+    }
+    .f01, .f02, .f03, .f04, .f05, .f06, .f07, .f08, .f09, .f10, .f11, .f12, .f13, .f14, .f15, .f16, .f17, .f18, .f19, .f20, .f21, .f22, .f23, .f24, .f25, .f26, .f27, .f28, .f29, .f30, .f31, .f32, .f33, .f34, .f35, .f36 {
+        display: none;
+    }
 .mais1 {
 	background-color: #FFFFF0;
 	box-shadow:  -0.1em 0.3em 0.5em #EEDD82;
