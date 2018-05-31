@@ -107,9 +107,9 @@
     background-color: #fff;
 	text-align: justify;
 	width: 93%;
-    height: 505px;
+    height: 300px;
 	overflow:auto;
-	/*margin-bottom: 3%;*/
+	overflow-y: hidden;
     margin: 0 2% 5% 3%;
 }
 .vindex {
@@ -273,7 +273,7 @@ body {
 @media only screen and (min-width: 520px) and (max-width: 629px) {
     .itemindex {
 		width: 46%;
-        height: 460px;
+        height: 350px;
         position: relative;
         float: left;
         margin-left: 2%;
@@ -292,6 +292,9 @@ body {
     }
 }
 @media only screen and (min-width: 630px) and (max-width: 768px) {
+    .itemindex {
+        height: 400px;
+    }
     .itemindex, .vindex {
 		width: 46%;
         position: relative;
@@ -359,7 +362,7 @@ body {
     }
 	.itemindex {
 		width: 46%;
-        height: 500px;
+        height: 260px;
         position: relative;
         float: left;
         margin-left: 2%;
@@ -387,7 +390,7 @@ body {
     }
 	.itemindex {
 		width: 23%;
-        height: 460px;
+        height: 350px;
         position: relative;
         float: left;
         margin-left: 1%;
