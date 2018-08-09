@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--titulos-->
+		<title>user-select: Selecione em um clique ou bloqueie a seleção de texto</title>
+        <meta name="twitter:title" content="user-select: Selecione em um clique ou bloqueie a seleção de texto">
+<!--descrição-->
+        <meta property="og:description" content="Com a user-select você consegue bloquear a seleção de texto ou selecionar todo o texto em qualquer elemento html."/>
+        <meta name="twitter:description" content="Com a user-select você consegue bloquear a seleção de texto ou selecionar todo o texto em qualquer elemento html.">
+<!--Palavras chave-->
+        <meta name="keywords" content="user-select, html5, css3, html, html5, css3, css, tutorial, curso, free, grátis, open-source, Em Busca do Código">
+<!--Meta Tags globais-->
+        <meta property="article:author" content='https://www.facebook.com/embuscadocodigo' />
+        <meta property="og:url" content="http://embuscadocodigo.com/codigos/html/user-select.html"/>
+        <meta property="og:site_name" content="http://embuscadocodigo.com">
+        <meta property="og:type" content="article">
+        <meta property="og:locale" content="pt_BR">
+<!--Favicon-->
+		<link rel="icon" href="http://embuscadocodigo.com/img/001.png">
+<!--imagens de compartilhamento-->
+      <!--Facebook-->
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image" content="http://embuscadocodigo.com/img/user-select.png" />
+        <meta property="og:image:width" content="1280">
+        <meta property="og:image:height" content="720">
+      <!--Twitter-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="http://embuscadocodigo.com/img/user-select.png">
+<!--cada uma pode ser diferente-->
+<!--CSS-->
+        <link rel="stylesheet" href="http://embuscadocodigo.com/css/reset.css">
+        <link rel="stylesheet" href="http://embuscadocodigo.com/css/hefo.css">
+        <link rel="stylesheet" href="http://embuscadocodigo.com/css/novo.css">
+        <link rel="stylesheet" href="http://embuscadocodigo.com/css/erro.css">
+        <link rel="stylesheet" href="http://embuscadocodigo.com/css/fonte.css">
+        <link rel="stylesheet" href="http://embuscadocodigo.com/css/tabelas.css">
+<!--Meta Tags exclusivas para Redes Sociais-->
+        <meta property="fb:app_id" content="966242223397117">
+        <meta name="twitter:site" content="@embuscadocodigo">
+        <meta name="twitter:creator" content="@alamvianna">
+<!--analytics-->
+        <!--Google-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86654507-1"></script>
+        <script src="http://embuscadocodigo.com/gtag.js"></script>
+	<!--Mixpanel-->
+		<script type="text/javascript" src="http://embuscadocodigo.com/js/mxp.js"></script>
+		<script type="text/javascript" src="http://embuscadocodigo.com/js/mixpanel-dominio.js"></script>
+     </head>
+     <body>
+    <header>
+        <nav class="cabecalho">
+            <ul>
+                <li><a href="../../index.html">home</a></li>
+                <li>|</li>
+                <li><a href="http://blogs.embuscadocodigo.com/">Blogs</a></li>
+                <li>|</li>
+                <li><a href="../../sobre.html">Sobre</a></li>
+                <li>|</li>
+                <li><a href="../../codigos.html">Códigos</a></li>
+            </ul>
+            <section class="linhamenus">
+            </section>
+        </nav>
+    </header>
+    <section class="jah jah2">
+        <p>O Em Busca do Código é um site em formato de plataforma de ensino a distância (EAD), totalmente aberta e gratuita.
+        <br><br>
+        Aprendendo e ensinando, essa é a minha regra para mim.
+        <br><br>
+         Publicado dia 08 de agosto de 2018.</p>
+    </section>
+    <section class="adesivo adesivo2">
+        <a href="http://produto.mercadolivre.com.br/MLB-800688733-adesivo-em-busca-do-codigo-_JM" target="_blank">
+          <p>Compre um adesivo do Em Busca do Código.</p>
+        </a>
+    </section>
+    <section class="prolatgo" >
+        <p>Publicidade</p>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- EBC JS--> 
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:336px;height:280px"
+             data-ad-client="ca-pub-5020252132627432"
+             data-ad-slot="6229362170"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </section>
+<section class="paragrafoscodigos">
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="rodape-responsivo-simples.html">Rodapé responsivo simpes</a></li>
+                <li>|</li>
+                <li><a href="../html.html">+ sobre HTML e CSS</a></li>
+            </ul>
+        </nav>
+    </section>
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+        <h1>user-select: Selecione em um clique ou bloqueie a seleção de texto</h1>
+<!--Título-->                     <!--Título-->                     <!--Título-->
+<!--Título-->                     <!--Título-->                     <!--Título-->
+    <p>
+Bem vindo a mais um vídeo da Em Busca do Código, nosso canal de programação e tecnologia, e neste vídeo voltamos um pouco as origens do canal, sim, este é um vídeo de HTML e CSS, mais exclusivamente de CSS, pois como já está no título falaremos um pouco da propriedade user-select.
+    </p>
+    <p>
+Com a propriedade user-select você pode bloquear a seleção do texto contido em algum elemento HTML, e dependendo do valor atribuído para essa propriedade você pode configurar para que, com um clique, todo o texto seja selecionado.
+    </p>
+    <p>
+Mas vamos começar com a parte pratica, segundo as especificações da W3C existem quatro valores possíveis para essa propriedade, sendo eles auto, none, text e all.
+    </p>
+    <p class="cabe">Assista ao vídeo:</p>
+    <div>
+
+<!-- class="video" embed-->
+    </div>
+    <p>
+O valor auto é o valor padrão para esta propriedade, isso significa que, quando não especificado o valor será sempre auto, se o texto for editável ele também poderá ser selecionado (utilizando esse valor).
+    </p>
+    <p>
+O valor none da propriedade user-select bloqueia a seleção do texto, o valor text é bem parecido com o valor auto, e permite a seleção do texto conforme o que o usuário selecionar.
+    </p>
+    <p>
+E o valor all selecionará com apenas um clique todo o texto do elemento que está sendo configurado com a propriedade user-select.
+    </p>
+    <h2>Exemplos</h2>
+    <p>
+A sintaxe da propriedade user-select segue o padrão do CSS. Propriedade: Valor;.
+    </p>
+    <div class="fonte">
+h2 {<br />
+&nbsp;&nbsp;&nbsp; user-select: auto;<br />
+}<br />
+    </div>
+    <p>
+Pelo que eu entendi a propriedade user-select é uma recomendação da W3C, que está sendo implementada nos navegadores, o certo deveria ser informar o nome da propriedade dois pontos o valor desejado, mas nesse caso você também tem que informar a primeira versão do navegador. Para ficar mais fácil esse exemplo deixei um HTML padrão, caso queira utilizar ele neste exemplo fique a vontade.
+    </p>
+    <p class="cabe">HTML inicial</p>
+    <div class="fonte">
+&lt;!DOCTYPE html&gt;<br />
+<br />
+&lt;html&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="utf-8"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;USER-SELECT&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel="stylesheet" href="user-select01.css"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;Propriedade USER-SELECT&lt;/h1&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h2&gt;user-select: auto;&lt;/h2&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;user-select: none;&lt;/h3&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h4&gt;user-select: text;&lt;/h4&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h5&gt;user-select: all;&lt;/h5&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+    </div>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p>
+Como já informado neste HTML crie também um arquivo CSS, de preferência com o nome user-select01.css e salve na mesma pasta que você salvou o arquivo HTML.
+    </p>
+    <p>
+Voltando a falar da sintaxe da propriedade user-select, além de uma linha especificando apenas a propriedade e o valor, você precisa também inserir uma linha para cada navegador, sendo -moz- para o Firefox, -webkit- para Chrome, Safari, Edge e Opera e -ms- para o Internet Explorer.
+    </p>
+    <p>
+Como podemos ver em nosso HTML, a tag h2 receberá receberá o valor auto, e o arquivo CSS deverá ser configurado assim:
+    </p>
+    <div class="fonte">
+h2 {<br />
+&nbsp;&nbsp;&nbsp; user-select: auto;<br />
+&nbsp;&nbsp;&nbsp; -moz-user-select: auto;<br />
+&nbsp;&nbsp;&nbsp; -webkit-user-select: auto;<br />
+&nbsp;&nbsp;&nbsp; -ms-user-select: auto;<br />
+}<br />
+    </div>
+    <p>
+Nada mudará na &lt;h2&gt; uma vez que o valor auto é default para a propriedade user-select, então vamos configurar nosso &lt;h3&gt;, que deverá estar assim.
+    </p>
+    <div class="fonte">
+h3 {<br />
+&nbsp;&nbsp;&nbsp; user-select: none;<br />
+&nbsp;&nbsp;&nbsp; -moz-user-select: none;<br />
+&nbsp;&nbsp;&nbsp; -webkit-user-select: none;<br />
+&nbsp;&nbsp;&nbsp; -ms-user-select: none;<br />
+}<br />
+    </div>
+    <p>
+Agora chegou a hora de testar, abra o arquivo HTML em qualquer navegador e tente selecionar o texto em nossa tag h3. Se você seguiu certinho nossas dicas não conseguirá selecionar o texto da tag h3 em nenhum navegador.
+    </p>
+    <p>
+Vamos configurar rapidinho nossa tag h4 mesmo porque o resultado do valor text é bem parecido com o valor auto.
+    </p>
+    <div class="fonte">
+h4 {<br />
+&nbsp;&nbsp;&nbsp; user-select: text;<br />
+&nbsp;&nbsp;&nbsp; -moz-user-select: text;<br />
+&nbsp;&nbsp;&nbsp; -webkit-user-select: text;<br />
+&nbsp;&nbsp;&nbsp; -ms-user-select: text;<br />
+}<br />
+    </div>
+    <p>
+E chegou a hora do valor all, lembrando que, com o valor all todo o conteúdo em texto do elemento HTML que está sendo configurado pela user-select será selecionado com apenas um clique.
+    </p>
+    <div class="fonte">
+h5 {<br />
+&nbsp;&nbsp;&nbsp; user-select: all;<br />
+&nbsp;&nbsp;&nbsp; -moz-user-select: all;<br />
+&nbsp;&nbsp;&nbsp; -webkit-user-select: all;<br />
+&nbsp;&nbsp;&nbsp; -ms-user-select: all;<br />
+} <br />
+    </div>
+    <p>
+Como disse antes segundo as recomendações da W3C existem 4 valores possíveis para a propriedade user-select, mas em navegadores da Microsoft, outro valor também é aceito, e só é aceito (por enquanto) nos navegadores Edge e Internet Explorer.
+    </p>
+<section class="prom ign">
+<p>Publicidade</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- EBC JS--> 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5020252132627432"
+     data-ad-slot="6229362170"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+    <p>
+Esse valor é o element, pelo que eu entendi esse valor deixa selecionar apenas o texto que está no elemento configurado, eu não uso Windows então eu não consigo testa-lo, mas na teoria ele deixará configurar apenas a tag (elemento HTML) que está sendo configurado, não deixando a seleção do texto passar para outros elementos.
+    </p>
+    <p>
+No HTML adicione um &lt;h6&gt; com o seguinte texto: user-select: element;.
+    </p>
+    <div class="fonte">
+&lt;h6&gt;user-select: element;&lt;/h6&gt;<br />
+    </div>
+    <p>
+Já no CSS adicionamos a configuração padrão que fizemos até aqui.
+    </p>
+    <div class="fonte">
+h6 {<br />
+&nbsp;&nbsp;&nbsp; user-select: element;<br />
+&nbsp;&nbsp;&nbsp; -moz-user-select: element;<br />
+&nbsp;&nbsp;&nbsp; -webkit-user-select: element;<br />
+&nbsp;&nbsp;&nbsp; -ms-user-select: element;<br />
+}<br />
+    </div>
+    <p>
+Como disse um pouco antes, por não utilizar Windows eu não consigo testar esse valor da propriedade user-select, mas se você usa Windows, por favor teste e comente no YouTube o atual resultado dela.
+    </p>
+    <p>
+Alias, um aviso exclusivo sobre o canal, teremos um curso de dicas que não terá como tema de programação e tecnologia, então, se estiver recebendo notificações do canal e não for seu foco o curso que será apresentado, já desabilita as notificações do canal, caso você já esteja inscrito.
+    </p>
+    <p>
+Agora o código fonte final, apenas o CSS.
+    </p>
+    <p class="cabe">Código fonte CSS (completo)</p>
+    <div class="fonte">
+h2 {<br />
+&nbsp;&nbsp;&nbsp; user-select: auto;<br />
+&nbsp;&nbsp;&nbsp; -moz-user-select: auto;<br />
+&nbsp;&nbsp;&nbsp; -webkit-user-select: auto;<br />
+&nbsp;&nbsp;&nbsp; -ms-user-select: auto;<br />
+}<br />
+h3 {<br />
+&nbsp;&nbsp;&nbsp; user-select: none;<br />
+&nbsp;&nbsp;&nbsp; -moz-user-select: none;<br />
+&nbsp;&nbsp;&nbsp; -webkit-user-select: none;<br />
+&nbsp;&nbsp;&nbsp; -ms-user-select: none;<br />
+}<br />
+h4 {<br />
+&nbsp;&nbsp;&nbsp; user-select: text;<br />
+&nbsp;&nbsp;&nbsp; -moz-user-select: text;<br />
+&nbsp;&nbsp;&nbsp; -webkit-user-select: text;<br />
+&nbsp;&nbsp;&nbsp; -ms-user-select: text;<br />
+}<br />
+h5 {<br />
+&nbsp;&nbsp;&nbsp; user-select: all;<br />
+&nbsp;&nbsp;&nbsp; -moz-user-select: all;<br />
+&nbsp;&nbsp;&nbsp; -webkit-user-select: all;<br />
+&nbsp;&nbsp;&nbsp; -ms-user-select: all;<br />
+}<br />
+h6 {<br />
+&nbsp;&nbsp;&nbsp; user-select: element;<br />
+&nbsp;&nbsp;&nbsp; -moz-user-select: element;<br />
+&nbsp;&nbsp;&nbsp; -webkit-user-select: element;<br />
+&nbsp;&nbsp;&nbsp; -ms-user-select: element;<br />
+}<br />
+    </div>
+    <p>
+Essa dica fica por aqui, eu espero que você tenha gostado, se possível 
+já deixa um like no vídeo desta dica lá no YouTube, compartilha este 
+link, e até mais.
+    </p>
+    <section>
+        <nav  class="paginas">
+            <ul>
+                <li><a href="rodape-responsivo-simples.html">Rodapé responsivo simpes</a></li>
+                <li>|</li>
+                <li><a href="../html.html">+ sobre HTML e CSS</a></li>
+            </ul>
+        </nav>
+    </section>
+</section>
+    <div class="mais1">
+        <a href="http://embuscadocodigo.com/codigos/parallax/index.html">
+            <div>
+                <h2>Curso aberto de Parallax</h2> 
+                <p>Para a W3C, parallax é uma tendência, onde o conteúdo do fundo é movido em uma velocidade diferente do conteúdo do primeiro plano.</p>
+            </div>
+        </a>
+    </div>
+    <div class="mais1">
+        <a href="http://embuscadocodigo.com/codigos/html/video100.html">
+            <div>
+                <h2>Breakpoint em HTML5 CSS3. Vídeo 100</h2> 
+                <p>Layout é a disposição dos elementos de um site, o layout é um esboço de como ficará a distribuição física dos elementos. </p>
+            </div>
+        </a>
+    </div>
+     <footer>
+          <div class="rodape">
+               <img src="../../img/001.png" alt="nosso logotipo">
+               2018 Em Busca do Código
+          </div>
+          <nav class="redes">
+               <ul>
+                   <li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="../../img/007.png" alt="Perfil Facebook"></a></li>
+		           <li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="../../img/008.png" alt="Perfil Google plus"></a></li>
+		           <li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="../../img/009.png" alt="Canal no YouTube"></a></li>
+		           <li><a href="https://www.instagram.com/alamvianna/" target="_blank"><img src="../../img/010.png" alt="Perfil Instagram"></a></li>
+		           <li><a href="https://www.twitter.com/alamvianna/" target="_blank"><img src="../../img/011.png" alt="Conta no Twitter"></a></li>
+	          </ul>
+          </nav>
+     </footer>
+<p class="antibloq">Se estiver utilizando bloqueador de propaganda, por favor, coloque este site na lista branca (isto sempre será apenas um pedido). Obrigado pela escolha.</p>
+		<div class="prose">
+		</div>
+	</body>
+</html>
